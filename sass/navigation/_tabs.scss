@@ -1,0 +1,21 @@
+.nav[role="tablist"] {
+
+	margin-bottom: 20px;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2.4px;
+
+	a {
+
+		&.active {
+			color: $light;
+		}
+
+	}
+
+	span {
+		color: $light;
+	}
+
+}

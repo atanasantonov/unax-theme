@@ -1,0 +1,5 @@
+$breakpoint-xs: map-get($grid-breakpoints, "xs");
+$breakpoint-sm: map-get($grid-breakpoints, "sm");
+$breakpoint-md: map-get($grid-breakpoints, "md");
+$breakpoint-lg: map-get($grid-breakpoints, "lg");
+$breakpoint-xl: map-get($grid-breakpoints, "xl");

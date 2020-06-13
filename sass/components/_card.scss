@@ -1,0 +1,28 @@
+.card {
+
+    box-shadow: 3px 3px 5px 0 $gray-200;
+
+}
+
+.card-deck {
+
+    .card {
+
+        flex: none !important;
+
+        .thumbnail {
+
+            height: 250px;
+            overflow: hidden;
+
+            .card-img-top {
+                min-height: 250px;
+                height: auto;
+                width: 100%;
+            }
+
+        }
+
+    }
+
+}

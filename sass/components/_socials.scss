@@ -1,0 +1,40 @@
+.socials {
+
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 1rem auto;
+
+    .social {
+
+        display: flex;
+        flex-direction: row;
+
+        .prefix {
+
+            display: none;
+            @include breakpoint-above(lg) {
+
+                display: block;
+                width: 3px;
+                height: 32px;
+                background: $black;
+                transform: skew(-45deg);
+
+            }
+
+        }
+
+        .icon {
+
+            img {
+
+                width: 32px;
+                height: 32px;
+                margin: 0 30px;
+
+            }
+        }
+
+    }
+
+}

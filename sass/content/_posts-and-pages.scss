@@ -1,0 +1,43 @@
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+// Loops to enumerate the classes for columns.
+@for $i from 2 through 6 {
+	.columns-#{$i} {
+		& > * {
+			width: 100%;
+		}
+	}
+}
+@media screen and ( min-width: $breakpoint-lg ) {
+
+	@for $i from 2 through 6 {
+		.columns-#{$i} {
+			& > * {
+				@include column-width( $i );
+			}
+		}
+	}
+
+}

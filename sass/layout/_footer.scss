@@ -1,0 +1,40 @@
+.site-footer {
+
+    clear: both;
+    margin-top: 3rem;
+    padding: 3rem 0;
+    color: $white;
+    background-color: $black;
+
+    a {
+        color: $white
+    }
+    border-top: 1px solid $gray-400;
+
+
+    ul {
+
+        margin: 0 0 1rem 0 !important;
+        padding: 0;
+
+        @include breakpoint-above(lg) {
+            margin: 0;
+        }
+
+        li {
+
+            padding: 0 0.5rem;
+            list-style-type: none;
+            font-family: sans-serif;
+            font-size: 1rem;
+            text-decoration: underline;
+            text-transform: uppercase;
+
+            @include breakpoint-above(lg) {
+		        display: inline-flex;
+		    }
+        }
+
+    }
+
+}

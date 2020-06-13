@@ -1,0 +1,252 @@
+@media ( min-width: 768px ) {
+
+	/* Menu Modal ---------------------------- */
+
+	button.close-nav-toggle {
+		font-size: 1.8rem;
+		padding: 4rem 0;
+	}
+
+	button.close-nav-toggle svg {
+		height: 2rem;
+		width: 2rem;
+	}
+
+	button.close-nav-toggle .toggle-text {
+		margin-right: 2.1rem;
+	}
+
+	.modal-menu {
+		left: auto;
+		width: 100%;
+	}
+
+	.modal-menu ul > li > a,
+	.modal-menu ul > li > .ancestor-wrapper > a {
+		font-size: 2.4rem;
+		padding: 2.5rem 0;
+	}
+
+	.modal-menu ul li {
+		border-left-color: transparent;
+	}
+
+	.modal-menu > li > .ancestor-wrapper > button.sub-menu-toggle {
+		padding: 0 3rem;
+	}
+
+	.modal-menu > li > .ancestor-wrapper > button.sub-menu-toggle svg {
+		height: 1.1rem;
+		width: 1.8rem;
+	}
+
+	.menu-bottom {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding: 4.4rem 0;
+	}
+
+	.menu-copyright {
+		display: block;
+		flex-shrink: 0;
+		margin-right: 4rem;
+	}
+
+
+	/* Sub Page ------------------------------ */
+
+}
+
+@media ( min-width: 992px ) {
+
+	/* HEADER NAVIGATION */
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: block;
+	}
+
+	.header-navigation-wrapper {
+		align-items: center;
+		display: flex;
+	}
+
+	.primary-menu-wrapper {
+		display: block;
+		width: 100%;
+	}
+
+	/* HEADER TOGGLES */
+
+	.mobile-search-toggle,
+	.mobile-nav-toggle {
+		display: none !important;
+	}
+
+	.primary-menu-wrapper + .header-toggles {
+		margin-left: 3rem;
+	}
+
+	.header-toggles {
+		display: flex;
+		flex-shrink: 0;
+		margin-right: -3rem;
+	}
+
+	.header-inner .toggle {
+		height: 4.4rem;
+		padding: 0 3rem;
+		position: relative;
+		bottom: auto;
+		left: auto;
+		right: auto;
+		top: auto;
+		width: auto;
+	}
+
+	.header-inner .toggle-wrapper {
+		position: relative;
+	}
+
+	.header-inner .toggle-wrapper::before {
+		background: #dedfdf;
+		content: "";
+		display: block;
+		height: 2.7rem;
+		position: absolute;
+		left: 0;
+		top: calc(50% - 1.35rem);
+		width: 0.1rem;
+	}
+
+	.header-inner .toggle-wrapper:first-child::before {
+		content: none;
+	}
+
+	.header-inner .primary-menu-wrapper + .header-toggles .toggle-wrapper:first-child::before {
+		content: "";
+	}
+
+	.nav-toggle-wrapper:not(.has-expanded-menu) {
+		display: none;
+	}
+
+	.toggle-inner {
+		position: static;
+	}
+
+	.toggle-inner .toggle-text {
+		left: 0;
+		right: 0;
+		text-align: center;
+		top: calc(100% - 0.3rem);
+		width: auto;
+	}
+
+	.header-toggles:only-child .nav-toggle .toggle-inner {
+		padding-top: 0;
+	}
+
+	.header-toggles:only-child .toggle-inner {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+
+	.header-toggles:only-child .toggle-inner .svg-icon {
+		order: 1;
+	}
+
+	.header-toggles:only-child .toggle-inner .toggle-text {
+		position: static;
+		padding-right: 20px;
+		font-size: 15px;
+		color: inherit;
+	}
+
+	/* Menu Modal ---------------------------- */
+
+	.menu-modal {
+		opacity: 1;
+		justify-content: flex-end;
+		padding: 0;
+		transition: background-color 0.3s ease-in, left 0s 0.3s, right 0s 0.3s;
+	}
+
+	.menu-modal.cover-modal {
+		background: rgba(0, 0, 0, 0);
+	}
+
+	.menu-modal.active {
+		background: rgba(0, 0, 0, 0.2);
+		transition: background-color 0.3s ease-out;
+	}
+
+	.menu-wrapper.section-inner {
+		width: calc(100% - 8rem);
+	}
+
+	.menu-modal-inner {
+		box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.1);
+		opacity: 0;
+		padding: 0;
+		transform: translateX(20rem);
+		transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+		width: 50rem;
+	}
+
+	.menu-modal.active .menu-modal-inner {
+		opacity: 1;
+		transform: translateX(0);
+		transition-timing-function: ease-out;
+	}
+
+	.mobile-menu {
+		display: none;
+	}
+
+	.expanded-menu {
+		display: block;
+	}
+
+	.menu-bottom {
+		padding: 6rem 0;
+	}
+
+	.menu-bottom .social-menu {
+		justify-content: flex-start;
+	}
+
+	/* Sub Page ------------------------------ */
+
+}
+
+
+@media ( min-width: 1200px ) {
+
+	/* PRIMARY MENU */
+
+	/* HEADER TOGGLES */
+
+	.primary-menu-wrapper + .header-toggles {
+		margin-left: 4rem;
+	}
+
+	.header-toggles {
+		margin-right: -4rem;
+	}
+
+	.header-toggles .toggle {
+		padding: 0 4rem;
+	}
+
+	/* Menu Modal ---------------------------- */
+
+	/* Search Modal -------------------------- */
+
+	/* Sub Page ------------------------------ */
+
+}
