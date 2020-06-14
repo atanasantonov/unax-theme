@@ -1,3 +1,4 @@
+/* Nav Tabs ----------------------------- */
 .nav[role="tablist"] {
 
 	margin-bottom: 20px;
@@ -16,6 +17,31 @@
 
 	span {
 		color: $light;
+	}
+
+}
+
+.nav.tabs {
+
+	.nav-item {
+
+		width: 100%;
+		text-transform: uppercase;
+		border-bottom: 1px solid $gray-300;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		.nav-link {
+
+			padding: 0.5rem 0;
+			&.active {
+				font-weight: 700;
+			}
+
+		}
+
 	}
 
 }

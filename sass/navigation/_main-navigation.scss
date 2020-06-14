@@ -1,0 +1,204 @@
+/* Main Navigation ----------------------------- */
+.main-navigation {
+
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	ul {
+
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+
+			float: left;
+			position: absolute;
+			top: 100%;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+
+				padding: 1rem;
+				background-color: $body-bg;
+
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				min-width: 250px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+.primary-menu-wrapper {
+	display: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+
+/* Repeat previous rules for IE11 (when JS enabled for polyfill). */
+body.touch-enabled .primary-menu > li.menu-item-has-children > a {
+	padding-right: 0;
+	margin-right: 2rem;
+}
+
+body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
+	margin-right: 4.5rem;
+	padding-right: 0;
+	width: unset;
+}
+
+/* Main menu animation ----------------------- */
+
+.menu-wrapper .menu-item {
+	position: relative;
+}
+
+.menu-wrapper .active {
+	display: block;
+}
+
+.menu-wrapper.is-toggling {
+	pointer-events: none;
+}
+
+.menu-wrapper.is-toggling .menu-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.menu-wrapper.is-toggling .menu-bottom .social-menu .menu-item {
+	width: auto;
+}
+
+.menu-wrapper.is-animating .menu-item,
+.menu-wrapper.is-animating .toggling-target {
+	transition-duration: 250ms;
+}
+
+.menu-wrapper.is-animating .menu-item {
+	transition-property: transform;
+}
+
+.menu-wrapper.is-toggling .toggling-target {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+}
+
+.menu-wrapper.is-toggling .toggling-target.active {
+	opacity: 0;
+}
+
+.menu-wrapper.is-animating.is-toggling .toggling-target {
+	display: block;
+	transition-property: opacity;
+	opacity: 0;
+}
+
+.menu-wrapper.is-animating.is-toggling .toggling-target.active {
+	opacity: 1;
+}
+
+.menu-wrapper.is-toggling .modal-menu > li:last-child li {
+	border-top-color: transparent;
+	border-bottom-width: 0.1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.menu-wrapper.is-animating .menu-item,
+	.menu-wrapper.is-animating .toggling-target {
+		transition-duration: 1ms !important;
+	}
+
+}
+
+
+/* Expanded Menu ----------------------------- */
+
+.expanded-menu {
+	display: none;
+}
+
+.mobile-menu {
+	display: block;
+}

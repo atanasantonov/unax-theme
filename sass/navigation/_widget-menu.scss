@@ -1,0 +1,33 @@
+/* Widget Menu ----------------------------- */
+.widget_nav_menu {
+
+	.heading-uppercase {
+		margin-bottom: 1rem;
+	}
+
+	ul.menu {
+
+		li.menu-item {
+
+			margin: 0;
+			padding: 0.5rem 0;
+	    	padding-top: 10px;
+			border-bottom: 1px solid $gray-400;
+
+			&.current-menu-item {
+				font-weight: 700;
+			}
+
+			&:first-child {
+				padding: 0 0 0.5rem 0;
+			}
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+		}
+
+	}
+
+}
