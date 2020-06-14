@@ -40,7 +40,7 @@ get_header();
 
 				?>
 
-				</div><!-- .archive-loop -->
+				</div><!-- .loop -->
 
 				<?php
 
