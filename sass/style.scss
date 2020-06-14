@@ -72,11 +72,10 @@ Text Domain: unax
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-@import "layout/common";
 @import "layout/header";
-@import "layout/content-sidebar";
-@import "layout/no-sidebar";
+@import "layout/content";
 @import "layout/footer";
+@import "layout/common";
 
 /*--------------------------------------------------------------
 ## Posts and pages

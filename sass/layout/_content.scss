@@ -1,0 +1,33 @@
+.site-content {
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+
+	.site-main {
+
+		width: 100%;
+		min-height: 600px;
+
+	}
+
+	.widget-area {
+
+		width: 100%;
+
+		@include breakpoint-above(lg) {
+
+			max-width: 27%;
+			margin-left: 3%;
+			overflow: hidden;
+
+		}
+
+		ul {
+			margin-left: -1rem;
+		}
+
+	}
+
+}
