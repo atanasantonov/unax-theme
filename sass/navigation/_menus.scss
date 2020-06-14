@@ -26,6 +26,9 @@
 
 			li {
 
+				padding: 1rem 0.5rem;
+				background-color: $body-bg;
+
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -33,7 +36,7 @@
 			}
 
 			a {
-				width: 200px;
+				min-width: 250px;
 			}
 
 			:hover > a,
