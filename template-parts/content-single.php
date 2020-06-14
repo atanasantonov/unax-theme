@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( apply_filters( 'unax_post_single_class', 'card mb-4' ) ); ?>>
 
 	<header class="entry-header">
 

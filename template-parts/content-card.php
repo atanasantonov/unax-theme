@@ -7,15 +7,9 @@
  * @package Unax
  */
 
-
-/*
- * Apply filter to post class
- */
-$post_class  = apply_filters( 'unax_card_post_class', 'card mb-4' );
-
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( $post_class ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( apply_filters( 'unax_card_post_class', 'card mb-4' ) ); ?>>
 
 	<a class="thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 		<?php unax_post_thumbnail(); ?>
