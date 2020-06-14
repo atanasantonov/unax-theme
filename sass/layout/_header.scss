@@ -83,7 +83,6 @@
 
 	.main-navigation {
 
-		padding: 0.75rem 0;
 		border-top: 1px solid $gray-400;
 		border-bottom: 1px solid $gray-400;
 
@@ -102,10 +101,12 @@
 				left: auto;
 				bottom: auto;
 				right: auto;
+				margin: 0.5rem 0;
 				color: $black;
+				background-color: $white;
 
-				.toggle-inner {
-					font-size: 24px;
+				.fa-bars {
+					font-size: 36px;
 				}
 
 			}
@@ -124,6 +125,7 @@
 					.menu-item {
 
 						margin: 0 0.75rem;
+						padding: 0.75rem 0.25rem;
 						font-size: 1.24rem;
 
 						&:first-child {
@@ -165,56 +167,4 @@
 
 	}
 
-}
-
-.search-form-container {
-
-	position: absolute;
-	width: 0;
-	max-width: 100%;
-	right: 20px;
-	top: 0;
-	background-color: $white;
-	overflow: hidden;
-  	transition: 0.5s;
-	z-index: 999;
-
-
-	@include breakpoint-above(lg) {
-		max-width: 50%;
-	}
-
-	.search-form-container-inner {
-
-		padding: 0 15px;
-		border: 1px solid $gray-200;
-
-		.search-form-close {
-			font-size: 36px;
-		}
-
-		label {
-
-			display: block;
-
-			.search-field {
-				width: 100%;
-			}
-
-		}
-
-		.search-submit {
-			color: $black;
-			border-color:  $black;
-		}
-
-	}
-
-}
-
-
-.button-search {
-	@include breakpoint-above(lg) {
-		padding-right: 15px;
-	}
 }

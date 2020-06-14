@@ -1,3 +1,5 @@
+
+
 @media ( min-width: 768px ) {
 
 	/* Menu Modal ---------------------------- */
@@ -21,8 +23,8 @@
 		width: 100%;
 	}
 
-	.modal-menu ul > li > a,
-	.modal-menu ul > li > .ancestor-wrapper > a {
+	.modal-menu > li > a,
+	.modal-menu > li > .ancestor-wrapper > a {
 		font-size: 2.4rem;
 		padding: 2.5rem 0;
 	}
@@ -61,13 +63,6 @@
 @media ( min-width: 992px ) {
 
 	/* HEADER NAVIGATION */
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: block;
-	}
 
 	.header-navigation-wrapper {
 		align-items: center;
@@ -228,6 +223,14 @@
 @media ( min-width: 1200px ) {
 
 	/* PRIMARY MENU */
+
+	ul.primary-menu {
+		margin: -0.8rem 0 0 -2.5rem;
+	}
+
+	.primary-menu > li {
+		margin: 0.8rem 0 0 2.5rem;
+	}
 
 	/* HEADER TOGGLES */
 
