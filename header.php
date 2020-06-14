@@ -44,5 +44,3 @@
 		</header><!-- .site-header -->
 
 		<?php get_template_part( 'template-parts/modal-menu' ); ?>
-
-		<div id="content" class="site-content">
