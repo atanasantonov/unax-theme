@@ -10,7 +10,7 @@
 get_header();
 
 ?>
-	<main id="primary" class="site-main <?php echo esc_attr( apply_filters( 'unax_archive_container_class', 'container' ) ) ?>">
+	<main id="primary" class="site-main <?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ) ?>">
 
 		<?php if ( have_posts() ) :	?>
 
@@ -18,11 +18,7 @@ get_header();
 				<?php unax_archive_header(); ?>
 			</header><!-- .page-header -->
 
-			<?php
-			$archive_loop_class[] = unax_grid_columns();
-			$archive_loop_class[] = apply_filters( 'unax_archive_loop_class', 'card-columns' );
-			?>
-			<div class="archive-loop <?php echo esc_attr( implode( ' ', $archive_loop_class ) ) ?>">
+			<div class="<?php echo esc_attr( unax_archive_loop_class() ) ?>">
 
 			<?php
 
