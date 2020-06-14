@@ -168,11 +168,11 @@ if ( ! function_exists( 'unax_archive_header' ) ) {
 }
 
 
-if ( ! function_exists( 'unax_archive_loop_class' ) ) {
+if ( ! function_exists( 'unax_loop_class' ) ) {
 	/**
 	 * Archive header
 	 */
-	function unax_archive_loop_class( $class = '' ) {
+	function unax_loop_class( $class = '' ) {
 
 		$archive_loop_class_array = [];
 
