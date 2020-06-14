@@ -69,7 +69,7 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				
+
 				@include breakpoint-above(lg) {
 					width: 50%;
 					align-items: flex-end;
@@ -83,7 +83,6 @@
 
 	.main-navigation {
 
-		margin-bottom: 0.75rem;
 		padding: 0.75rem 0;
 		border-top: 1px solid $gray-400;
 		border-bottom: 1px solid $gray-400;
