@@ -47,9 +47,11 @@ if ( ! function_exists( 'unax_header_top' ) ) {
 
 			</div><!-- .site-branding -->
 
+			<?php if( is_active_sidebar( 'header-widget-area' ) ) : ?>
 			<div class="widget-area">
 				<?php dynamic_sidebar( 'header-widget-area' ); ?>
 			</div>
+			<?php endif; ?>
 
 		</div><!-- .container -->
 
@@ -108,6 +110,12 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 				?>
 				</ul>
 			</nav><!-- .primary-menu-wrapper -->
+
+			<?php if( is_active_sidebar( 'primary-menu-widget-area' ) ) : ?>
+			<div class="widget-area">
+				<?php dynamic_sidebar( 'primary-menu-widget-area' ); ?>
+			</div>
+			<?php endif; ?>
 
 		</div><!-- .container -->
 
