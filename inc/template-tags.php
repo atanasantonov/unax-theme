@@ -149,7 +149,7 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 
 		endif;
 
-		if( !is_single() ) {
+		if( !is_single() && get_post_type() === 'post' ) {
 			return unax_header_image();
 		}
 
