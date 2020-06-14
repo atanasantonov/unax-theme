@@ -128,6 +128,16 @@ function unax_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name'          => esc_html__( 'Primary Menu Widget Area', 'unax' ),
+		'id'            => 'primary-menu-widget-area',
+		'description'   => esc_html__( 'Add widgets here.', 'unax' ),
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+
+	register_sidebar( array(
 		'name'          => esc_html__( 'Footer Widget Area', 'unax' ),
 		'id'            => 'footer-widget-area',
 		'description'   => esc_html__( 'Add widgets here.', 'unax' ),
