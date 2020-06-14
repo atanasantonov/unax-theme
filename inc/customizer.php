@@ -33,6 +33,23 @@ function unax_customize_register( $wp_customize ) {
 	}
 
 
+	$wp_customize->add_section( 'unax_common_settings' , array(
+	    'title'      => __( 'Unax Settings','unax' ),
+	    'priority'   => 120,
+	) );
+
+	$wp_customize->add_setting( 'grid_columns' , array(
+			'default' => '3',
+			'sanitize_callback' => 'sanitize_text_field',
+	) );
+	$wp_customize->add_control(
+		 new WP_Customize_Control( $wp_customize, 'grid_columns', [
+			 'label'    => __( 'Grid columns', 'unax' ),
+			 'section'  => 'unax_common_settings',
+			 'type'  	=> 'number',
+		 ])
+ 	);
+
 	$wp_customize->add_setting( 'google_analytics' , array(
 			'default' => '',
 			'sanitize_callback' => 'sanitize_text_field',
@@ -40,7 +57,7 @@ function unax_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		 new WP_Customize_Control( $wp_customize, 'google_analytics', [
 			 'label'    => __( 'Google Analytics ID', 'unax' ),
-			 'section'  => 'title_tagline',
+			 'section'  => 'unax_common_settings',
 		 ])
  	);
 
@@ -51,7 +68,7 @@ function unax_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		 new WP_Customize_Control( $wp_customize, 'facebook_page', [
 			 'label'    => __( 'Facebook Page', 'unax' ),
-			 'section'  => 'title_tagline',
+			 'section'  => 'unax_common_settings',
 		 ])
  	);
 
