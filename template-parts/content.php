@@ -7,14 +7,11 @@
  * @package Unax
  */
 
-if( get_post_type() !== 'post' ) {
-	get_template_part( 'template-parts/content', get_post_type() );
-	return;
-}
+if( get_post_type() === 'post' ) {
 
-if( !is_singular() ) {
 	get_template_part( 'template-parts/content', apply_filters( 'unax_content', 'card' ) );
 	return;
+
 }
 
-get_template_part( 'template-parts/content', apply_filters( 'unax_content_single', 'single' ) );
+get_template_part( 'template-parts/content', get_post_type() );
