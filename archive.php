@@ -20,7 +20,7 @@ get_header();
 					<?php unax_archive_header(); ?>
 				</header><!-- .page-header -->
 
-				<div class="<?php echo esc_attr( unax_archive_loop_class() ) ?>">
+				<div class="<?php echo esc_attr( unax_loop_class() ) ?>">
 
 				<?php
 
