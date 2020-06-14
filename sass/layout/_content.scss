@@ -2,7 +2,12 @@
 
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+
+	@include breakpoint-above(lg) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
 	.site-main {
 
