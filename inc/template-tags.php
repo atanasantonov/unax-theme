@@ -129,24 +129,55 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 			return;
 		}
 
-		$post_thumbnail_class = apply_filters( 'unax_post_thumbnail_class', 'card-img-top' );
+		$thumbnail_wrapper_class = apply_filters( 'unax_thumbnail_wrapper_class', 'post-thumbnail-wrapper' );
+
+		$thumbnail_class_default = get_post_type() === 'post' && !is_single() ? 'card-img-top' : '';
+		$thumbnail_class = apply_filters( 'unax_thumbnail_class', $thumbnail_class_default );
+
 
 		if( has_post_thumbnail() ) :
 
-			return the_post_thumbnail(
-				'post-thumbnail', [ 'class' => $post_thumbnail_class ]
+			return printf(
+				'<div class="%s">%s</div>',
+				$thumbnail_wrapper_class,
+				get_the_post_thumbnail(
+					null,
+					'post-thumbnail',
+					[ 'class' => $thumbnail_class ]
+				)
 			);
 
 		endif;
 
+		if( !is_single() ) {
+			return unax_header_image();
+		}
+
+	}
+
+endif;
+
+
+if ( ! function_exists( 'unax_header_image' ) ) :
+	/**
+	 * Displays an optional post thumbnail.
+	 *
+	 * Wraps the post thumbnail in an anchor element on index views, or a div
+	 * element when on single views.
+	 */
+	function unax_header_image() {
+
+		$header_image_wrapper_class = apply_filters( 'unax_header_image_wrapper_class', 'post-thumbnail-wrapper' );
+		$header_image_class = apply_filters( 'unax_header_image_class', '' );
+
 		if( has_header_image() ) :
 
 			return printf(
-				'<img src="%s" alt="%s" class="%s" >',
+				'<div class="%s"><img src="%s" alt="%s" class="%s"></div>',
+				$header_image_wrapper_class,
 				esc_url( get_header_image() ),
 				'',
-				$post_thumbnail_class,
-
+				$header_image_class
 			);
 
 		endif;
