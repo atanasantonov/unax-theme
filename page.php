@@ -14,8 +14,9 @@
 
 get_header();
 ?>
+	<div id="content" class="site-content <?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ) ?>">
 
-	<main id="primary" class="site-main container">
+	<main id="primary" class="site-main">
 
 		<?php
 		while ( have_posts() ) :
@@ -33,6 +34,9 @@ get_header();
 
 	</main><!-- #main -->
 
+	<?php get_sidebar(); ?>
+
+</div><!-- #content -->
 <?php
-get_sidebar();
+
 get_footer();
