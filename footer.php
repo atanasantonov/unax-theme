@@ -15,7 +15,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info container text-center">
 
-			<?php dynamic_sidebar( 'sidebar-footer' ); ?>
+			<?php dynamic_sidebar( 'footer-widget-area' ); ?>
 
 			<?php
 				printf(
