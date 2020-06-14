@@ -29,7 +29,11 @@ get_header();
 					</header>
 					<?php
 				endif;
+				?>
 
+				<div class="<?php echo esc_attr( unax_loop_class() ) ?>">
+
+				<?php
 				/* Start the Loop */
 				while ( have_posts() ) :
 					the_post();
@@ -42,6 +46,12 @@ get_header();
 					get_template_part( 'template-parts/content', get_post_type() );
 
 				endwhile;
+
+				?>
+
+				</div><!-- .loop -->
+
+				<?php
 
 				the_posts_navigation();
 
