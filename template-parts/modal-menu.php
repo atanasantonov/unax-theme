@@ -33,7 +33,6 @@
 							'items_wrap'     => '%3$s',
 							'show_toggles'   => true,
 							'theme_location' => 'mobile-menu',
-								'depth'      => 2,
 						)
 					);
 					?>

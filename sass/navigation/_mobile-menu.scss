@@ -1,3 +1,31 @@
+.menu {
+	padding: 0;
+}
+
+/* Navigation Toggle ------------------------- */
+.nav-toggle {
+
+	display: block;
+	position: relative;
+	width: auto;
+	top: auto;
+	left: auto;
+	bottom: auto;
+	right: auto;
+	margin: 0.5rem 0;
+	color: $black;
+	background-color: $white;
+
+	@include breakpoint-above(lg) {
+		display: none;
+	}
+
+	.fa-bars {
+		font-size: 36px;
+	}
+
+}
+
 /* Modal Menu ----------------------------- */
 .menu-modal {
 
@@ -61,7 +89,7 @@
 
 }
 
-/* Mobile Menu --------------------------------- */
+/* WP Nav Menu --------------------------------- */
 .modal-menu {
 
 	position: relative;
@@ -152,6 +180,16 @@
 
 }
 
+/* Expanded Menu ----------------------------- */
+
+.expanded-menu {
+	display: none;
+}
+
+.mobile-menu {
+	display: block;
+}
+
 /* Main menu animation ----------------------- */
 
 .menu-wrapper .menu-item {
@@ -172,10 +210,6 @@
 	left: 0;
 	margin: 0;
 	width: 100%;
-}
-
-.menu-wrapper.is-toggling .menu-bottom .social-menu .menu-item {
-	width: auto;
 }
 
 .menu-wrapper.is-animating .menu-item,
