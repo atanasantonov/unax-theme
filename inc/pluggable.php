@@ -13,9 +13,7 @@ if ( ! function_exists( 'unax_header_top' ) ) {
 	 */
 	function unax_header_top()	{
 
-	?>
-	<div class="header-top">
-
+	?><div class="header-top">
 		<?php
 		/*
 		 * Apply the filters to wrapper
@@ -31,18 +29,17 @@ if ( ! function_exists( 'unax_header_top' ) ) {
 					the_custom_logo();
 				endif;
 
+				if( display_header_text() ) :
+
 				?>
 
-				<?php if( display_header_text() ) : ?>
 				<div class="site-branding-texts">
 
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-					<?php
-
-					$unax_description = get_bloginfo( 'description', 'display' );
-					if ( $unax_description ) : ?>
-						<p class="site-description"><?php echo $unax_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+					<?php $unax_description = get_bloginfo( 'description', 'display' ); ?>
+					<?php if ( $unax_description ) : ?>
+					<p class="site-description"><?php echo $unax_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 					<?php endif; ?>
 
 				</div><!-- .site-branding-text -->
@@ -50,7 +47,7 @@ if ( ! function_exists( 'unax_header_top' ) ) {
 
 			</div><!-- .site-branding -->
 
-			<div class="sidebar">
+			<div class="widget-area">
 				<?php dynamic_sidebar( 'header-widget-area' ); ?>
 			</div>
 
