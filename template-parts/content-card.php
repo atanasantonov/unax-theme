@@ -33,7 +33,6 @@
 
 	<div class="entry-meta card-footer text-muted">
 		<?php unax_posted_on(); ?>
-		<?php unax_posted_by(); ?>
 	</div>
 
 </article><!-- #post-<?php the_ID(); ?> -->

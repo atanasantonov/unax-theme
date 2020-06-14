@@ -20,10 +20,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php
-			unax_posted_on();
-			unax_posted_by();
-			?>
+			<?php unax_posted_on(); ?>
 		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
