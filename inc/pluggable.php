@@ -96,12 +96,12 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 			<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Menu', 'unax' ); ?>" role="navigation">
 				<ul class="primary-menu reset-list-style">
 				<?php
-				if ( has_nav_menu( 'primary' ) ) :
+				if ( has_nav_menu( 'primary-menu' ) ) :
 					wp_nav_menu(
 						array(
 							'container'  => '',
 							'items_wrap' => '%3$s',
-							'theme_location' => 'primary',
+							'theme_location' => 'primary-menu',
 						)
 					);
 				endif;
