@@ -24,7 +24,7 @@ function unax_custom_header_setup() {
 			'unax_custom_header_args',
 			array(
 				'width'              => 1000,
-				'height'             => 236,
+				'height'             => 382,
 				'flex-width'         => true,
 	   			'flex-height'        => true,
 				'wp-head-callback'   => 'unax_header_style',
