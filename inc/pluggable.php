@@ -149,7 +149,7 @@ if ( ! function_exists( 'unax_breadcrumbs' ) ) {
 }
 
 
-if ( ! function_exists( 'unax_archive_header' ) ) :
+if ( ! function_exists( 'unax_archive_header' ) ) {
 	/**
 	 * Archive header
 	 */
@@ -157,10 +157,10 @@ if ( ! function_exists( 'unax_archive_header' ) ) :
 		the_archive_title( '<h1 class="page-title">', '</h1>' );
 		the_archive_description( '<div class="archive-description">', '</div>' );
 	}
-endif;
+}
 
 
-if ( ! function_exists( 'unax_archive_loop_class' ) ) :
+if ( ! function_exists( 'unax_archive_loop_class' ) ) {
 	/**
 	 * Archive header
 	 */
@@ -181,4 +181,4 @@ if ( ! function_exists( 'unax_archive_loop_class' ) ) :
 		return implode( ' ', $archive_loop_class );
 
 	}
-endif;
+}
