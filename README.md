@@ -30,6 +30,9 @@ Basic templates included with common container filters.
 
 ## Changelog
 
+* 1.0.1 - Jul 15 2020
+  Theme URI fix
+
 * 1.0 - Jul 15 2020
   Initial release
 
