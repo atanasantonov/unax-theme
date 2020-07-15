@@ -1,5 +1,6 @@
 # Copyright (C) 2020 Automattic
 # This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
@@ -9,29 +10,17 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-04-17T21:03:15+00:00\n"
+"POT-Creation-Date: 2020-07-15 10:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Domain: _s\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
 
-#. Theme Name of the theme
-msgid "_s"
-msgstr ""
-
-#. Theme URI of the theme
-msgid "https://underscores.me/"
-msgstr ""
-
-#. Description of the theme
-msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
-msgstr ""
-
-#. Author of the theme
-msgid "Automattic"
-msgstr ""
-
-#. Author URI of the theme
-msgid "https://automattic.com/"
+#. %s: search query.
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
 msgstr ""
 
 #: 404.php:18
@@ -39,25 +28,20 @@ msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
 #: 404.php:22
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
 
-#: 404.php:31
-msgid "Most Used Categories"
-msgstr ""
-
-#. translators: %1$s: smiley
-#: 404.php:49
-msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
-#. translators: 1: title.
+#. 1: title.
 #: comments.php:35
+#, php-format
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr ""
 
-#. translators: 1: comment count number, 2: title.
+#. 1: comment count number, 2: title.
 #: comments.php:41
+#, php-format
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
@@ -68,131 +52,227 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:18
-msgid "https://wordpress.org/"
-msgstr ""
-
-#. translators: %s: CMS name, i.e. WordPress.
-#: footer.php:21
-msgid "Proudly powered by %s"
-msgstr ""
-
-#. translators: 1: Theme name, 2: Theme author.
-#: footer.php:27
-msgid "Theme: %1$s by %2$s."
-msgstr ""
-
-#: functions.php:53
-msgid "Primary"
-msgstr ""
-
-#: functions.php:130
-msgid "Sidebar"
-msgstr ""
-
-#: functions.php:132
-msgid "Add widgets here."
-msgstr ""
-
 #: header.php:26
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:49
-msgid "Primary Menu"
+#: inc/gutenberg.php:9
+msgid "Primary Color"
 msgstr ""
 
-#. translators: %s: post date.
-#: inc/template-tags.php:30
+#: inc/gutenberg.php:14
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/gutenberg.php:19
+msgid "Success Color"
+msgstr ""
+
+#: inc/gutenberg.php:24
+msgid "Danger color"
+msgstr ""
+
+#: inc/gutenberg.php:29
+msgid "Warning color"
+msgstr ""
+
+#: inc/gutenberg.php:34
+msgid "Info Color"
+msgstr ""
+
+#: inc/gutenberg.php:39
+msgid "White"
+msgstr ""
+
+#: inc/gutenberg.php:44
+msgid "Light Gray"
+msgstr ""
+
+#: inc/gutenberg.php:49
+msgid "Medium Gray"
+msgstr ""
+
+#: inc/gutenberg.php:54
+msgid "Dark Gray"
+msgstr ""
+
+#: inc/gutenberg.php:59
+msgid "Black"
+msgstr ""
+
+#: inc/gutenberg.php:71 inc/gutenberg.php:79
+msgid "Container"
+msgstr ""
+
+#: inc/customizer.php:37
+msgid "Unax Settings"
+msgstr ""
+
+#: inc/customizer.php:47
+msgid "Grid columns"
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Google Analytics ID"
+msgstr ""
+
+#: inc/customizer.php:70
+msgid "Facebook Page"
+msgstr ""
+
+#: inc/pluggable.php:93 inc/pluggable.php:98
+msgid "Menu"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:32
+#, php-format
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
-#. translators: %s: post author.
-#: inc/template-tags.php:46
+#. %s: post author.
+#: inc/template-tags.php:50
+#, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:63
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:67
 msgid ", "
 msgstr ""
 
-#. translators: 1: list of categories.
-#: inc/template-tags.php:66
+#. 1: list of categories.
+#: inc/template-tags.php:70
+#, php-format
 msgid "Posted in %1$s"
 msgstr ""
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:70
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:74
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
-#. translators: 1: list of tags.
-#: inc/template-tags.php:73
+#. 1: list of tags.
+#: inc/template-tags.php:77
+#, php-format
 msgid "Tagged %1$s"
 msgstr ""
 
-#. translators: %s: post title
-#: inc/template-tags.php:83
+#. %s: post title
+#: inc/template-tags.php:87
+#, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:100
-#: template-parts/content-page.php:39
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:104 template-parts/content-page.php:40
+#, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/woocommerce.php:186
-msgid "View your shopping cart"
+#: inc/template-functions.php:45
+msgid "Primary menu"
 msgstr ""
 
-#. translators: number of items in the mini cart.
-#: inc/woocommerce.php:190
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] ""
-msgstr[1] ""
-
-#. translators: %s: search query.
-#: search.php:22
-msgid "Search Results for: %s"
+#: inc/template-functions.php:46 template-parts/modal-menu.php:25
+msgid "Mobile menu"
 msgstr ""
 
-#: single.php:23
-msgid "Previous:"
+#: inc/template-functions.php:47
+msgid "Footer menu"
 msgstr ""
 
-#: single.php:24
-msgid "Next:"
+#: inc/template-functions.php:110
+msgid "Sidebar"
+msgstr ""
+
+#: inc/template-functions.php:112 inc/template-functions.php:123
+#: inc/template-functions.php:133 inc/template-functions.php:143
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/template-functions.php:121
+msgid "Header Widget Area"
+msgstr ""
+
+#: inc/template-functions.php:131
+msgid "Primary Menu Widget Area"
+msgstr ""
+
+#: inc/template-functions.php:141
+msgid "Footer Widget Area"
+msgstr ""
+
+#: inc/template-functions.php:251
+msgid "Submenu"
+msgstr ""
+
+#: inc/template-functions.php:336
+msgid "Facebook Message"
+msgstr ""
+
+#: template-parts/content-single.php:37 template-parts/content-page.php:26
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/modal-menu.php:21
+msgid "Close menu"
 msgstr ""
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
 msgstr ""
 
-#. translators: 1: link to WP admin new post page.
+#. 1: link to WP admin new post page.
 #: template-parts/content-none.php:24
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: template-parts/content-none.php:37
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 msgstr ""
 
 #: template-parts/content-none.php:44
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:25
-#: template-parts/content.php:53
-msgid "Pages:"
+#: template-parts/content-card.php:25
+msgid "<br><span class=\"more\">Read more</span>"
 msgstr ""
 
-#. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:40
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+#. Name of the template
+msgid "No Sidebar"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width"
+msgstr ""
+
+#. Name of the theme
+msgid "Unax"
+msgstr ""
+
+#. Description of the theme
+msgid "Custom theme for Unax services based on _s"
+msgstr ""
+
+#. URI of the theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Author of the theme
+msgid "Atanas Antonov"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://unax.org"
 msgstr ""
