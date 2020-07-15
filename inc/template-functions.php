@@ -97,6 +97,12 @@ function unax_setup() {
 
 }
 
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function unax_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
 
 /**
 * Register widget area.
