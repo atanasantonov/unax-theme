@@ -248,7 +248,7 @@ function unax_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 			$toggle_duration      = unax_toggle_duration();
 
 			// Add the sub menu toggle.
-			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Подменю', 'gesolutions' ) . '</span><i class="fas fa-chevron-down"></i></button>';
+			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Submenu', 'unax' ) . '</span><i class="fas fa-chevron-down"></i></button>';
 
 		}
 

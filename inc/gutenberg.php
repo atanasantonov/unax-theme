@@ -6,57 +6,57 @@ add_action( 'after_setup_theme', function() {
     add_theme_support( 'editor-color-palette', array(
 
         array(
-            'name' => __( 'Primary Color', 'womeninbusiness' ),
+            'name' => __( 'Primary Color', 'unax' ),
             'slug' => 'primary',
             'color' => '#007bff',
         ),
         array(
-            'name' => __( 'Secondary Color', 'womeninbusiness' ),
+            'name' => __( 'Secondary Color', 'unax' ),
             'slug' => 'secondary',
             'color' => '#6c757d',
         ),
         array(
-            'name' => __( 'Success Color', 'womeninbusiness' ),
+            'name' => __( 'Success Color', 'unax' ),
             'slug' => 'success',
             'color' => '#28a745',
         ),
         array(
-            'name' => __( 'Danger color', 'womeninbusiness' ),
+            'name' => __( 'Danger color', 'unax' ),
             'slug' => 'danger',
             'color' => '#dc3545',
         ),
         array(
-            'name' => __( 'Warning color', 'womeninbusiness' ),
+            'name' => __( 'Warning color', 'unax' ),
             'slug' => 'warning',
             'color' => '#ffc107',
         ),
         array(
-            'name' => __( 'Info Color', 'womeninbusiness' ),
+            'name' => __( 'Info Color', 'unax' ),
             'slug' => 'info',
             'color' => '#17a2b8',
         ),
 		array(
-			'name' => __( 'White', 'womeninbusiness' ),
+			'name' => __( 'White', 'unax' ),
 			'slug' => 'white',
 			'color' => '#fff',
 		),
         array(
-            'name' => __( 'Light Gray', 'womeninbusiness' ),
+            'name' => __( 'Light Gray', 'unax' ),
             'slug' => 'gray-100',
             'color' => '#f8f9fa',
         ),
         array(
-            'name' => __( 'Medium Gray', 'womeninbusiness' ),
+            'name' => __( 'Medium Gray', 'unax' ),
             'slug' => 'gray-400',
             'color' => '#ced4da',
         ),
         array(
-            'name' => __( 'Dark Gray', 'womeninbusiness' ),
+            'name' => __( 'Dark Gray', 'unax' ),
             'slug' => 'gray-700',
             'color' => '#495057',
         ),
         array(
-            'name' => __( 'Black', 'womeninbusiness' ),
+            'name' => __( 'Black', 'unax' ),
             'slug' => 'black',
             'color' => '#000',
         ),
@@ -68,7 +68,7 @@ register_block_style(
     'core/group',
     array(
         'name'         => 'container',
-        'label'        => __( 'Контейнер', 'womeninbusiness' ),
+        'label'        => __( 'Container', 'unax' ),
     )
 );
 
@@ -76,6 +76,6 @@ register_block_style(
     'core/cover',
     array(
         'name'         => 'container',
-        'label'        => __( 'Контейнер', 'womeninbusiness' ),
+        'label'        => __( 'Container', 'unax' ),
     )
 );
