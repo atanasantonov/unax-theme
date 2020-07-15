@@ -4,6 +4,7 @@
 
 	.custom-logo {
 		max-width: 100px;
+		margin-right: 1rem;
 		@include breakpoint-above(lg) {
 			max-width: 125px;
 		}
@@ -57,7 +58,6 @@
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
-					padding-left: 1rem;
 				}
 
 			}
