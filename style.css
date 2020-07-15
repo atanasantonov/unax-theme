@@ -1,13 +1,15 @@
 /*!
 Theme Name: Unax
-Theme URI: https://github.com/atanasantonov/unax-theme
+Theme URI: http://underscores.me/
+Tags: bootstrap, developer-friendly, gulp-ready, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 Author: Atanas Antonov
 Author URI: https://unax.org
 Description: Custom theme for Unax services based on _s
-Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: unax
+Tested up to: 5.4.2
+Requires PHP: 5.6
 */
 /* Bootstrap */
 /*!
