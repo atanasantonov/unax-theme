@@ -1,0 +1,115 @@
+// primary
+.has-primary-color {
+    color: $primary;
+    &:focus,
+    &.active {
+        color: darken( $primary, 15% );
+    }
+}
+.has-primary-background-color {
+    background-color: $primary;
+}
+
+// secondary
+.has-secondary-color {
+    color: $secondary;
+    &:focus,
+    &.active {
+        color: darken( $secondary, 15% );
+    }
+}
+.has-secondary-background-color {
+    background-color: $secondary;
+}
+
+// success
+.has-success-color {
+    color: $success;
+    &:focus,
+    &.active {
+        color: darken( $success, 15% );
+    }
+}
+.has-success-background-color {
+    background-color: $success;
+}
+
+// info
+.has-info-color {
+    color: $info;
+    &:focus,
+    &.active {
+        color: darken( $info, 15% );
+    }
+}
+.has-info-background-color {
+    background-color: $info;
+}
+
+// warning
+.has-warning-color {
+    color: $warning;
+    &:focus,
+    &.active {
+        color: darken( $warning, 15% );
+    }
+}
+.has-warning-background-color {
+    background-color: $warning;
+}
+
+// danger
+.has-danger-color {
+    color: $danger;
+    &:focus,
+    &.active {
+        color: darken( $danger, 15% );
+    }
+}
+.has-danger-background-color {
+    background-color: $danger;
+}
+
+// white
+.has-white-color {
+    color: $white;
+    &:focus,
+    &.active {
+        color: darken( $white, 15% );
+    }
+}
+.has-white-background-color {
+    background-color: $white;
+}
+
+// gray-100
+.has-gray-100-color {
+    color: $gray-100;
+}
+.has-gray-100-background-color {
+    background-color: $gray-100;
+}
+
+// gray-400
+.has-gray-400-color {
+    color: $gray-400;
+}
+.has-gray-400-background-color {
+    background-color: $gray-400;
+}
+
+// gray-700
+.has-gray-700-color {
+    color: $gray-700;
+}
+.has-gray-700-background-color {
+    background-color: $gray-600;
+}
+
+// black
+.has-black-color {
+    color: $black;
+}
+.has-black-background-color {
+    background-color: $black;
+}
