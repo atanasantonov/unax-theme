@@ -333,7 +333,7 @@ function unax_facebook_messanger() {
 		href="<?php echo esc_url( 'https://m.me/' . $facebook_page ) ?>"
 		class="fb-messanger"
 		target="_blank"
-		title="<?php echo esc_html__( 'Facebook Message', 'unax' ); ?>"
+		title="<?php echo esc_attr__( 'Facebook Message', 'unax' ); ?>"
 		>
 		<svg width="60px" height="60px" viewBox="0 0 60 60">
 			<svg x="0" y="0" width="60px" height="60px">
