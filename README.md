@@ -1,4 +1,4 @@
-=== Unax ===
+# Unax Theme
 
 Contributors: unax
 Tags: bootstrap, developer-friendly, gulp-ready, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -12,7 +12,7 @@ License URI: LICENSE
 
 A starter theme called Unax.
 
-== Description ==
+## Description
 
 Starter Theme based on _s and Twitter Bootstrap.
 
@@ -22,18 +22,18 @@ Theme is using Sass language in well organized files. Theme is using gulp. Sass 
 
 Basic templates included with common container filters.
 
-== Installation ==
+## Installation
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Changelog ==
+## Changelog
 
-= 1.0 - Jul 15 2020 =
-* Initial release
+* 1.0 - Jul 15 2020
+  Initial release
 
-== Credits ==
+## Credits ##
 
 * Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * Bootstrap https://getbootstrap.com/, Copyright 2011-2019 The Bootstrap Authors, Copyright 2011-2019 Twitter, Inc.
