@@ -7,6 +7,10 @@
  * @package unax
  */
 
+if ( ! isset( $content_width ) ) {
+	$content_width = 900; 
+}
+
 if ( ! function_exists( 'unax_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
