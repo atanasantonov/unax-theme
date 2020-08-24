@@ -69,6 +69,17 @@ Version: 1.0.1
 @import "modules/widgets";
 
 /*--------------------------------------------------------------
+# Shop
+--------------------------------------------------------------*/
+@import "shop/components";
+@import "shop/tables";
+@import "shop/products";
+@import "shop/single-product";
+@import "shop/cart";
+@import "shop/checkout";
+@import "shop/widgets"; 
+
+/*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
 @import "layout/header";
