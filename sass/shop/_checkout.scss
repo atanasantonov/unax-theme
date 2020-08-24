@@ -1,0 +1,109 @@
+.woocommerce,
+.woocommerce-page {
+
+	.col2-set {
+
+		width: 100%;
+
+		.col-1, .col-2 {
+
+			width: 100%;
+			max-width: 100%;
+
+		}
+
+		.woocommerce-billing-fields,
+		.woocommerce-shipping-fields,
+		.woocommerce-additional-fields {
+
+			p {
+
+				label {
+					width: 100%;
+				}
+				.woocommerce-input-wrapper {
+					width: 100%;
+				}
+				input:not(#createaccount),
+				textarea {
+					width: 100%;
+				}
+
+			}
+
+		}
+
+	}
+
+	.woocommerce-checkout-review-order {
+		width: 100%;
+	}
+
+}
+
+
+@media screen and ( min-width: $breakpoint-lg ) {
+
+	.woocommerce,
+	.woocommerce-page {
+
+		.col2-set {
+
+			width: 60%;
+			float: left;
+			padding-right: 2rem;
+
+			.col-1,
+			.col-2 {
+				padding: 0;
+			}
+
+			.woocommerce-billing-fields,
+			.woocommerce-shipping-fields {
+
+				p:not(#billing_first_name_field):not(#billing_last_name_field) {
+
+					label:not(#billing_first_name_field) {
+						width: 36%;
+					}
+					.woocommerce-input-wrapper {
+						width: 64%;
+					}
+					input:not(#createaccount),
+					textarea {
+						width: 100%;
+					}
+
+				}
+
+			}
+
+			.form-row-first {
+				float: left;
+				margin-right: $columns__margin;
+			}
+
+			.form-row-last {
+				float: right;
+				margin-right: 0;
+			}
+
+			.form-row-first,
+			.form-row-last {
+
+				@include column-width(2);
+			}
+
+		}
+
+		h3 {
+			clear: none;
+		}
+		.woocommerce-checkout-review-order {
+			width: 40%;
+			float: right;
+		}
+
+	}
+
+}
