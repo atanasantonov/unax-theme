@@ -11032,10 +11032,16 @@ h1, h2, h3, h4, h5, h6 {
   word-spacing: .03rem; }
 
 h1 {
-  font-size: 3.6rem; }
+  font-size: 32px; }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 48px; } }
 
 h2 {
-  font-size: 32px; }
+  font-size: 24px; }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 32px; } }
 
 p {
   margin-bottom: 1.5em; }
@@ -11114,7 +11120,11 @@ hr {
 
 ul,
 ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 15px 0; }
+  @media (min-width: 992px) {
+    ul,
+    ol {
+      margin: 0 0 1.5em 3em; } }
 
 ul {
   list-style: disc; }
@@ -11125,7 +11135,11 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: 15px; }
+  @media (min-width: 992px) {
+    li > ul,
+    li > ol {
+      margin-left: 1.5em; } }
 
 dt {
   font-weight: 700; }
