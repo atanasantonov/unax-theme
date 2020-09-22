@@ -244,7 +244,7 @@ function unax_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 	if ( isset( $args->show_toggles ) && $args->show_toggles ) {
 
 		// Wrap the menu item link contents in a div, used for positioning.
-		$args->before = '<div class="ancestor-wrapper">';
+		$args->before = '<span class="ancestor-wrapper">';
 		$args->after  = '';
 
 		// Add a toggle to items with children.
@@ -259,7 +259,7 @@ function unax_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 		}
 
 		// Close the wrapper.
-		$args->after .= '</div><!-- .ancestor-wrapper -->';
+		$args->after .= '</span><!-- .ancestor-wrapper -->';
 
 		// Add sub menu icons to the primary menu without toggles.
 	} elseif ( 'primary' === $args->theme_location ) {

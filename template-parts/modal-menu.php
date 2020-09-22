@@ -23,22 +23,30 @@
 				</button><!-- .nav-toggle -->
 
 				<nav class="mobile-menu" aria-label="<?php esc_attr_e( 'Mobile menu', 'unax-theme' ); ?>">
-
 					<ul class="modal-menu">
-
 					<?php
-					wp_nav_menu(
-						array(
-							'container'      => '',
-							'items_wrap'     => '%3$s',
-							'show_toggles'   => true,
-							'theme_location' => 'mobile-menu',
-						)
-					);
+					if ( has_nav_menu( 'mobile-menu' ) ) :
+						wp_nav_menu(
+							array(
+								'container' => '',
+								'container_class' => '',
+								'items_wrap'      => '%3$s',
+								'show_toggles'    => true,
+								'theme_location'  => 'mobile-menu',
+							)
+						);
+					else :
+						wp_nav_menu(
+							array(
+								'container'       => '',
+								'container_class' => '',
+								'items_wrap'      => '%3$s',
+								'theme_location'  => 'primary-menu',
+							)
+						);
+					endif;
 					?>
-
 					</ul>
-
 				</nav>
 			</div><!-- .menu-top -->
 
