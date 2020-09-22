@@ -95,7 +95,7 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 				</span>
 			</button><!-- .nav-toggle -->
 
-			<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Menu', 'unax-theme' ); ?>" role="navigation">
+			<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Menu', 'unax-theme' ); ?>">
 				<ul class="primary-menu reset-list-style">
 				<?php
 				if ( has_nav_menu( 'primary-menu' ) ) :

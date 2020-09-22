@@ -22,7 +22,7 @@
 					<i class="fas fa-times"></i>
 				</button><!-- .nav-toggle -->
 
-				<nav class="mobile-menu" aria-label="<?php esc_attr_e( 'Mobile menu', 'unax-theme' ); ?>" role="navigation">
+				<nav class="mobile-menu" aria-label="<?php esc_attr_e( 'Mobile menu', 'unax-theme' ); ?>">
 
 					<ul class="modal-menu">
 
