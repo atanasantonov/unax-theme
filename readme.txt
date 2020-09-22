@@ -5,8 +5,8 @@ Stable tag: 1.0.2
 Tested up to: 5.5.1
 Requires at least: 4.7
 Requires PHP: 5.6
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 Unax starter theme.
 
@@ -50,7 +50,7 @@ See changelog.txt
 
 == Credits ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* Bootstrap https://getbootstrap.com/, Copyright 2011-2019 The Bootstrap Authors, Copyright 2011-2019 Twitter, Inc.
-* Font Awesome https://fontawesome.com/
-* Gulp https://gulpjs.com/
+* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+* Bootstrap https://getbootstrap.com/, Copyright 2011-2019 The Bootstrap Authors, Copyright 2011-2019 Twitter, Inc. [MIT](https://github.com/twbs/bootstrap/blob/main/LICENSE)
+* Font Awesome https://fontawesome.com/, Copyright Fonticons, Inc., [Font Awesome Free](https://fontawesome.com/license)
+* Gulp https://gulpjs.com/, Copyright 2013-2018 Blaine Bublitz, Eric Schoffstall and other contributors, [MIT](https://github.com/gulpjs/gulp/blob/master/LICENSE)
