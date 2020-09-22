@@ -22,7 +22,7 @@
 		<p class="card-text">
 			<?php
 
-				$conent_more = apply_filters( 'unax_conent_more', __( '<br><span class="more">Read more</span>', 'unax-theme' ) );
+				$conent_more = apply_filters( 'unax_conent_more', __( '<br><span class="more">Read more</span>', 'unax' ) );
 
 				echo esc_html( wp_trim_words( get_the_excerpt(), 15, $conent_more ) );
 

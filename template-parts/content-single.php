@@ -34,7 +34,7 @@ $post_content_class = apply_filters( 'unax_post_content_class', 'col-12 col-lg-1
 
 			wp_link_pages(
 				array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'unax-theme' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'unax' ),
 					'after'  => '</div>',
 				)
 			);

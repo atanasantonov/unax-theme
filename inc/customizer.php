@@ -34,7 +34,7 @@ function unax_customize_register( $wp_customize ) {
 
 
 	$wp_customize->add_section( 'unax_common_settings' , array(
-	    'title'      => __( 'Unax Settings', 'unax-theme' ),
+	    'title'      => __( 'Unax Settings', 'unax' ),
 	    'priority'   => 120,
 	) );
 
@@ -44,7 +44,7 @@ function unax_customize_register( $wp_customize ) {
 	) );
 	$wp_customize->add_control(
 		 new WP_Customize_Control( $wp_customize, 'grid_columns', [
-			 'label'    => __( 'Grid columns', 'unax-theme' ),
+			 'label'    => __( 'Grid columns', 'unax' ),
 			 'section'  => 'unax_common_settings',
 			 'type'  	=> 'number',
 		 ])
@@ -56,7 +56,7 @@ function unax_customize_register( $wp_customize ) {
 	) );
 	$wp_customize->add_control(
 		 new WP_Customize_Control( $wp_customize, 'facebook_page', [
-			 'label'    => __( 'Facebook Page', 'unax-theme' ),
+			 'label'    => __( 'Facebook Page', 'unax' ),
 			 'section'  => 'unax_common_settings',
 		 ])
  	);

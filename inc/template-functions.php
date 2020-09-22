@@ -42,9 +42,9 @@ function unax_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'primary-menu' 	=> esc_html__( 'Primary menu', 'unax-theme' ),
-			'mobile-menu' 	=> esc_html__( 'Mobile menu', 'unax-theme' ),
-			'footer-menu' 	=> esc_html__( 'Footer menu', 'unax-theme' ),
+			'primary-menu' 	=> esc_html__( 'Primary menu', 'unax' ),
+			'mobile-menu' 	=> esc_html__( 'Mobile menu', 'unax' ),
+			'footer-menu' 	=> esc_html__( 'Footer menu', 'unax' ),
 		)
 	);
 
@@ -113,9 +113,9 @@ function unax_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'unax-theme' ),
+			'name'          => esc_html__( 'Sidebar', 'unax' ),
 			'id'            => 'sidebar-main',
-			'description'   => esc_html__( 'Add widgets here.', 'unax-theme' ),
+			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -124,9 +124,9 @@ function unax_widgets_init() {
 	);
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Header Widget Area', 'unax-theme' ),
+		'name'          => esc_html__( 'Header Widget Area', 'unax' ),
 		'id'            => 'header-widget-area',
-		'description'   => esc_html__( 'Add widgets here.', 'unax-theme' ),
+		'description'   => esc_html__( 'Add widgets here.', 'unax' ),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '',
@@ -134,9 +134,9 @@ function unax_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Primary Menu Widget Area', 'unax-theme' ),
+		'name'          => esc_html__( 'Primary Menu Widget Area', 'unax' ),
 		'id'            => 'primary-menu-widget-area',
-		'description'   => esc_html__( 'Add widgets here.', 'unax-theme' ),
+		'description'   => esc_html__( 'Add widgets here.', 'unax' ),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '',
@@ -144,9 +144,9 @@ function unax_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Widget Area', 'unax-theme' ),
+		'name'          => esc_html__( 'Footer Widget Area', 'unax' ),
 		'id'            => 'footer-widget-area',
-		'description'   => esc_html__( 'Add widgets here.', 'unax-theme' ),
+		'description'   => esc_html__( 'Add widgets here.', 'unax' ),
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '',
@@ -254,7 +254,7 @@ function unax_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 			$toggle_duration      = unax_toggle_duration();
 
 			// Add the sub menu toggle.
-			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Submenu', 'unax-theme' ) . '</span><i class="fas fa-chevron-down"></i></button>';
+			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Submenu', 'unax' ) . '</span><i class="fas fa-chevron-down"></i></button>';
 
 		}
 
@@ -312,7 +312,7 @@ function unax_facebook_messanger() {
 		href="<?php echo esc_url( 'https://m.me/' . $facebook_page ) ?>"
 		class="fb-messanger"
 		target="_blank"
-		title="<?php echo esc_attr__( 'Facebook Message', 'unax-theme' ); ?>"
+		title="<?php echo esc_attr__( 'Facebook Message', 'unax' ); ?>"
 		>
 		<svg width="60px" height="60px" viewBox="0 0 60 60">
 			<svg x="0" y="0" width="60px" height="60px">

@@ -90,12 +90,12 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 				<span class="toggle-inner">
 					<i class="fas fa-bars"></i>
 					<span class="screen-reader-text">
-						<?php esc_html_e( 'Menu', 'unax-theme' ); ?>
+						<?php esc_html_e( 'Menu', 'unax' ); ?>
 					</span>
 				</span>
 			</button><!-- .nav-toggle -->
 
-			<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Menu', 'unax-theme' ); ?>">
+			<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Menu', 'unax' ); ?>">
 				<ul class="primary-menu reset-list-style">
 				<?php
 				if ( has_nav_menu( 'primary-menu' ) ) :

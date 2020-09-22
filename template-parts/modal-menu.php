@@ -18,11 +18,11 @@
 			<div class="menu-top">
 
 				<button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal">
-					<span class="screen-reader-text"><?php esc_html_e( 'Close menu', 'unax-theme' ); ?></span>
+					<span class="screen-reader-text"><?php esc_html_e( 'Close menu', 'unax' ); ?></span>
 					<i class="fas fa-times"></i>
 				</button><!-- .nav-toggle -->
 
-				<nav class="mobile-menu" aria-label="<?php esc_attr_e( 'Mobile menu', 'unax-theme' ); ?>">
+				<nav class="mobile-menu" aria-label="<?php esc_attr_e( 'Mobile menu', 'unax' ); ?>">
 					<ul class="modal-menu">
 					<?php
 					if ( has_nav_menu( 'mobile-menu' ) ) :
