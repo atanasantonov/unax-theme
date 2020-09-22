@@ -13,7 +13,6 @@ add_action( 'customize_preview_init', 'unax_customize_preview_js' );
 
 // Head
 add_action( 'wp_head', 'unax_pingback_header' );
-add_action( 'wp_head', 'unax_gtag', 1 );
 
 // Header
 add_action( 'unax_header', 'unax_header_top', 10 );

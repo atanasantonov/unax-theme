@@ -50,17 +50,6 @@ function unax_customize_register( $wp_customize ) {
 		 ])
  	);
 
-	$wp_customize->add_setting( 'google_analytics' , array(
-			'default' => '',
-			'sanitize_callback' => 'sanitize_text_field',
-	) );
-	$wp_customize->add_control(
-		 new WP_Customize_Control( $wp_customize, 'google_analytics', [
-			 'label'    => __( 'Google Analytics ID', 'unax-theme' ),
-			 'section'  => 'unax_common_settings',
-		 ])
- 	);
-
 	$wp_customize->add_setting( 'facebook_page' , array(
 			'default' => '',
 			'sanitize_callback' => 'sanitize_text_field',
