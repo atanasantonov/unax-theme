@@ -8,7 +8,7 @@
  */
 
 if ( ! isset( $content_width ) ) {
-	$content_width = 900; 
+	$content_width = 900;
 }
 
 if ( ! function_exists( 'unax_posted_on' ) ) :
@@ -143,7 +143,7 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 
 			return printf(
 				'<div class="%s">%s</div>',
-				$thumbnail_wrapper_class,
+				esc_attr( $thumbnail_wrapper_class ),
 				get_the_post_thumbnail(
 					null,
 					'post-thumbnail',
@@ -178,10 +178,10 @@ if ( ! function_exists( 'unax_header_image' ) ) :
 
 			return printf(
 				'<div class="%s"><img src="%s" alt="%s" class="%s"></div>',
-				$header_image_wrapper_class,
+				esc_attr( $header_image_wrapper_class ),
 				esc_url( get_header_image() ),
 				'',
-				$header_image_class
+				esc_attr( $header_image_class )
 			);
 
 		endif;

@@ -90,7 +90,7 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 				<span class="toggle-inner">
 					<i class="fas fa-bars"></i>
 					<span class="screen-reader-text">
-						<?php _e( 'Menu', 'unax-theme' ); ?>
+						<?php esc_html_e( 'Menu', 'unax-theme' ); ?>
 					</span>
 				</span>
 			</button><!-- .nav-toggle -->
