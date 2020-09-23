@@ -12415,6 +12415,9 @@ ul.products {
 .post-thumbnail-wrapper img {
   width: 100%; }
 
+.alignfull {
+  width: 100%; }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -12489,6 +12492,9 @@ ul.products {
   @media (min-width: 992px) {
     .single-post .entry-content > * {
       margin: 1rem auto 0 auto; } }
+  @media (min-width: 992px) {
+    .single-post .entry-content .alignleft {
+      margin: 1rem 0.5rem 0 auto; } }
 
 @media (min-width: 992px) {
   .single-post .entry-footer {
@@ -12528,11 +12534,17 @@ ul.products {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-area {
+  margin-top: 2rem; }
+
 .comment-content a {
   word-wrap: break-word; }
 
 .bypostauthor {
   display: block; }
+
+.no-comments {
+  padding: 0.5rem 1rem; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
@@ -12731,6 +12743,10 @@ object {
             flex-grow: 1;
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important; } }
+
+.blocks-gallery-grid,
+.blocks-gallery-caption {
+  width: 100%; }
 
 /*--------------------------------------------------------------
 # Components
