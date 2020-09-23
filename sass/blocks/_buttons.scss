@@ -1,0 +1,21 @@
+.is-style-outline {
+    .wp-block-button__link {
+        &:not([href]) {
+            color: $black;
+
+            &:hover {
+                color: $gray-700;
+            }
+        }
+    }    
+}
+
+.wp-block-button__link {
+    &:not([href]) {
+        color: $white;
+
+        &:hover {
+            color: $gray-200;
+        }
+    }
+}
