@@ -1,7 +1,15 @@
+.comments-area {
+	margin-top: 2rem;
+}
+
 .comment-content a {
 	word-wrap: break-word;
 }
 
 .bypostauthor {
 	display: block;
+}
+
+.no-comments {
+	padding: 0.5rem 1rem;
 }
