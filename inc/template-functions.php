@@ -94,14 +94,18 @@ function unax_setup() {
 			'flex-height' => true,
 		)
 	);
-
 }
 
 /**
  * Registers an editor stylesheet for the theme.
  */
-function unax_add_editor_styles() {
-    add_editor_style( 'custom-editor-style.css' );
+function unax_add_editor_style() {
+	wp_register_style(
+        'editor-style',
+        plugins_url( 'editor-style.css', __FILE__ ),
+        array( 'wp-edit-blocks' ),
+        THEME_VERSION
+    );
 }
 
 /**
