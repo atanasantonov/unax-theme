@@ -11038,7 +11038,9 @@ h1, h2, h3, h4, h5, h6 {
   word-spacing: .03rem; }
 
 h1 {
-  font-size: 32px; }
+  font-size: 32px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word; }
   @media (min-width: 992px) {
     h1 {
       font-size: 48px; } }
