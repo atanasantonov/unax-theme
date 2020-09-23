@@ -12617,15 +12617,15 @@ object {
 /*--------------------------------------------------------------
 # Blocks
 --------------------------------------------------------------*/
-.is-style-outline .wp-block-button__link:not([href]) {
-  color: #000; }
-  .is-style-outline .wp-block-button__link:not([href]):hover {
-    color: #495057; }
-
-.wp-block-button__link:not([href]) {
+.wp-block-button {
   color: #fff; }
-  .wp-block-button__link:not([href]):hover {
-    color: #f0f0f2; }
+  .wp-block-button:hover {
+    color: #ced4da; }
+
+.is-style-outline {
+  color: #000; }
+  .is-style-outline:hover {
+    color: #495057; }
 
 .has-primary-color {
   color: #007bff; }
@@ -12706,6 +12706,9 @@ object {
 
 .has-black-background-color {
   background-color: #000; }
+
+.wp-block-cover.has-background-dim p:not(.has-text-color) {
+  color: #fff; }
 
 @media (min-width: 992px) {
   .wp-block-column {

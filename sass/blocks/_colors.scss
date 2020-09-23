@@ -113,3 +113,12 @@
 .has-black-background-color {
     background-color: $black;
 }
+
+// cover
+.wp-block-cover {
+    &.has-background-dim {
+        p:not(.has-text-color) {
+            color: $white;
+        }
+    }
+}
