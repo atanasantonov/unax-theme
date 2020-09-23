@@ -2,15 +2,12 @@
 
     .entry-header {
 
-        * {
-            margin: 0 auto;
-        }
-
         .entry-category,
         .entry-title,
         .entry-meta {
             @include breakpoint-above(lg) {
                 max-width: 800px;
+                margin: 0 auto;
             }
         }
 
@@ -33,15 +30,14 @@
 
     .entry-content {
 
+        max-width: 800px;
         margin: 1rem auto 2rem auto;
 
-        * {
+        & > * {
             @include breakpoint-above(lg) {
                 margin: 1rem auto 0 auto;
-                max-width: 800px;
             }
         }
-
     }
 
     .entry-footer {
@@ -97,5 +93,5 @@
         margin-bottom: 2rem;
 
     }
-    
+
 }
