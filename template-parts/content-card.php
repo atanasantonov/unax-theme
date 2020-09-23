@@ -22,9 +22,12 @@
 		<p class="card-text">
 			<?php
 
-				$conent_more = apply_filters( 'unax_conent_more', __( '<br><span class="more">Read more</span>', 'unax' ) );
-
-				echo esc_html( wp_trim_words( get_the_excerpt(), 15, $conent_more ) );
+				$content_more = sprintf(
+					' <a href="%s" class="read-more">%s</a>',
+					esc_url( get_the_permalink() ),
+					apply_filters( 'unax_text_more', esc_html( 'Read more', 'unax' ) )
+				);
+				echo wp_trim_words( esc_html( get_the_excerpt() ), 15, $content_more );
 
 			?>
 		</p>
