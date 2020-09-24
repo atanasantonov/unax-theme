@@ -1,11 +1,13 @@
 <?php
 
+// Admin
+add_action( 'admin_enqueue_scripts', 'unax_add_editor_style' );
+
 // Theme setup
 add_action( 'after_setup_theme', 'unax_setup' );
 add_action( 'widgets_init', 'unax_widgets_init' );
 add_action( 'wp_enqueue_scripts', 'unax_scripts' );
 add_action( 'after_setup_theme', 'unax_custom_header_setup' );
-add_action( 'admin_init', 'unax_add_editor_style' );
 
 // Customizer
 add_action( 'customize_register', 'unax_customize_register' );

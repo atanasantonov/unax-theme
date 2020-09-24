@@ -94,15 +94,22 @@ function unax_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	/**
+	 * Add support of possibility to define a “wide” or “full” alignment in some blocks.
+	 *
+	 * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/
+	 */
+	add_theme_support( 'align-wide' );
 }
 
 /**
  * Registers an editor stylesheet for the theme.
  */
 function unax_add_editor_style() {
-	wp_register_style(
-        'editor-style',
-        plugins_url( 'editor-style.css', __FILE__ ),
+	wp_enqueue_style(
+        'custom-editor-style',
+        get_template_directory_uri() . '/editor-style.css',
         array( 'wp-edit-blocks' ),
         THEME_VERSION
     );
