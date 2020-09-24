@@ -58,14 +58,13 @@
 
 		.widget-area {
 
-			width: 100%;
+			max-width: 100%;
 			display: flex;
 			flex-direction: column;
-			align-items: center;
+			align-items: flex-end;
 
 			@include breakpoint-above(lg) {
-				width: 30%;
-				align-items: flex-end;
+				max-width: 30%;
 			}
 
 		}
