@@ -23,12 +23,14 @@ if ( ! function_exists( 'unax_posted_on' ) ) :
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
+		$date_format = apply_filters( 'unax_posted_on_format', 'M j, Y' );
+
 		$time_string = sprintf(
 			$time_string,
 			esc_attr( get_the_date( DATE_W3C ) ),
-			esc_html( get_the_date( 'j D' ) ),
+			esc_html( get_the_date( $date_format ) ),
 			esc_attr( get_the_modified_date( DATE_W3C ) ),
-			esc_html( get_the_modified_date( 'j D' ) )
+			esc_html( get_the_modified_date( $date_format ) )
 		);
 
 		$posted_on = sprintf(
@@ -67,13 +69,6 @@ if ( ! function_exists( 'unax_entry_footer' ) ) :
 	function unax_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'unax' ) );
-			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'unax' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			}
-
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'unax' ) );
 			if ( $tags_list ) {
