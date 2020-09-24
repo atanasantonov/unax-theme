@@ -6,20 +6,26 @@
  *
  * @package Unax
  */
+
+if ( ! empty( get_the_title() ) ) {
+	the_title( '<h1 class="entry-title">', '</h1>' );
+}
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( apply_filters( 'unax_post_single_class', '' ) ); ?>>
 
 	<header class="entry-header">
 
-		<div class="thumbnail">
-			<?php unax_post_thumbnail(); ?>
-		</div>
+		<?php unax_post_thumbnail(); ?>
 
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-
-		<div class="entry-meta">
-			<strong class="entry-category"><?php the_category( ', ' ); ?></strong>
+		<div class="entry-meta row">
+			<div class="entry-category col-lg-10 order-2 order-lg-1">
+				<?php esc_html_e( 'Category:', 'unax' ); ?>
+				<?php the_category( ', ' ); ?>
+			</div>
+			<div class="col-lg-2 order-1 order-lg-2 text-lg-right">
+				<?php unax_posted_on(); ?>
+			</div>
 		</div>
 
 	</header><!-- .entry-header -->
