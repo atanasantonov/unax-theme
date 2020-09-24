@@ -22,6 +22,10 @@
 	margin: 0 0 1.5em;
 }
 
+.entry-date {
+	color: $secondary;
+}
+
 // Loops to enumerate the classes for columns.
 @for $i from 2 through 6 {
 	.columns-#{$i} {
