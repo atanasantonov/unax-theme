@@ -21,13 +21,12 @@
 
 		<p class="card-text">
 			<?php
-
 				$content_more = sprintf(
-					' <a href="%s" class="read-more">%s</a>',
+					'... <a href="%s" class="read-more">%s</a>',
 					esc_url( get_the_permalink() ),
 					apply_filters( 'unax_text_more', esc_html( 'Read more', 'unax' ) )
 				);
-				echo wp_trim_words( esc_html( get_the_excerpt() ), 15, $content_more );
+				echo wp_trim_words( get_the_excerpt(), 15, $content_more );
 
 			?>
 		</p>
