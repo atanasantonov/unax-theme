@@ -112,7 +112,7 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 			</nav><!-- .primary-menu-wrapper -->
 
 			<?php if( is_active_sidebar( 'primary-menu-widget-area' ) ) : ?>
-			<div class="widget-area">
+			<div class="widget-area text-right">
 				<?php dynamic_sidebar( 'primary-menu-widget-area' ); ?>
 			</div>
 			<?php endif; ?>
