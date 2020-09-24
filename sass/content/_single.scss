@@ -2,18 +2,7 @@
 
     .entry-header {
 
-        .entry-category,
-        .entry-title,
-        .entry-meta {
-            @include breakpoint-above(lg) {
-                max-width: 800px;
-                margin: 0 auto;
-            }
-        }
-
         .entry-category {
-            padding-top: 1rem;
-            text-transform: uppercase;
             font-family: sans-serif;
             font-size: 1.15rem;
             a {
@@ -30,7 +19,6 @@
 
     .entry-content {
 
-        max-width: 800px;
         margin: 1rem auto 2rem auto;
 
         & > * {
@@ -48,7 +36,6 @@
     .entry-footer {
         @include breakpoint-above(lg) {
             margin: 1rem auto 0 auto;
-            max-width: 800px;
         }
     }
 
@@ -91,12 +78,8 @@
 
 .single-post,
 .page {
-
     .post-thumbnail-wrapper {
-
         width: 100%;
-        margin-bottom: 2rem;
-
+        margin-bottom: 1rem;
     }
-
 }
