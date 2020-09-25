@@ -14,8 +14,18 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info container text-center">
 
-			<?php dynamic_sidebar( 'footer-widget-area' ); ?>
+			<?php
+			if ( has_nav_menu( 'footer-menu' ) ) :
+				wp_nav_menu(
+					array(
+						'theme_location' => 'footer-menu',
+					)
+				);
+			endif;
+			?>
 
+			<?php dynamic_sidebar( 'footer-widget-area' ); ?>
+			<br>
 			<?php
 				printf(
 					'<a href="%s" target="_blank">%s</a>',
