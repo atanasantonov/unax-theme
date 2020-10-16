@@ -178,9 +178,9 @@ function unax_widgets_init() {
  */
 function unax_scripts() {
 
-	wp_enqueue_style( 'unax-style', get_template_directory_uri(), array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'unax', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 
-	wp_style_add_data( 'unax-style', 'rtl', 'replace' );
+	wp_style_add_data( 'unax', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'unax-navigation', get_template_directory_uri() . '/dist/js/index.min.js', array( 'jquery' ), THEME_VERSION, true );
 
