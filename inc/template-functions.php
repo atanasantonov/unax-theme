@@ -6,12 +6,12 @@
  */
 
 /**
-* Sets up theme defaults and registers support for various WordPress features.
-*
-* Note that this function is hooked into the after_setup_theme hook, which
-* runs before the init hook. The init hook is too late for some features, such
-* as indicating support for post thumbnails.
-*/
+ * Sets up theme defaults and registers support for various WordPress features.
+ *
+ * Note that this function is hooked into the after_setup_theme hook, which
+ * runs before the init hook. The init hook is too late for some features, such
+ * as indicating support for post thumbnails.
+ */
 function unax_setup() {
 	/*
 	 * Make theme available for translation.
@@ -42,9 +42,9 @@ function unax_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'primary-menu' 	=> esc_html__( 'Primary menu', 'unax' ),
-			'mobile-menu' 	=> esc_html__( 'Mobile menu', 'unax' ),
-			'footer-menu' 	=> esc_html__( 'Footer menu', 'unax' ),
+			'primary-menu' => esc_html__( 'Primary menu', 'unax' ),
+			'mobile-menu'  => esc_html__( 'Mobile menu', 'unax' ),
+			'footer-menu'  => esc_html__( 'Footer menu', 'unax' ),
 		)
 	);
 
@@ -108,18 +108,18 @@ function unax_setup() {
  */
 function unax_add_editor_style() {
 	wp_enqueue_style(
-        'custom-editor-style',
-        get_template_directory_uri() . '/editor-style.css',
-        array( 'wp-edit-blocks' ),
-        THEME_VERSION
-    );
+		'custom-editor-style',
+		get_template_directory_uri() . '/editor-style.css',
+		array( 'wp-edit-blocks' ),
+		wp_get_theme()->get( 'Version' )
+	);
 }
 
 /**
-* Register widget area.
-*
-* @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
-*/
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
 function unax_widgets_init() {
 
 	register_sidebar(
@@ -134,45 +134,51 @@ function unax_widgets_init() {
 		)
 	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Header Widget Area', 'unax' ),
-		'id'            => 'header-widget-area',
-		'description'   => esc_html__( 'Add widgets here.', 'unax' ),
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Header Widget Area', 'unax' ),
+			'id'            => 'header-widget-area',
+			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '',
+			'after_title'   => '',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Primary Menu Widget Area', 'unax' ),
-		'id'            => 'primary-menu-widget-area',
-		'description'   => esc_html__( 'Add widgets here.', 'unax' ),
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Primary Menu Widget Area', 'unax' ),
+			'id'            => 'primary-menu-widget-area',
+			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '',
+			'after_title'   => '',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Widget Area', 'unax' ),
-		'id'            => 'footer-widget-area',
-		'description'   => esc_html__( 'Add widgets here.', 'unax' ),
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Widget Area', 'unax' ),
+			'id'            => 'footer-widget-area',
+			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '',
+			'after_title'   => '',
+		)
+	);
 
 }
 
 
 /**
-* Enqueue scripts and styles.
-*/
+ * Enqueue scripts and styles.
+ */
 function unax_scripts() {
 
-	wp_enqueue_style( 'unax-style', get_stylesheet_uri(), array(), THEME_VERSION );
+	wp_enqueue_style( 'unax-style', get_template_directory_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 	wp_style_add_data( 'unax-style', 'rtl', 'replace' );
 
@@ -199,7 +205,7 @@ function unax_body_classes( $classes ) {
 	}
 
 	// Adds a class of no-sidebar when there is no sidebar present.
-	if ( !is_active_sidebar( 'sidebar-main' ) ) {
+	if ( ! is_active_sidebar( 'sidebar-main' ) ) {
 		$classes[] = 'no-sidebar';
 	}
 
@@ -214,14 +220,14 @@ function unax_grid_columns() {
 
 	$grid_columns_default = 3;
 
-	$grid_columns = (int)get_theme_mod( 'grid_columns', $grid_columns_default );
+	$grid_columns = (int) get_theme_mod( 'grid_columns', $grid_columns_default );
 
 	/*
 	 * Apply filter to columns count
 	 */
-	$grid_columns = (int)apply_filters( 'unax_grid_columns', $grid_columns_default );
+	$grid_columns = (int) apply_filters( 'unax_grid_columns', $grid_columns_default );
 
-	if( empty( $grid_columns ) || $grid_columns < 1 || $grid_columns > 6 ) {
+	if ( empty( $grid_columns ) || $grid_columns < 1 || $grid_columns > 6 ) {
 		$grid_columns = $grid_columns_default;
 	}
 
@@ -314,13 +320,13 @@ function unax_facebook_messanger() {
 
 	$facebook_page = get_theme_mod( 'facebook_page', '' );
 
-	if( empty( $facebook_page ) ) {
+	if ( empty( $facebook_page ) ) {
 		return;
 	}
 
 	?>
-    <a
-		href="<?php echo esc_url( 'https://m.me/' . $facebook_page ) ?>"
+	<a
+		href="<?php echo esc_url( 'https://m.me/' . $facebook_page ); ?>"
 		class="fb-messanger"
 		target="_blank"
 		title="<?php echo esc_attr__( 'Facebook Message', 'unax' ); ?>"
@@ -337,5 +343,4 @@ function unax_facebook_messanger() {
 		</svg>
 	</a>
 	<?php
-	return;
 }
