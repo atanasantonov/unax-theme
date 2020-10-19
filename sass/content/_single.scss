@@ -53,8 +53,7 @@
         padding: 0;
     }
 
-    .entry-header,
-    .entry-content {
+    .entry-content > *:not(.wp-block-cover) {
         padding: 0 15px;
     }
 

@@ -12499,8 +12499,7 @@ ul.products {
   margin: 0 auto;
   padding: 0; }
 
-.page-template-full-width .entry-header,
-.page-template-full-width .entry-content {
+.page-template-full-width .entry-content > *:not(.wp-block-cover) {
   padding: 0 15px; }
 
 @media (min-width: 992px) {
