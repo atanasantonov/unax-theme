@@ -6,7 +6,8 @@
         color: darken( $primary, 15% );
     }
 }
-.has-primary-background-color {
+.has-primary-background-color,
+.wp-block-cover.has-background-dim.has-primary-background-color {
     background-color: $primary;
 }
 
@@ -18,7 +19,8 @@
         color: darken( $secondary, 15% );
     }
 }
-.has-secondary-background-color {
+.has-secondary-background-color,
+.wp-block-cover.has-background-dim.has-secondary-background-color {
     background-color: $secondary;
 }
 
@@ -30,7 +32,8 @@
         color: darken( $success, 15% );
     }
 }
-.has-success-background-color {
+.has-success-background-color,
+.wp-block-cover.has-background-dim.has-success-background-color {
     background-color: $success;
 }
 
@@ -42,7 +45,8 @@
         color: darken( $info, 15% );
     }
 }
-.has-info-background-color {
+.has-info-background-color,
+.wp-block-cover.has-background-dim.has-info-background-color {
     background-color: $info;
 }
 
@@ -54,7 +58,8 @@
         color: darken( $warning, 15% );
     }
 }
-.has-warning-background-color {
+.has-warning-background-color,
+.wp-block-cover.has-background-dim.has-warning-background-color {
     background-color: $warning;
 }
 
@@ -66,7 +71,8 @@
         color: darken( $danger, 15% );
     }
 }
-.has-danger-background-color {
+.has-danger-background-color,
+.wp-block-cover.has-background-dim.has-danger-background-color {
     background-color: $danger;
 }
 
@@ -78,7 +84,8 @@
         color: darken( $white, 15% );
     }
 }
-.has-white-background-color {
+.has-white-background-color,
+.wp-block-cover.has-background-dim.has-white-background-color {
     background-color: $white;
 }
 
@@ -86,7 +93,8 @@
 .has-gray-100-color {
     color: $gray-100;
 }
-.has-gray-100-background-color {
+.has-gray-100-background-color,
+.wp-block-cover.has-background-dim.has-gray-100-background-color {
     background-color: $gray-100;
 }
 
@@ -94,7 +102,8 @@
 .has-gray-400-color {
     color: $gray-400;
 }
-.has-gray-400-background-color {
+.has-gray-400-background-color,
+.wp-block-cover.has-background-dim.has-gray-400-background-color {
     background-color: $gray-400;
 }
 
@@ -102,7 +111,8 @@
 .has-gray-700-color {
     color: $gray-700;
 }
-.has-gray-700-background-color {
+.has-gray-700-background-color,
+.wp-block-cover.has-background-dim.has-gray-700-background-color {
     background-color: $gray-600;
 }
 
@@ -110,7 +120,8 @@
 .has-black-color {
     color: $black;
 }
-.has-black-background-color {
+.has-black-background-color,
+.wp-block-cover.has-background-dim.has-black-background-color {
     background-color: $black;
 }
 

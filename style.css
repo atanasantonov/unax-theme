@@ -12630,7 +12630,8 @@ object {
   .has-primary-color:focus, .has-primary-color.active {
     color: #0056b3; }
 
-.has-primary-background-color {
+.has-primary-background-color,
+.wp-block-cover.has-background-dim.has-primary-background-color {
   background-color: #007bff; }
 
 .has-secondary-color {
@@ -12638,7 +12639,8 @@ object {
   .has-secondary-color:focus, .has-secondary-color.active {
     color: #494f54; }
 
-.has-secondary-background-color {
+.has-secondary-background-color,
+.wp-block-cover.has-background-dim.has-secondary-background-color {
   background-color: #6c757d; }
 
 .has-success-color {
@@ -12646,7 +12648,8 @@ object {
   .has-success-color:focus, .has-success-color.active {
     color: #19692c; }
 
-.has-success-background-color {
+.has-success-background-color,
+.wp-block-cover.has-background-dim.has-success-background-color {
   background-color: #28a745; }
 
 .has-info-color {
@@ -12654,7 +12657,8 @@ object {
   .has-info-color:focus, .has-info-color.active {
     color: #0f6674; }
 
-.has-info-background-color {
+.has-info-background-color,
+.wp-block-cover.has-background-dim.has-info-background-color {
   background-color: #17a2b8; }
 
 .has-warning-color {
@@ -12662,7 +12666,8 @@ object {
   .has-warning-color:focus, .has-warning-color.active {
     color: #ba8b00; }
 
-.has-warning-background-color {
+.has-warning-background-color,
+.wp-block-cover.has-background-dim.has-warning-background-color {
   background-color: #ffc107; }
 
 .has-danger-color {
@@ -12670,7 +12675,8 @@ object {
   .has-danger-color:focus, .has-danger-color.active {
     color: #a71d2a; }
 
-.has-danger-background-color {
+.has-danger-background-color,
+.wp-block-cover.has-background-dim.has-danger-background-color {
   background-color: #dc3545; }
 
 .has-white-color {
@@ -12678,31 +12684,36 @@ object {
   .has-white-color:focus, .has-white-color.active {
     color: #d9d9d9; }
 
-.has-white-background-color {
+.has-white-background-color,
+.wp-block-cover.has-background-dim.has-white-background-color {
   background-color: #fff; }
 
 .has-gray-100-color {
   color: #f8f9fa; }
 
-.has-gray-100-background-color {
+.has-gray-100-background-color,
+.wp-block-cover.has-background-dim.has-gray-100-background-color {
   background-color: #f8f9fa; }
 
 .has-gray-400-color {
   color: #ced4da; }
 
-.has-gray-400-background-color {
+.has-gray-400-background-color,
+.wp-block-cover.has-background-dim.has-gray-400-background-color {
   background-color: #ced4da; }
 
 .has-gray-700-color {
   color: #495057; }
 
-.has-gray-700-background-color {
+.has-gray-700-background-color,
+.wp-block-cover.has-background-dim.has-gray-700-background-color {
   background-color: #6c757d; }
 
 .has-black-color {
   color: #000; }
 
-.has-black-background-color {
+.has-black-background-color,
+.wp-block-cover.has-background-dim.has-black-background-color {
   background-color: #000; }
 
 .wp-block-cover.has-background-dim p:not(.has-text-color) {
