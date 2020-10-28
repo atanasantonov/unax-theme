@@ -4,7 +4,7 @@ Theme URI: https://github.com/atanasantonov/unax-theme
 Author: Atanas Antonov
 Author URI: https://unax.org
 Description: Starter theme from Unax based on Underscores and Twitter Bootstrap
-Tags: custom-background, custom-logo, custom-menu, featured-images, translation-ready
+Tags: blog, e-commerce, news, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, block-styles
 Version: 1.0.2
 Tested up to: 5.5.1
 Requires at least: 4.7
@@ -72,7 +72,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: skolar, georgia, serif;
+  font-family: verdana, sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25;
@@ -323,7 +323,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: skolar, georgia, serif;
+  font-family: verdana, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #000; }
@@ -11128,11 +11128,11 @@ hr {
 
 ul,
 ol {
-  margin: 0 0 15px 0; }
+  margin: auto; }
   @media (min-width: 992px) {
     ul,
     ol {
-      margin: 0 0 1.5em 3em; } }
+      margin: 0 0 1.5em 1.5em; } }
 
 ul {
   list-style: disc; }
@@ -11296,19 +11296,6 @@ a {
       @media (min-width: 992px) {
         .main-navigation .container .primary-menu-wrapper {
           display: block; } }
-      .main-navigation .container .primary-menu-wrapper .primary-menu {
-        margin: 0;
-        padding: 0; }
-        .main-navigation .container .primary-menu-wrapper .primary-menu .menu-item {
-          margin: 0 0.75rem;
-          padding: 0.75rem 0.25rem;
-          font-size: 1.24rem; }
-          .main-navigation .container .primary-menu-wrapper .primary-menu .menu-item:first-child {
-            margin-left: 0; }
-          .main-navigation .container .primary-menu-wrapper .primary-menu .menu-item:hover a {
-            color: #6c757d; }
-          .main-navigation .container .primary-menu-wrapper .primary-menu .menu-item.current-menu-item a {
-            color: #007bff; }
     .main-navigation .container .widget-area {
       max-width: 100%;
       display: -webkit-box;
@@ -11324,36 +11311,181 @@ a {
       @media (min-width: 992px) {
         .main-navigation .container .widget-area {
           max-width: 30%; } }
-  .main-navigation ul {
-    list-style: none;
+
+/* Primary Menu ---------------------------- */
+.primary-menu-wrapper {
+  display: none; }
+
+ul.primary-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.0277em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.primary-menu li {
+  list-style: none;
+  font-size: inherit;
+  line-height: 1.25;
+  position: relative; }
+
+.primary-menu > li {
+  padding: 0.5rem 1rem; }
+
+.primary-menu > li:first-child {
+  padding-left: 0; }
+
+.primary-menu > li.menu-item-has-children > a {
+  position: relative;
+  padding-right: 2rem; }
+  .primary-menu > li.menu-item-has-children > a:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
     margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      float: left;
-      position: absolute;
-      top: 100%;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li {
-        padding: 1rem;
-        background-color: #fff; }
-        .main-navigation ul ul li:hover > ul,
-        .main-navigation ul ul li.focus > ul {
-          left: 100%; }
-      .main-navigation ul ul a {
-        min-width: 250px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    top: 10px;
+    right: 0.75rem;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #ced4da; }
+
+.primary-menu a {
+  color: inherit;
+  display: block;
+  line-height: 1.2;
+  text-decoration: none; }
+
+.primary-menu a:hover,
+.primary-menu a:focus,
+.primary-menu .current_page_ancestor {
+  color: #495057; }
+
+.primary-menu li.current-menu-item > a,
+.primary-menu li.current-menu-item > .link-icon-wrapper > a {
+  color: #495057; }
+
+.primary-menu li.current-menu-item > a:hover,
+.primary-menu li.current-menu-item > .link-icon-wrapper > a:hover,
+.primary-menu li.current-menu-item > a:focus,
+.primary-menu li.current-menu-item > .link-icon-wrapper > a:focus {
+  color: inherit; }
+
+/* SUB MENU */
+.primary-menu ul {
+  background: #f8f9fa;
+  font-size: 1.4rem;
+  opacity: 0;
+  padding: 1rem 0;
+  position: absolute;
+  right: 9999rem;
+  top: calc(100% + 1rem);
+  -webkit-transition: opacity 0.15s linear, right 0s 0.15s, -webkit-transform 0.15s linear;
+  transition: opacity 0.15s linear, right 0s 0.15s, -webkit-transform 0.15s linear;
+  transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
+  transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s, -webkit-transform 0.15s linear;
+  -webkit-transform: translateY(0.6rem);
+          transform: translateY(0.6rem);
+  width: 20rem;
+  z-index: 1; }
+
+.primary-menu li.menu-item-has-children:hover > ul,
+.primary-menu li.menu-item-has-children:focus > ul,
+.primary-menu li.menu-item-has-children.focus > ul {
+  right: 0;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 0.15s linear, -webkit-transform 0.15s linear;
+  transition: opacity 0.15s linear, -webkit-transform 0.15s linear;
+  transition: opacity 0.15s linear, transform 0.15s linear;
+  transition: opacity 0.15s linear, transform 0.15s linear, -webkit-transform 0.15s linear; }
+
+.primary-menu ul::before,
+.primary-menu ul::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%; }
+
+.primary-menu ul::before {
+  height: 2rem;
+  left: 0;
+  right: 0; }
+
+.primary-menu ul::after {
+  border: 0.8rem solid transparent;
+  border-bottom-color: #ced4da;
+  right: 1.5rem; }
+
+.primary-menu ul a {
+  background: transparent;
+  border: none;
+  color: inherit;
+  display: block;
+  padding: 1rem 2rem;
+  -webkit-transition: background-color 0.15s linear;
+  transition: background-color 0.15s linear;
+  width: 100%; }
+
+.primary-menu ul li.menu-item-has-children > a {
+  padding-right: 4.5rem; }
+
+.primary-menu ul li.menu-item-has-children .icon {
+  position: absolute;
+  right: 1.5rem;
+  top: calc(50% - 0.5rem); }
+
+/* DEEP DOWN */
+.primary-menu ul ul {
+  top: -1rem; }
+
+.primary-menu ul li.menu-item-has-children:hover > ul,
+.primary-menu ul li.menu-item-has-children:focus > ul,
+.primary-menu ul li.menu-item-has-children.focus > ul {
+  right: calc(100% + 2rem); }
+
+.primary-menu ul ul::before {
+  bottom: 0;
+  height: auto;
+  left: auto;
+  right: -2rem;
+  top: 0;
+  width: 2rem; }
+
+.primary-menu ul ul::after {
+  border-bottom-color: transparent;
+  /*rtl:ignore*/
+  border-left-color: #ced4da;
+  bottom: auto;
+  right: -1.6rem;
+  top: 2rem; }
+
+.rtl .primary-menu ul ul::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+/*
+ * Enable nav submenu expansion with tapping on arrows on large-viewport
+ * touch interfaces (e.g. tablets or laptops with touch screens).
+ * These rules are supported by all browsers (>IE11) and when JS is disabled.
+ */
+@media (any-pointer: coarse) {
+  .primary-menu > li.menu-item-has-children > a {
+    padding-right: 0;
+    margin-right: 2rem; }
+  .primary-menu ul li.menu-item-has-children > a {
+    margin-right: 4.5rem;
+    padding-right: 0;
+    width: unset; } }
 
 /* Repeat previous rules for IE11 (when JS enabled for polyfill). */
 body.touch-enabled .primary-menu > li.menu-item-has-children > a {
@@ -12317,7 +12449,8 @@ ul.products {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; }
+                flex-direction: column;
+        margin-top: -0.5rem; }
     .site-header .header-top .container .widget-area {
       width: 100%;
       display: none; }
