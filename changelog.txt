@@ -1,8 +1,16 @@
-* 1.0.2 - Sep 22 2020
-  Output escape fixes, text-domain fixes
+*** Unax Theme Changelog ***
 
-* 1.0.1 - Jul 15 2020
-  Theme URI fix
+2020-10-28 - version 1.0.3
+* Mobile menu opening submenus animation fix
+* Desktop menu submenus changed
+* Default font family changed to sans-serif
+* WordPress.org Tags fix
 
-* 1.0 - Jul 15 2020
-  Initial release
+2020-09-22 - version 1.0.2
+* Output escape fixes, text-domain fixes
+
+2020-07-16 - version 1.0.1
+* Theme URI fix
+
+2020-07-15 - version 1.0.0
+* Initial release
