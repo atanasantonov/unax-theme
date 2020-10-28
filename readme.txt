@@ -1,7 +1,7 @@
 === Unax ===
 Contributors: unax
-Tags: bootstrap, developer-friendly, gulp-ready, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-Stable tag: 1.0.2
+Tags: blog, e-commerce, news, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, custom-logo, block-styles
+Stable tag: 1.0.3
 Tested up to: 5.5.1
 Requires at least: 4.7
 Requires PHP: 5.6
@@ -43,14 +43,15 @@ No notice.
 == Screenshots ==
 
 /screenshot.png
+Source: https://unsplash.com/photos/CSrIsRQDSLk
 
-== Changelog ==
-
-See changelog.txt
-
-== Credits ==
+== Third Party Libraries ==
 
 * Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
 * Bootstrap https://getbootstrap.com/, Copyright 2011-2019 The Bootstrap Authors, Copyright 2011-2019 Twitter, Inc. [MIT](https://github.com/twbs/bootstrap/blob/main/LICENSE)
 * Font Awesome https://fontawesome.com/, Copyright Fonticons, Inc., [Font Awesome Free](https://fontawesome.com/license)
 * Gulp https://gulpjs.com/, Copyright 2013-2018 Blaine Bublitz, Eric Schoffstall and other contributors, [MIT](https://github.com/gulpjs/gulp/blob/master/LICENSE)
+
+== Changelog ==
+
+See changelog.txt
