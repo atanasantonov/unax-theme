@@ -35,11 +35,15 @@ if ( ! function_exists( 'unax_header_top' ) ) {
 
 				<div class="site-branding-texts">
 
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php if ( is_home() || is_front_page() ) : ?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo esc_html( bloginfo( 'name' ) ); ?></a></h1>
+					<?php else : ?>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo esc_html( bloginfo( 'name' ) ); ?></a></p>
+					<?php endif; ?>
 
 					<?php $unax_description = get_bloginfo( 'description', 'display' ); ?>
 					<?php if ( $unax_description ) : ?>
-					<p class="site-description"><?php echo $unax_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+					<p class="site-description"><?php echo esc_html( $unax_description ); ?></p>
 					<?php endif; ?>
 
 				</div><!-- .site-branding-text -->
