@@ -17,7 +17,7 @@
         margin: 0 0 1rem 0 !important;
         padding: 0;
 
-        @include breakpoint-above(lg) {
+        @include media-breakpoint-up(lg) {
             margin: 0;
         }
 
@@ -30,7 +30,7 @@
             text-decoration: underline;
             text-transform: uppercase;
 
-            @include breakpoint-above(lg) {
+            @include media-breakpoint-up(lg) {
 		        display: inline-flex;
 		    }
         }

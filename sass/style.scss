@@ -35,7 +35,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* Variables Site */
 @import "variables-site/variables-site";
-@import "mixins/mixins-breakpoints";
+
+/* Mixins */
 @import "mixins/mixins-effects";
 @import "mixins/mixins-master";
 
@@ -45,39 +46,37 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "typography/typography";
 
 /*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 @import "elements/elements";
+@import "elements/buttons";
+@import "elements/fields";
+@import "elements/links";
 
 /*--------------------------------------------------------------
-# Forms
+## Menus
 --------------------------------------------------------------*/
-@import "forms/forms";
+@import "navigation/main-navigation";
+@import "navigation/mobile-menu";
+@import "navigation/menu-media-queries";
+@import "navigation/widget-menu";
 
 /*--------------------------------------------------------------
-# Navigation
+## Tabs
 --------------------------------------------------------------*/
-@import "navigation/navigation";
+@import "navigation/tabs";
 
 /*--------------------------------------------------------------
-# Accessibility
+# Layout
 --------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "modules/widgets";
+@import "layout/header";
+@import "layout/content";
+@import "layout/footer";
 
 /*--------------------------------------------------------------
 # Shop
@@ -91,33 +90,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "shop/widgets";
 
 /*--------------------------------------------------------------
-# Layout
+# Components
 --------------------------------------------------------------*/
-@import "layout/header";
-@import "layout/content";
-@import "layout/footer";
-@import "layout/common";
+@import "components/cards";
+@import "components/comments";
+@import "components/socials";
+@import "components/widgets";
 
 /*--------------------------------------------------------------
-## Posts and pages
+## Content
 --------------------------------------------------------------*/
+@import "content/alignments";
+@import "content/clearings";
 @import "content/posts-and-pages";
 @import "content/single";
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-@import "content/comments";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-@import "media/media";
 
 /*--------------------------------------------------------------
 # Blocks
@@ -128,7 +114,5 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "blocks/gallery";
 
 /*--------------------------------------------------------------
-# Components
+# Templates
 --------------------------------------------------------------*/
-@import "components/card";
-@import "components/socials";

@@ -12,7 +12,7 @@ h6 {
 
 h1 {
 	font-size: 32px;
-	@include breakpoint-above(lg) {
+	@include media-breakpoint-up(lg) {
 		font-size: 48px;
 	}
 	-ms-word-wrap: break-word;
@@ -21,7 +21,7 @@ h1 {
 
 h2 {
 	font-size: 24px;
-	@include breakpoint-above(lg) {
+	@include media-breakpoint-up(lg) {
 		font-size: 32px;
 	}
 }

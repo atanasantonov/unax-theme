@@ -5,7 +5,7 @@
 
         width: 100%;
 
-        @include breakpoint-above(lg) {
+        @include media-breakpoint-up(lg) {
 			width: 63%;
             float: left;
 		}
@@ -19,7 +19,7 @@
             float: none;
             width: 100%;
 
-            @include breakpoint-above(lg) {
+            @include media-breakpoint-up(lg) {
                 float: right;
                 width: 33%;
     		}

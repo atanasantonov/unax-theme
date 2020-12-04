@@ -1,7 +1,7 @@
 ul,
 ol {
 	margin: auto;
-	@include breakpoint-above(lg) {
+	@include media-breakpoint-up(lg) {
 		margin: 0 0 1.5em 1.5em;
 	}
 }
@@ -18,7 +18,7 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 15px	;
-	@include breakpoint-above(lg) {
+	@include media-breakpoint-up(lg) {
 		margin-left: 1.5em;
 	}
 }

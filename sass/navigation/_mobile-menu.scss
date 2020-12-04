@@ -16,7 +16,7 @@
 	color: $black;
 	background-color: $white;
 
-	@include breakpoint-above(lg) {
+	@include media-breakpoint-up(lg) {
 		display: none;
 	}
 

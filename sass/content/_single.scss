@@ -22,19 +22,19 @@
         margin: 1rem auto 2rem auto;
 
         & > * {
-            @include breakpoint-above(lg) {
+            @include media-breakpoint-up(lg) {
                 margin: 1rem auto 0 auto;
             }
         }
         .alignleft {
-            @include breakpoint-above(lg) {
+            @include media-breakpoint-up(lg) {
                 margin: 1rem 0.5rem 0 auto;
             }
         }
     }
 
     .entry-footer {
-        @include breakpoint-above(lg) {
+        @include media-breakpoint-up(lg) {
             margin: 1rem auto 0 auto;
         }
     }
@@ -55,13 +55,13 @@
 
     .post-thumbnail-wrapper {
 
-        @include breakpoint-above(lg) {
+        @include media-breakpoint-up(lg) {
             height: 600px;
             overflow-y: hidden;
         }
 
         img {
-            @include breakpoint-above(lg) {
+            @include media-breakpoint-up(lg) {
                 margin-top: -15%;
             }
 

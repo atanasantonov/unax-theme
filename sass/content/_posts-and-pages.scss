@@ -25,23 +25,3 @@
 .entry-date {
 	color: $secondary;
 }
-
-// Loops to enumerate the classes for columns.
-@for $i from 2 through 6 {
-	.columns-#{$i} {
-		& > * {
-			width: 100%;
-		}
-	}
-}
-@media screen and ( min-width: $breakpoint-lg ) {
-
-	@for $i from 2 through 6 {
-		.columns-#{$i} {
-			& > * {
-				@include column-width( $i );
-			}
-		}
-	}
-
-}

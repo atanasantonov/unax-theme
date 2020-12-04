@@ -12,7 +12,7 @@
         .prefix {
 
             display: none;
-            @include breakpoint-above(lg) {
+            @include media-breakpoint-up(lg) {
 
                 display: block;
                 width: 3px;
