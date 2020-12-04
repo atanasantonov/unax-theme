@@ -97,6 +97,6 @@ function unax_custom_header() {
 		esc_attr( $custom_header_wrapper_class ),
 		esc_url( get_header_image() ),
 		esc_attr( $custom_header_class ),
-		'',
+		''
 	);
 }
