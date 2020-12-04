@@ -1,5 +1,16 @@
 *** Unax Theme Changelog ***
 
+2020-12-04 - version 1.0.5
+* wp_body_open hook added with wp_body_open() right after body tag
+* Screenshot updated
+* Customizer grid columns fix
+* Header vertical alignment to center
+* Header widget visible on mobile also
+* Sidebar layout updated
+* Sass files reorganized
+* Custom header added
+* Missing filter 'unax_post_class' hook removed
+
 2020-11-08 - version 1.0.4
 * Site branding escaped
 * Site title tag h1 only if is homepage

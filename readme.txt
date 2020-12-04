@@ -43,7 +43,6 @@ No notice.
 == Screenshots ==
 
 /screenshot.png
-Source: https://unsplash.com/photos/CSrIsRQDSLk
 
 == Third Party Libraries ==
 
