@@ -1,39 +1,70 @@
 .site-content {
-
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 
-	@include breakpoint-above(lg) {
+	@include media-breakpoint-up(lg) {
 		flex-direction: row;
 		justify-content: space-between;
 	}
 
 	.site-main {
-
 		width: 100%;
 		min-height: 600px;
 		padding-top: 2rem;
 
+		@include media-breakpoint-up(lg) {
+			width: 75%;
+		}
 	}
 
 	.widget-area {
-
 		width: 100%;
-		padding-top: 2rem;
+		padding: 2rem 0 0 0;
 
-		@include breakpoint-above(lg) {
-
-			max-width: 27%;
+		@include media-breakpoint-up(lg) {
+			width: 25%;
 			margin-left: 3%;
 			overflow: hidden;
-
 		}
 
 		ul {
 			margin-left: -1rem;
 		}
 
-	}
+		input {
+			width: 100%;
 
+			&.search-submit {
+				@include media-breakpoint-up(lg) {
+					max-width: 50%;
+				}				
+			}
+		}
+	}
+}
+
+.no-sidebar .site-main {
+	width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include media-breakpoint-up(lg) {
+        padding: 0;
+    }
+}
+
+.post-thumbnail-wrapper {
+
+    img {
+        width: 100%;
+    }
+
+}
+
+.alignfull {
+	width: 100%;
 }

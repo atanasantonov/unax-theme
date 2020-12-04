@@ -10,7 +10,7 @@
 get_header();
 
 ?>
-	<div id="content" class="site-content <?php echo esc_attr( apply_filters( 'unax_container_fluid_class', 'container-fluid' ) ); ?>">
+	<div id="content" class="site-content no-sidebar <?php echo esc_attr( apply_filters( 'unax_container_fluid_class', 'container-fluid' ) ); ?>">
 
 		<main id="primary" class="site-main">
 
