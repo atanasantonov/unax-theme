@@ -1,32 +1,24 @@
 .wp-block-column {
-
-    @include breakpoint-above(lg) {
+    @include media-breakpoint-up(lg) {
         flex-basis: calc(50% - 16px) !important;
     }
-
 }
 
 .wp-block-column:not(:first-child) {
-
-    @include breakpoint-above(lg) {
+    @include media-breakpoint-up(lg) {
         margin-left: 48px;
     }
-
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-
     .wp-block-column {
         flex-basis: 100% !important;
     }
-
 }
 
 @media screen and (min-width: 768px) {
-
     .wp-block-column {
         flex-grow: 1;
         flex-basis: 100% !important;
     }
-
 }
