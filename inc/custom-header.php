@@ -74,3 +74,29 @@ function unax_header_style() {
 	</style>
 	<?php
 }
+
+
+/**
+ * Displays custom header.
+ */
+function unax_custom_header() {
+
+	if( ! has_header_image() ) {
+		return;
+	}
+
+	if( is_page_template( 'templates/full-width.php' ) ) {
+		return;
+	}
+
+	$custom_header_wrapper_class = apply_filters( 'unax_custom_header_class', 'custom-header-wrapper' );
+	$custom_header_class = apply_filters( 'unax_custom_header_class', 'custom-header' );
+
+	return printf(
+		'<div class="%s"><img src="%s" class="%s" alt="%s"></div>',
+		esc_attr( $custom_header_wrapper_class ),
+		esc_url( get_header_image() ),
+		esc_attr( $custom_header_class ),
+		'',
+	);
+}
