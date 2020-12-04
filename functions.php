@@ -5,9 +5,9 @@
  * @package Unax
  */
 
-if ( ! defined( 'THEME_VERSION' ) ) {
+if ( ! defined( 'UNAX_THEME_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'THEME_VERSION', '1.0.4' );
+	define( 'UNAX_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
 }
 
 /**

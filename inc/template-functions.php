@@ -178,11 +178,11 @@ function unax_widgets_init() {
  */
 function unax_scripts() {
 
-	wp_enqueue_style( 'unax', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'unax', get_template_directory_uri() . '/style.css', array(), UNAX_THEME_VERSION );
 
 	wp_style_add_data( 'unax', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'unax-navigation', get_template_directory_uri() . '/dist/js/index.min.js', array( 'jquery' ), THEME_VERSION, true );
+	wp_enqueue_script( 'unax-navigation', get_template_directory_uri() . '/dist/js/index.min.js', array( 'jquery' ), UNAX_THEME_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
