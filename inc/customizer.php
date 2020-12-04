@@ -34,33 +34,29 @@ function unax_customize_register( $wp_customize ) {
 
 
 	$wp_customize->add_section( 'unax_common_settings' , array(
-	    'title'      => __( 'Unax Settings', 'unax' ),
+	    'title'      => esc_html__( 'Unax Settings', 'unax' ),
 	    'priority'   => 120,
 	) );
 
 	$wp_customize->add_setting( 'grid_columns' , array(
-			'default' => '3',
+			'default' 			=> '3',
 			'sanitize_callback' => 'sanitize_text_field',
+			'type'              => 'option',
 	) );
 	$wp_customize->add_control(
 		 new WP_Customize_Control( $wp_customize, 'grid_columns', [
-			 'label'    => __( 'Grid columns', 'unax' ),
-			 'section'  => 'unax_common_settings',
-			 'type'  	=> 'number',
+			 'label'       => esc_html__( 'Grid columns', 'unax' ),
+			 'description' => esc_html__( 'Choose the default columns count for archive pages.', 'unax' ),
+			 'section'     => 'unax_common_settings',
+			 'settings'    => 'grid_columns',
+			 'type'        => 'number',
+			 'input_attrs' => array(
+				'min'  => 1,
+				'max'  => 6,
+				'step' => 1,
+			 ),
 		 ])
  	);
-
-	$wp_customize->add_setting( 'facebook_page' , array(
-			'default' => '',
-			'sanitize_callback' => 'sanitize_text_field',
-	) );
-	$wp_customize->add_control(
-		 new WP_Customize_Control( $wp_customize, 'facebook_page', [
-			 'label'    => __( 'Facebook Page', 'unax' ),
-			 'section'  => 'unax_common_settings',
-		 ])
- 	);
-
 }
 
 
