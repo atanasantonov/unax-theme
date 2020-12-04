@@ -13741,7 +13741,8 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 # Layout
 --------------------------------------------------------------*/
 .site-header {
-  padding: 0; }
+  padding: 0;
+  background-color: #fff; }
   .site-header .custom-logo {
     max-width: 100px;
     margin-right: 1rem; }
@@ -13816,7 +13817,7 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
   .site-header .custom-header-wrapper {
     position: relative;
     width: 100%;
-    height: 38.2vw;
+    height: 37.5vw;
     overflow: hidden; }
     .site-header .custom-header-wrapper .custom-header {
       position: absolute;
