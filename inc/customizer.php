@@ -39,7 +39,7 @@ function unax_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_setting( 'grid_columns' , array(
-			'default' 			=> '3',
+			'default' 			=> 3,
 			'sanitize_callback' => 'sanitize_text_field',
 	) );
 	$wp_customize->add_control(
