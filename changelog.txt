@@ -1,5 +1,9 @@
 *** Unax Theme Changelog ***
 
+2020-12-19 - version 1.0.6
+* Links in content underlined
+* Customizer grid columns default value type to integer
+
 2020-12-04 - version 1.0.5
 * wp_body_open hook added with wp_body_open() right after body tag
 * Screenshot updated
