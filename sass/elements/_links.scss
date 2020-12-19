@@ -1,5 +1,6 @@
 a {
 	color: $link-color;
+	text-decoration: underline;
 
 	&:visited {
 		color: darken($link-color, 10%);
@@ -18,5 +19,15 @@ a {
 	&:hover,
 	&:active {
 		outline: 0;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, li {
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: none;
 	}
 }
