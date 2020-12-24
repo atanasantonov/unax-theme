@@ -40,7 +40,7 @@ function unax_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting( 'grid_columns' , array(
 			'default' 			=> 3,
-			'sanitize_callback' => 'sanitize_text_field',
+			'sanitize_callback' => 'absint',
 	) );
 	$wp_customize->add_control(
 		 new WP_Customize_Control( $wp_customize, 'grid_columns', [
