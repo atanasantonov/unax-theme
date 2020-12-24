@@ -2,7 +2,7 @@
 Contributors: unax
 Tags: blog, e-commerce, news, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, custom-logo, block-styles
 Stable tag: 1.0.6
-Tested up to: 5.5.1
+Tested up to: 5.6
 Requires at least: 4.7
 Requires PHP: 5.6
 License: GPL-2.0-or-later

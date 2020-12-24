@@ -6,7 +6,7 @@ Author URI: https://unax.org
 Description: Starter theme from Unax based on Underscores and Twitter Bootstrap
 Tags: blog, e-commerce, news, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, custom-logo, block-styles
 Version: 1.0.6
-Tested up to: 5.5.1
+Tested up to: 5.6
 Requires at least: 4.7
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -14744,26 +14744,19 @@ ul.products {
 .wp-block-cover.has-background-dim.has-white-background-color {
   background-color: #fff; }
 
-.has-gray-100-color {
+.has-light-color {
   color: #f8f9fa; }
 
-.has-gray-100-background-color,
-.wp-block-cover.has-background-dim.has-gray-100-background-color {
+.has-light-background-color,
+.wp-block-cover.has-background-dim.has-light-background-color {
   background-color: #f8f9fa; }
 
-.has-gray-400-color {
-  color: #ced4da; }
+.has-dark-color {
+  color: #212529; }
 
-.has-gray-400-background-color,
-.wp-block-cover.has-background-dim.has-gray-400-background-color {
-  background-color: #ced4da; }
-
-.has-gray-700-color {
-  color: #495057; }
-
-.has-gray-700-background-color,
-.wp-block-cover.has-background-dim.has-gray-700-background-color {
-  background-color: #6c757d; }
+.has-dark-background-color,
+.wp-block-cover.has-background-dim.has-dark-background-color {
+  background-color: #212529; }
 
 .has-black-color {
   color: #000; }

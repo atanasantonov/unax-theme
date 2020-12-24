@@ -89,31 +89,22 @@
     background-color: $white;
 }
 
-// gray-100
-.has-gray-100-color {
-    color: $gray-100;
+// light
+.has-light-color {
+    color: $light;
 }
-.has-gray-100-background-color,
-.wp-block-cover.has-background-dim.has-gray-100-background-color {
-    background-color: $gray-100;
-}
-
-// gray-400
-.has-gray-400-color {
-    color: $gray-400;
-}
-.has-gray-400-background-color,
-.wp-block-cover.has-background-dim.has-gray-400-background-color {
-    background-color: $gray-400;
+.has-light-background-color,
+.wp-block-cover.has-background-dim.has-light-background-color {
+    background-color: $light;
 }
 
-// gray-700
-.has-gray-700-color {
-    color: $gray-700;
+// dark
+.has-dark-color {
+    color: $dark;
 }
-.has-gray-700-background-color,
-.wp-block-cover.has-background-dim.has-gray-700-background-color {
-    background-color: $gray-600;
+.has-dark-background-color,
+.wp-block-cover.has-background-dim.has-dark-background-color {
+    background-color: $dark;
 }
 
 // black
