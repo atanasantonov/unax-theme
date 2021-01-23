@@ -23,7 +23,6 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/gutenberg.php';
 require get_template_directory() . '/inc/pluggable.php';
 require get_template_directory() . '/inc/shortcodes.php';
 require get_template_directory() . '/inc/template-filters.php';

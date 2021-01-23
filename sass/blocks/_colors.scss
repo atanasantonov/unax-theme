@@ -1,9 +1,13 @@
 // primary
 .has-primary-color {
     color: $primary;
+}
+a.has-primary-color,
+.wp-block-button__link.has-primary-color {
+    &:hover,
     &:focus,
     &.active {
-        color: darken( $primary, 15% );
+        color: $primary;
     }
 }
 .has-primary-background-color,
@@ -14,9 +18,13 @@
 // secondary
 .has-secondary-color {
     color: $secondary;
+}
+a.has-secondary-color,
+.wp-block-button__link.has-secondary-color {
+    &:hover,
     &:focus,
     &.active {
-        color: darken( $secondary, 15% );
+        color: $secondary;
     }
 }
 .has-secondary-background-color,
@@ -27,9 +35,13 @@
 // success
 .has-success-color {
     color: $success;
+}
+a.has-success-color,
+.wp-block-button__link.has-success-color {
+    &:hover,
     &:focus,
     &.active {
-        color: darken( $success, 15% );
+        color: $success;
     }
 }
 .has-success-background-color,
@@ -40,9 +52,13 @@
 // info
 .has-info-color {
     color: $info;
+}
+a.has-info-color,
+.wp-block-button__link.has-info-color {
+    &:hover,
     &:focus,
     &.active {
-        color: darken( $info, 15% );
+        color: $info;
     }
 }
 .has-info-background-color,
@@ -53,9 +69,13 @@
 // warning
 .has-warning-color {
     color: $warning;
+}
+a.has-warning-color,
+.wp-block-button__link.has-warning-color {
+    &:hover,
     &:focus,
     &.active {
-        color: darken( $warning, 15% );
+        color: $warning;
     }
 }
 .has-warning-background-color,
@@ -66,9 +86,13 @@
 // danger
 .has-danger-color {
     color: $danger;
+}
+a.has-danger-color,
+.wp-block-button__link.has-danger-color {
+    &:hover,
     &:focus,
     &.active {
-        color: darken( $danger, 15% );
+        color: $danger;
     }
 }
 .has-danger-background-color,
@@ -79,9 +103,13 @@
 // white
 .has-white-color {
     color: $white;
+}
+a.has-white-color,
+.wp-block-button__link.has-white-color {
+    &:hover,
     &:focus,
     &.active {
-        color: darken( $white, 15% );
+        color: $white;
     }
 }
 .has-white-background-color,
@@ -89,36 +117,68 @@
     background-color: $white;
 }
 
-// gray-100
-.has-gray-100-color {
-    color: $gray-100;
+// light
+.has-light-color {
+    color: $light;
 }
-.has-gray-100-background-color,
-.wp-block-cover.has-background-dim.has-gray-100-background-color {
-    background-color: $gray-100;
+a.has-light-color,
+.wp-block-button__link.has-light-color {
+    &:hover,
+    &:focus,
+    &.active {
+        color: $light;
+    }
+}
+.has-light-background-color,
+.wp-block-cover.has-background-dim.has-light-background-color {
+    background-color: $light;
 }
 
-// gray-400
-.has-gray-400-color {
-    color: $gray-400;
+// medium
+.has-medium-color {
+    color: $medium;
 }
-.has-gray-400-background-color,
-.wp-block-cover.has-background-dim.has-gray-400-background-color {
-    background-color: $gray-400;
+a.has-medium-color,
+.wp-block-button__link.has-medium-color {
+    &:hover,
+    &:focus,
+    &.active {
+        color: $medium;
+    }
+}
+.has-medium-background-color,
+.wp-block-cover.has-background-dim.has-medium-background-color {
+    background-color: $medium;
 }
 
-// gray-700
-.has-gray-700-color {
-    color: $gray-700;
+// dark
+.has-dark-color {
+    color: $dark;
 }
-.has-gray-700-background-color,
-.wp-block-cover.has-background-dim.has-gray-700-background-color {
-    background-color: $gray-600;
+a.has-dark-color,
+.wp-block-button__link.has-dark-color {
+    &:hover,
+    &:focus,
+    &.active {
+        color: $dark;
+    }
+}
+.has-dark-background-color,
+.wp-block-cover.has-background-dim.has-dark-background-color {
+    background-color: $dark;
 }
 
 // black
 .has-black-color {
     color: $black;
+}
+a.has-black-color,
+.wp-block-button__link.has-black-color {
+    &:hover,
+    &:focus,
+    &.active {
+        color: $black;
+    }
 }
 .has-black-background-color,
 .wp-block-cover.has-background-dim.has-black-background-color {

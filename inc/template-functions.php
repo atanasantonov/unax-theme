@@ -65,6 +65,63 @@ function unax_setup() {
 		)
 	);
 
+	// Add color palette to the editor
+    add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
+	            'name' => __( 'Primary Color', 'unax' ),
+	            'slug' => 'primary',
+	            'color' => apply_filters( 'unax_editor_color_palette_primary', '#007bff' ),
+	        ),
+	        array(
+	            'name' => __( 'Secondary Color', 'unax' ),
+	            'slug' => 'secondary',
+	            'color' => apply_filters( 'unax_editor_color_palette_secondary', '#6c757d' ),
+	        ),
+	        array(
+	            'name' => __( 'Success Color', 'unax' ),
+	            'slug' => 'success',
+	            'color' => apply_filters( 'unax_editor_color_palette_success', '#28a745' ),
+	        ),
+	        array(
+	            'name' => __( 'Danger color', 'unax' ),
+	            'slug' => 'danger',
+	            'color' => apply_filters( 'unax_editor_color_palette_danger', '#dc3545' ),
+	        ),
+	        array(
+	            'name' => __( 'Warning color', 'unax' ),
+	            'slug' => 'warning',
+	            'color' => apply_filters( 'unax_editor_color_palette_warning', '#ffc107' ),
+	        ),
+	        array(
+	            'name' => __( 'Info Color', 'unax' ),
+	            'slug' => 'info',
+	            'color' => apply_filters( 'unax_editor_color_palette_info', '#17a2b8' ),
+	        ),
+			array(
+				'name' => __( 'White', 'unax' ),
+				'slug' => 'white',
+				'color' => apply_filters( 'unax_editor_color_palette_white', '#fff' ),
+			),
+	        array(
+	            'name' => __( 'Light', 'unax' ),
+	            'slug' => 'light',
+	            'color' => apply_filters( 'unax_editor_color_palette_light', '#f8f9fa' ),
+	        ),
+	        array(
+	            'name' => __( 'Dark', 'unax' ),
+	            'slug' => 'dark',
+	            'color' => apply_filters( 'unax_editor_color_palette_dark', '#495057' ),
+	        ),
+	        array(
+	            'name' => __( 'Black', 'unax' ),
+	            'slug' => 'black',
+	            'color' => apply_filters( 'unax_editor_color_palette_black', '#000' ),
+	        ),
+	    )
+	);
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support(
 		'custom-background',

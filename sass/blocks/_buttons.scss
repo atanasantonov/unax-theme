@@ -1,13 +1,17 @@
-.wp-block-button {
-    color: $white;
-    &:hover {
-        color: $gray-400;
+.wp-block-button,
+.wp-block-button__link {
+    color: inherit;
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
+        color: inherit;
     }
 }
 
 .is-style-outline {
-    color: $black;
+    color: inherit;
     &:hover {
-        color: $gray-700;
+        color: inherit;
     }
 }
