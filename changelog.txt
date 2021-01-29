@@ -3,6 +3,7 @@
 2020-12-22 - version 1.0.7
 * Filters added to editor color palette
 * Customizer grid columns setting value sanitize callback to absint
+* Page template full-width added padding to container class in header.
 
 2020-12-19 - version 1.0.6
 * Links in content underlined

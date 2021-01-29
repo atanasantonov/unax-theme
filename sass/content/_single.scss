@@ -49,6 +49,14 @@
         padding: 0;
     }
 
+    .site-header .container,
+    .site-header .container-fluid {
+        padding: 0 15px;
+        @include media-breakpoint-up(lg) {
+            padding: 0;
+        }
+    }
+
     .entry-content > *:not(.wp-block-cover) {
         padding: 0 15px;
     }

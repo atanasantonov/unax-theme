@@ -14768,6 +14768,22 @@ ul.products {
   margin: 0 auto;
   padding: 0; }
 
+.page-template-full-width .site-header .container,
+.page-template-full-width .site-header .container-fluid,
+.page-template-full-width .site-header .container-sm,
+.page-template-full-width .site-header .container-md,
+.page-template-full-width .site-header .container-lg,
+.page-template-full-width .site-header .container-xl {
+  padding: 0 15px; }
+  @media (min-width: 992px) {
+    .page-template-full-width .site-header .container,
+    .page-template-full-width .site-header .container-fluid,
+    .page-template-full-width .site-header .container-sm,
+    .page-template-full-width .site-header .container-md,
+    .page-template-full-width .site-header .container-lg,
+    .page-template-full-width .site-header .container-xl {
+      padding: 0; } }
+
 .page-template-full-width .entry-content > *:not(.wp-block-cover) {
   padding: 0 15px; }
 
