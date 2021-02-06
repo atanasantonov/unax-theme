@@ -239,7 +239,8 @@ function unax_scripts() {
 
 	wp_style_add_data( 'unax', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'unax-navigation', get_template_directory_uri() . '/dist/js/index.min.js', array( 'jquery' ), UNAX_THEME_VERSION, true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/dist/vendor/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '4.4.1', true );
+	wp_enqueue_script( 'unax', get_template_directory_uri() . '/dist/js/index.min.js', array( 'jquery', 'bootstrap' ), UNAX_THEME_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
