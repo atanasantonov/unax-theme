@@ -1,5 +1,11 @@
 *** Unax Theme Changelog ***
 
+2020-02-06 - version 1.0.8
+* Shortcodes empty file removed.
+* Bootstrap js moved in dist folder and loaded separately.
+* Footer credits escaped and translatable.
+* readme.txt updated.
+
 2020-12-22 - version 1.0.7
 * Filters added to editor color palette
 * Customizer grid columns setting value sanitize callback to absint
