@@ -1,5 +1,8 @@
 *** Unax Theme Changelog ***
 
+2020-02-06 - version 1.0.9
+* Screenshot updated.
+
 2020-02-06 - version 1.0.8
 * Shortcodes empty file removed.
 * Bootstrap js moved in dist folder and loaded separately.
