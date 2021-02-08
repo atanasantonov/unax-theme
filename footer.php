@@ -29,8 +29,9 @@
 			<?php
 				printf(
 					'<a href="%s" target="_blank">%s</a>',
-					esc_url( apply_filters( 'unax_powered_by_url', 'https://wordpress.org/' ) ),
-					// translators: Footer credits.
+					// translators: Footer credits url.
+					esc_url( apply_filters( 'unax_powered_by_url', __( 'https://wordpress.org/', 'unax' ) ) ),
+					// translators: Footer credits text.
 					esc_html( apply_filters( 'unax_powered_by_text', __( 'Proudly powered by WordPress', 'unax' ) ) ),
 				);
  			?>
