@@ -109,8 +109,8 @@ if ( ! function_exists( 'unax_entry_footer' ) ) :
 				),
 				wp_kses_post( get_the_title() )
 			),
-			'<span class="edit-link">',
-			'</span>'
+			'<div class="mt-3"><span class="edit-link">',
+			'</span></div>'
 		);
 	}
 endif;
@@ -147,7 +147,6 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 			);
 
 		endif;
-
 	}
 
 endif;
