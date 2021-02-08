@@ -4,15 +4,25 @@
 
         .entry-category {
             font-family: sans-serif;
-            font-size: 1.15rem;
+            font-size: 1.25rem;
+            margin-top: 0.5rem;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1.15rem;
+                margin-top: 0;
+            }
             a {
                 color: $gray-600;
             }
         }
 
         .entry-meta {
-            font-size: 1rem;
+            font-size: 1.35rem;
             font-family: sans-serif;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1rem;
+            }
         }
 
     }
