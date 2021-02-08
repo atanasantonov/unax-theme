@@ -21,10 +21,11 @@
 			padding: 0;
 
 			@include media-breakpoint-up(lg) {
-				max-width: 80%;
 				display: block;
+				&.has-widget-area {
+					max-width: 80%;
+				}
 			}
-
 		}
 
 		.widget-area {

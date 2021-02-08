@@ -99,8 +99,8 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 				</span>
 			</button><!-- .nav-toggle -->
 
-			<nav class="primary-menu-wrapper" aria-label="<?php esc_attr_e( 'Menu', 'unax' ); ?>">
-				<ul class="primary-menu reset-list-style">
+			<nav class="primary-menu-wrapper <?php if( is_active_sidebar( 'primary-menu-widget-area' ) ) { echo ' has-widget-area'; } ?>" aria-label="<?php esc_attr_e( 'Menu', 'unax' ); ?>">
+				<ul class="primary-menu">
 				<?php
 				if ( has_nav_menu( 'primary-menu' ) ) :
 					wp_nav_menu(

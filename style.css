@@ -13210,8 +13210,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, li a:hov
       padding: 0; }
       @media (min-width: 992px) {
         .main-navigation .container .primary-menu-wrapper {
-          max-width: 80%;
-          display: block; } }
+          display: block; }
+          .main-navigation .container .primary-menu-wrapper.has-widget-area {
+            max-width: 80%; } }
     .main-navigation .container .widget-area {
       max-width: 100%;
       display: -webkit-box;
@@ -13914,7 +13915,7 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
       padding: 0.5rem 0; }
       @media (min-width: 992px) {
         .site-header .header-top .container .site-branding {
-          padding: 0; } }
+          padding: 0.25rem 0; } }
       .site-header .header-top .container .site-branding .site-branding-texts {
         display: -webkit-box;
         display: -ms-flexbox;
