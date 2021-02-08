@@ -14,9 +14,11 @@ if ( ! empty( get_the_title() ) ) {
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( apply_filters( 'unax_post_single_class', '' ) ); ?>>
 
+	<?php if( ! function_exists( 'is_product' ) || ! is_product() ) : ?>
 	<header class="entry-header">
 
 		<?php unax_post_thumbnail(); ?>
+
 
 		<div class="entry-meta row">
 			<div class="entry-category col-lg-10 order-2 order-lg-1">
@@ -29,6 +31,7 @@ if ( ! empty( get_the_title() ) ) {
 		</div>
 
 	</header><!-- .entry-header -->
+	<?php endif; ?>
 
 	<div class="entry-content">
 		<?php

@@ -34,7 +34,13 @@ get_header();
 
 		</main><!-- #main -->
 
-		<?php get_sidebar(); ?>
+		<?php
+		if( ! function_exists( 'is_woocommerce' ) || ( ! is_woocommerce() && ! is_cart() && is_checkout() ) ) :
+
+			get_sidebar();
+
+		endif;
+		?>
 
 	</div><!-- #content -->
 <?php

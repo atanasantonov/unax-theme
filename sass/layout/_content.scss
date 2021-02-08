@@ -38,13 +38,14 @@
 			&.search-submit {
 				@include media-breakpoint-up(lg) {
 					max-width: 50%;
-				}				
+				}
 			}
 		}
 	}
 }
 
-.no-sidebar .site-main {
+.no-sidebar .site-main,
+.woocommerce-page .site-main {
 	width: 100%;
 }
 
