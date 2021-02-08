@@ -1,9 +1,9 @@
 === Unax ===
 Contributors: unax
 Tags: blog, e-commerce, news, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, custom-logo, block-styles
-Stable tag: 1.0.7
+Stable tag: 1.1.0
 Tested up to: 5.6
-Requires at least: 4.7
+Requires at least: 5.0
 Requires PHP: 5.6
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -12,13 +12,10 @@ Unax starter theme.
 
 == Description ==
 
-Starter Theme based on Underscores and Twitter Bootstrap.
-
-Fast and simple. Font Awesome included.
-
-Theme is using Sass language in well organized files. Theme is using gulp. Sass files can be managed in scss/style.scss.
-
-Basic templates included with common container filters.
+Unax theme is most of all starter theme based on Underscores and Twitter Bootstrap. Theme uses Sass language in well organized files. Static assets are compiled with gulp and gulp files are included.
+Sass files can be managed in scss/style.scss. Theme includes different filters for classes in the markup. Plenty of widget areas are registered as well as several menu locations. Bootstrap colors with the appropriate filters are integrated in Gutenberg color palette.
+Code is also available on GitHub: https://github.com/atanasantonov/unax-theme
+Any comments are welcome and GitHub issues as well.
 
 == Donations ==
 
@@ -50,7 +47,6 @@ No notice.
 * Twenty Twenty By WordPress.org https://wordpress.org/themes/twentytwenty/, Copyright 2011-2019 by the contributors, [GPLv2](https://github.com/WordPress/twentytwenty/blob/master/LICENSE)
 * Bootstrap https://getbootstrap.com/, Copyright 2011-2019 The Bootstrap Authors, Copyright 2011-2019 Twitter, Inc. [MIT](https://github.com/twbs/bootstrap/blob/main/LICENSE)
 * Font Awesome https://fontawesome.com/, Copyright Fonticons, Inc., [Font Awesome Free](https://fontawesome.com/license)
-* Gulp https://gulpjs.com/, Copyright 2013-2018 Blaine Bublitz, Eric Schoffstall and other contributors, [MIT](https://github.com/gulpjs/gulp/blob/master/LICENSE)
 
 == Changelog ==
 
