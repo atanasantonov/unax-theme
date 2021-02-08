@@ -1,5 +1,18 @@
 *** Unax Theme Changelog ***
 
+2020-02-08 - version 1.1.0
+* Theme published on WordPress.org
+* Fix main navigation styling.
+* Updated minimum requirements to WordPress 5.0.
+* Updated theme description.
+* Added translation to credits link in footer.
+* Fix Skip to content text for screen readers.
+* Added 'responsive-embeds' theme support.
+* Fix Edit link on posts and pages.
+* Fix sidebar hidden on WooCommerce pages.
+* Fix posts meta bigger fonts on mobile for better accessibility.
+* Removed development files.
+
 2020-02-06 - version 1.0.9
 * Screenshot updated.
 
