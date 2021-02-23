@@ -1,7 +1,6 @@
 *** Unax Theme Changelog ***
 
 2020-02-23 - version 1.1.1
-* Web Content Accessibility Guidelines (WCAG) compatible.
 * Fix accessibility issues with post meta contrast
 * Fix read more text for screen readers
 * Added 'navigation-widgets' theme support.

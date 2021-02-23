@@ -21,12 +21,14 @@
 
 		<p class="card-text">
 			<?php
-				$content_more = sprintf(
-					'... <a href="%s" class="read-more">%s</a>',
+				$read_more = sprintf(
+					'... <a href="%s" class="read-more">%s <span class="screen-reader-text sr-only">%s</span></a>',
 					esc_url( get_the_permalink() ),
-					apply_filters( 'unax_text_more', esc_html__( 'Read more', 'unax' ) )
+					apply_filters( 'unax_text_more', esc_html__( 'Continue reading', 'unax' ) ),
+					get_the_title()
 				);
-				$post_excerpt =  wp_trim_words( get_the_excerpt(), 15, $content_more );
+
+				$post_excerpt =  wp_trim_words( get_the_excerpt(), 15, $read_more );
 
 				echo wp_kses( $post_excerpt, 'post' );
 			?>
