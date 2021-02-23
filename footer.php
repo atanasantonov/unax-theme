@@ -32,7 +32,7 @@
 					// translators: Footer credits url.
 					esc_url( apply_filters( 'unax_powered_by_url', __( 'https://wordpress.org/', 'unax' ) ) ),
 					// translators: Footer credits text.
-					esc_html( apply_filters( 'unax_powered_by_text', __( 'Proudly powered by WordPress', 'unax' ) ) ),
+					esc_html( apply_filters( 'unax_powered_by_text', __( 'Proudly powered by WordPress', 'unax' ) ) )
 				);
  			?>
 
