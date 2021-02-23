@@ -8,13 +8,13 @@ Requires PHP: 5.6
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-Unax starter theme.
+Unax starter theme based on Underscores and Twitter Bootstrap.
 
 == Description ==
 
-Unax theme is most of all starter theme based on Underscores and Twitter Bootstrap. Theme uses Sass language in well organized files. Static assets are compiled with gulp and gulp files are included.
+Unax starter theme based on Underscores and Twitter Bootstrap.
 
-Sass files can be managed in scss/style.scss. Theme includes different filters for classes in the markup. Plenty of widget areas are registered as well as several menu locations. Bootstrap colors with the appropriate filters are integrated in Gutenberg color palette.
+Theme uses Sass language in well organized files. Theme includes different filters for layout classes. Plenty of widget areas are registered as well as several menu locations. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette.
 
 Web Content Accessibility Guidelines (WCAG) compatible.
 
