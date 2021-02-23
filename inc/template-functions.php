@@ -62,7 +62,8 @@ function unax_setup() {
 			'caption',
 			'style',
 			'script',
-			'responsive-embeds'
+			'responsive-embeds',
+			'navigation-widgets'
 		)
 	);
 
