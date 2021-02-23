@@ -1,6 +1,6 @@
 === Unax ===
 Contributors: unax
-Tags: blog, e-commerce, news, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, custom-logo, block-styles
+Tags: blog, accessibility-ready, e-commerce, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, custom-logo, block-styles
 Stable tag: 1.1.0
 Tested up to: 5.6
 Requires at least: 5.0
@@ -13,25 +13,20 @@ Unax starter theme.
 == Description ==
 
 Unax theme is most of all starter theme based on Underscores and Twitter Bootstrap. Theme uses Sass language in well organized files. Static assets are compiled with gulp and gulp files are included.
+
 Sass files can be managed in scss/style.scss. Theme includes different filters for classes in the markup. Plenty of widget areas are registered as well as several menu locations. Bootstrap colors with the appropriate filters are integrated in Gutenberg color palette.
-Code is also available on GitHub: https://github.com/atanasantonov/unax-theme
+
+Web Content Accessibility Guidelines (WCAG) compatible.
+
+Code available on GitHub: https://github.com/atanasantonov/unax-theme
+
 Any comments are welcome and GitHub issues as well.
-
-== Donations ==
-
-Support the development with donation at:
-
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PBQQSPL9W8XYQ&source=url
 
 == Installation ==
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
-
-== Frequently Asked Questions ==
-
-Comming soon...
 
 == Upgrade Notice ==
 
@@ -40,6 +35,12 @@ No notice.
 == Screenshots ==
 
 /screenshot.png
+
+== Donations ==
+
+Support the development with PayPal:
+
+https://www.paypal.com/donate?hosted_button_id=4CZP4EL93G6VJ
 
 == Third Party Libraries ==
 

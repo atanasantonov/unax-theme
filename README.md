@@ -4,8 +4,12 @@ Unax theme is most of all starter theme based on Underscores and Twitter Bootstr
 
 Sass files can be managed in scss/style.scss. Theme includes different filters for classes in the markup. Plenty of widget areas are registered as well as several menu locations. Bootstrap colors with the appropriate filters are integrated in Gutenberg color palette.
 
-Code is also available on GitHub: https://github.com/atanasantonov/unax-theme
+Web Content Accessibility Guidelines (WCAG) compatible.
+
+Code available on GitHub: https://github.com/atanasantonov/unax-theme
+
 Any comments are welcome and GitHub issues as well.
+
 ## Screenshots
 
 ![Home Page](screenshot.png?raw=true "Home Page")
