@@ -21,11 +21,11 @@ if ( ! empty( get_the_title() ) ) {
 
 
 		<div class="entry-meta row">
-			<div class="entry-category col-lg-10 order-2 order-lg-1">
+			<div class="entry-category col-lg-9 order-2 order-lg-1">
 				<?php esc_html_e( 'Category:', 'unax' ); ?>
 				<?php the_category( ', ' ); ?>
 			</div>
-			<div class="col-lg-2 order-1 order-lg-2 text-lg-right">
+			<div class="col-lg-3 order-1 order-lg-2 text-lg-right">
 				<?php unax_posted_on(); ?>
 			</div>
 		</div>
