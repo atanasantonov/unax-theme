@@ -19,6 +19,9 @@
 		@include media-breakpoint-up(lg) {
 			font-size: 2rem;
 		}
+		a {
+			text-decoration: none;
+		}
 	}
 
 	.site-description {
