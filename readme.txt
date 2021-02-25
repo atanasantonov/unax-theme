@@ -1,7 +1,7 @@
 === Unax ===
 Contributors: unax
 Tags: blog, accessibility-ready, e-commerce, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, custom-logo, block-styles
-Stable tag: 1.1.0
+Stable tag: 1.1.2
 Tested up to: 5.6
 Requires at least: 5.0
 Requires PHP: 5.6
@@ -14,7 +14,7 @@ Unax starter theme based on Underscores and Twitter Bootstrap.
 
 Unax starter theme based on Underscores and Twitter Bootstrap.
 
-Theme uses Sass language in well organized files. Theme includes different filters for layout classes. Plenty of widget areas are registered as well as several menu locations. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette.
+No sidebar and full width page templates. Plenty of widget areas are registered as well as several menu locations. Theme includes different filters for layout classes. Theme uses Sass language in well organized files. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette.
 
 Web Content Accessibility Guidelines (WCAG) compatible.
 

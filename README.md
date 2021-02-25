@@ -1,8 +1,8 @@
 # Unax
 
-Unax starter theme based on Underscores and Twitter Bootstrap. 
+Unax starter theme based on Underscores and Twitter Bootstrap.
 
-Theme uses Sass language in well organized files. Theme includes different filters for layout classes. Plenty of widget areas are registered as well as several menu locations. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette.
+No sidebar and full width page templates. Plenty of widget areas are registered as well as several menu locations. Theme includes different filters for layout classes. Theme uses Sass language in well organized files. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette.
 
 Web Content Accessibility Guidelines (WCAG) compatible.
 
