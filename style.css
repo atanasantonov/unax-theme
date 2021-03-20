@@ -13252,14 +13252,13 @@ ul.primary-menu {
   position: relative; }
 
 .primary-menu > li {
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem; }
 
 .primary-menu > li:first-child {
   padding-left: 0; }
 
 .primary-menu > li.menu-item-has-children > a {
-  position: relative;
-  padding-right: 2rem; }
+  position: relative; }
   .primary-menu > li.menu-item-has-children > a:after {
     position: absolute;
     content: '';
@@ -13267,7 +13266,7 @@ ul.primary-menu {
     height: 0;
     margin: 0;
     top: 10px;
-    right: 0.75rem;
+    right: -20px;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 7px solid #ced4da; }
@@ -13314,7 +13313,7 @@ ul.primary-menu {
 .primary-menu li.menu-item-has-children:hover > ul,
 .primary-menu li.menu-item-has-children:focus > ul,
 .primary-menu li.menu-item-has-children.focus > ul {
-  right: 0;
+  right: -2.5rem;
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
