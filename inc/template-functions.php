@@ -67,61 +67,64 @@ function unax_setup() {
 		)
 	);
 
-	// Add color palette to the editor
+	// Add colors palette to the editor.
     add_theme_support(
 		'editor-color-palette',
-		array(
+		apply_filters(
+			'unax_editor_color_palette',
 			array(
-	            'name' => __( 'Primary Color', 'unax' ),
-	            'slug' => 'primary',
-	            'color' => apply_filters( 'unax_editor_color_palette_primary', '#007bff' ),
-	        ),
-	        array(
-	            'name' => __( 'Secondary Color', 'unax' ),
-	            'slug' => 'secondary',
-	            'color' => apply_filters( 'unax_editor_color_palette_secondary', '#6c757d' ),
-	        ),
-	        array(
-	            'name' => __( 'Success Color', 'unax' ),
-	            'slug' => 'success',
-	            'color' => apply_filters( 'unax_editor_color_palette_success', '#28a745' ),
-	        ),
-	        array(
-	            'name' => __( 'Danger color', 'unax' ),
-	            'slug' => 'danger',
-	            'color' => apply_filters( 'unax_editor_color_palette_danger', '#dc3545' ),
-	        ),
-	        array(
-	            'name' => __( 'Warning color', 'unax' ),
-	            'slug' => 'warning',
-	            'color' => apply_filters( 'unax_editor_color_palette_warning', '#ffc107' ),
-	        ),
-	        array(
-	            'name' => __( 'Info Color', 'unax' ),
-	            'slug' => 'info',
-	            'color' => apply_filters( 'unax_editor_color_palette_info', '#17a2b8' ),
-	        ),
-			array(
-				'name' => __( 'White', 'unax' ),
-				'slug' => 'white',
-				'color' => apply_filters( 'unax_editor_color_palette_white', '#fff' ),
-			),
-	        array(
-	            'name' => __( 'Light', 'unax' ),
-	            'slug' => 'light',
-	            'color' => apply_filters( 'unax_editor_color_palette_light', '#f8f9fa' ),
-	        ),
-	        array(
-	            'name' => __( 'Dark', 'unax' ),
-	            'slug' => 'dark',
-	            'color' => apply_filters( 'unax_editor_color_palette_dark', '#495057' ),
-	        ),
-	        array(
-	            'name' => __( 'Black', 'unax' ),
-	            'slug' => 'black',
-	            'color' => apply_filters( 'unax_editor_color_palette_black', '#000' ),
-	        ),
-	    )
+				array(
+		            'name' => __( 'Primary Color', 'unax' ),
+		            'slug' => 'primary',
+		            'color' => apply_filters( 'unax_editor_color_palette_primary', '#007bff' ),
+		        ),
+		        array(
+		            'name' => __( 'Secondary Color', 'unax' ),
+		            'slug' => 'secondary',
+		            'color' => apply_filters( 'unax_editor_color_palette_secondary', '#6c757d' ),
+		        ),
+		        array(
+		            'name' => __( 'Success Color', 'unax' ),
+		            'slug' => 'success',
+		            'color' => apply_filters( 'unax_editor_color_palette_success', '#28a745' ),
+		        ),
+		        array(
+		            'name' => __( 'Danger color', 'unax' ),
+		            'slug' => 'danger',
+		            'color' => apply_filters( 'unax_editor_color_palette_danger', '#dc3545' ),
+		        ),
+		        array(
+		            'name' => __( 'Warning color', 'unax' ),
+		            'slug' => 'warning',
+		            'color' => apply_filters( 'unax_editor_color_palette_warning', '#ffc107' ),
+		        ),
+		        array(
+		            'name' => __( 'Info Color', 'unax' ),
+		            'slug' => 'info',
+		            'color' => apply_filters( 'unax_editor_color_palette_info', '#17a2b8' ),
+		        ),
+				array(
+					'name' => __( 'White', 'unax' ),
+					'slug' => 'white',
+					'color' => apply_filters( 'unax_editor_color_palette_white', '#fff' ),
+				),
+		        array(
+		            'name' => __( 'Light', 'unax' ),
+		            'slug' => 'light',
+		            'color' => apply_filters( 'unax_editor_color_palette_light', '#f8f9fa' ),
+		        ),
+		        array(
+		            'name' => __( 'Dark', 'unax' ),
+		            'slug' => 'dark',
+		            'color' => apply_filters( 'unax_editor_color_palette_dark', '#495057' ),
+		        ),
+		        array(
+		            'name' => __( 'Black', 'unax' ),
+		            'slug' => 'black',
+		            'color' => apply_filters( 'unax_editor_color_palette_black', '#000' ),
+		        ),
+		    )
+		)
 	);
 
 	// Set up the WordPress core custom background feature.
@@ -146,11 +149,14 @@ function unax_setup() {
 	 */
 	add_theme_support(
 		'custom-logo',
-		array(
-			'width'       => 200,
-			'height'      => 124,
-			'flex-width'  => true,
-			'flex-height' => true,
+		apply_filters(
+			'unax_custom_logo',
+			array(
+				'width'       => 200,
+				'height'      => 124,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
 		)
 	);
 
@@ -160,6 +166,100 @@ function unax_setup() {
 	 * @link https://developer.wordpress.org/block-editor/developers/themes/theme-support/
 	 */
 	add_theme_support( 'align-wide' );
+
+	// Define and register starter content to showcase the theme on new sites.
+	add_theme_support(
+		'starter-content',
+		apply_filters(
+			'unax_starter_content',
+			array(
+
+				// Default to a static front page and assign the front and posts pages.
+				'options' => array(
+					'show_on_front' => 'page',
+					'page_on_front' => '{{home}}',
+					'page_for_posts' => '{{blog}}',
+				),
+
+				// Starter pages to include.
+				'posts' => array(
+					'home',
+		            'about',
+		            'blog'
+				),
+
+				// Place example widgets.
+				'widgets' => array(
+					// Place core-defined widgets in the sidebar area.
+					'sidebar-main' => array(
+						'search',
+						'recent_posts',
+						'archives',
+						'tag_cloud',
+						'meta',
+					),
+
+					// Add the example text widget to header area.
+					'header-widget-area' => array(
+				        'example_header_widget' => array(
+							'text',
+							array(
+							  'title' => esc_html__( 'Widget title', 'unax' ),
+							  'text'  => esc_html__( 'Widget text', 'unax' ),
+							)
+						)
+					),
+
+					// Add the example text widget to the primary menu area.
+					'primary-menu-widget-area' => array(
+
+					),
+
+					// Add the example text widget to footer area.
+					'footer-widget-area' => array(
+						'example_footer_widget' => array(
+							'text',
+							array(
+							  'title' => esc_html__( 'Widget title', 'unax' ),
+							  'text'  => esc_html__( 'Widget text', 'unax' ),
+							)
+						)
+					),
+				),
+
+				// Set up nav menus for each area registered in the theme.
+				'nav_menus' => array(
+					// Assign a menu to the "primary-menu" location.
+					'primary-menu' => array(
+						'name' => esc_html__( 'Primary menu', 'unax' ),
+						'items' => array(
+							'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
+							'page_about',
+							'page_blog',
+						),
+					),
+
+					// Assign a menu to the "mobile-menu" location.
+					'mobile-menu' => array(
+						'name' => esc_html__( 'Mobile menu', 'unax' ),
+						'items' => array(
+							'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
+							'page_about',
+							'page_blog',
+						),
+					),
+
+					// Assign a menu to the "footer-menu" location.
+					'footer-menu' => array(
+						'name' => esc_html__( 'Footer menu', 'unax' ),
+						'items' => array(
+							'page_privacy',
+						),
+					),
+				),
+			)
+		)
+	);
 }
 
 /**
