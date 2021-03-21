@@ -201,7 +201,9 @@ function unax_get_starter_content() {
 			'footer' => array(
 				'name' => esc_html__( 'Footer menu', 'unax' ),
 				'items' => array(
-					'page_privacy',
+					'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
+					'page_about',
+					'page_contact',
 				),
 			),
 		),

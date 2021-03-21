@@ -251,10 +251,10 @@ function unax_widgets_init() {
 			'name'          => esc_html__( 'Header Widget Area', 'unax' ),
 			'id'            => 'header-widget-area',
 			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
-			'before_widget' => '',
-			'after_widget'  => '',
-			'before_title'  => '',
-			'after_title'   => '',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
 		)
 	);
 
@@ -263,10 +263,10 @@ function unax_widgets_init() {
 			'name'          => esc_html__( 'Primary Menu Widget Area', 'unax' ),
 			'id'            => 'primary-menu-widget-area',
 			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
-			'before_widget' => '',
-			'after_widget'  => '',
-			'before_title'  => '',
-			'after_title'   => '',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
 		)
 	);
 
@@ -275,10 +275,10 @@ function unax_widgets_init() {
 			'name'          => esc_html__( 'Footer Widget Area', 'unax' ),
 			'id'            => 'footer-widget-area',
 			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
-			'before_widget' => '',
-			'after_widget'  => '',
-			'before_title'  => '',
-			'after_title'   => '',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
 		)
 	);
 

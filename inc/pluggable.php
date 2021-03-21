@@ -99,21 +99,20 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 				</span>
 			</button><!-- .nav-toggle -->
 
-			<nav class="primary-menu-wrapper <?php if( is_active_sidebar( 'primary-menu-widget-area' ) ) { echo ' has-widget-area'; } ?>" aria-label="<?php esc_attr_e( 'Menu', 'unax' ); ?>">
-				<ul class="primary-menu">
-				<?php
-				if ( has_nav_menu( 'primary' ) ) :
-					wp_nav_menu(
-						array(
-							'container'  => '',
-							'items_wrap' => '%3$s',
-							'theme_location' => 'primary',
-						)
-					);
-				endif;
-				?>
-				</ul>
-			</nav><!-- .primary-menu-wrapper -->
+			<?php
+			$container_class = is_active_sidebar( 'primary-menu-widget-area' ) ? ' has-widget-area' : '';
+			if ( has_nav_menu( 'primary' ) ) :
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'menu_class'      => 'primary-menu',
+						'container_class' => 'primary-menu-wrapper' . $container_class,
+						'items_wrap'      => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
+						'fallback_cb'     => false,
+					)
+				);
+			endif;
+			?>
 
 			<?php if( is_active_sidebar( 'primary-menu-widget-area' ) ) : ?>
 			<div class="widget-area text-right">

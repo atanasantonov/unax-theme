@@ -18,7 +18,11 @@
 			if ( has_nav_menu( 'footer' ) ) :
 				wp_nav_menu(
 					array(
-						'theme_location' => 'footer',
+						'theme_location'  => 'footer',
+						'menu_class'      => 'footer-menu',
+						'container_class' => 'footer-menu-wrapper',
+						'items_wrap'      => '<ul id="footer-menu-list" class="%2$s">%3$s</ul>',
+						'fallback_cb'     => false,
 					)
 				);
 			endif;
