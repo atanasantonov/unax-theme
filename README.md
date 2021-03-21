@@ -28,7 +28,7 @@ No notice.
 
 Support the development with PayPal:
 
-[<img src="https://unax.org/paypal-donate-button.png" width="150">](https://www.paypal.com/donate?hosted_button_id=4CZP4EL93G6VJ)
+[![PayPal Donate Button](dist/img/paypal-donate-button.png?raw=true "PayPal Donate Button")](https://www.paypal.com/donate?hosted_button_id=4CZP4EL93G6VJ)
 
 ## Third Party Libraries
 

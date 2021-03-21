@@ -1,5 +1,13 @@
 *** Unax Theme Changelog ***
 
+2020-03-21 - version 1.1.3
+* New: Starter content added
+* New: Editor color palette css loaded inline
+* New: Visible edit shortcuts shortcuts for theme menus and widgets
+* Edit: Primary menu paddings smaller
+* Edit: Footer content
+* Fix: Header and main navigation widget areas positioning
+
 2020-02-25 - version 1.1.2
 * Edit headings font weight.
 * Styling site title, single post date.
