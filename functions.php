@@ -11,6 +11,11 @@ if ( ! defined( 'UNAX_THEME_VERSION' ) ) {
 }
 
 /**
+ * Updates related actions.
+ */
+require get_template_directory() . '/inc/update.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -23,6 +28,7 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
+require get_template_directory() . '/inc/custom-css.php';
 require get_template_directory() . '/inc/pluggable.php';
 require get_template_directory() . '/inc/template-filters.php';
 require get_template_directory() . '/inc/template-functions.php';

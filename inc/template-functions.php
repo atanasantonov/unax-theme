@@ -5,6 +5,24 @@
  * @package unax
  */
 
+ /**
+  * Define colors for editor palette
+  */
+function unax_editor_color_palette() {
+	return array(
+		'primary' 	=> apply_filters( 'unax_editor_color_palette_primary', '#007bff' ),
+		'secondary' => apply_filters( 'unax_editor_color_palette_secondary', '#6c757d' ),
+		'success' 	=> apply_filters( 'unax_editor_color_palette_success', '#28a745' ),
+		'danger' 	=> apply_filters( 'unax_editor_color_palette_danger', '#dc3545' ),
+		'warning' 	=> apply_filters( 'unax_editor_color_palette_warning', '#ffc107' ),
+		'info' 		=> apply_filters( 'unax_editor_color_palette_info', '#17a2b8' ),
+		'white' 	=> apply_filters( 'unax_editor_color_palette_white', '#fff' ),
+		'light' 	=> apply_filters( 'unax_editor_color_palette_light', '#f8f9fa' ),
+		'dark' 		=> apply_filters( 'unax_editor_color_palette_dark', '#495057' ),
+		'black' 	=> apply_filters( 'unax_editor_color_palette_black', '#000' ),
+	);
+}
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -32,6 +50,24 @@ function unax_setup() {
 	 */
 	add_theme_support( 'title-tag' );
 
+	/**
+	 * Add post-formats support.
+	 */
+	add_theme_support(
+		'post-formats',
+		array(
+			'link',
+			'aside',
+			'gallery',
+			'image',
+			'quote',
+			'status',
+			'video',
+			'audio',
+			'chat',
+		)
+	);
+
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
@@ -42,9 +78,9 @@ function unax_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'primary-menu' => esc_html__( 'Primary menu', 'unax' ),
-			'mobile-menu'  => esc_html__( 'Mobile menu', 'unax' ),
-			'footer-menu'  => esc_html__( 'Footer menu', 'unax' ),
+			'primary' => esc_html__( 'Primary menu', 'unax' ),
+			'mobile'  => esc_html__( 'Mobile menu', 'unax' ),
+			'footer'  => esc_html__( 'Footer menu', 'unax' ),
 		)
 	);
 
@@ -68,6 +104,7 @@ function unax_setup() {
 	);
 
 	// Add colors palette to the editor.
+	$colors = unax_editor_color_palette();
     add_theme_support(
 		'editor-color-palette',
 		apply_filters(
@@ -76,52 +113,52 @@ function unax_setup() {
 				array(
 		            'name' => __( 'Primary Color', 'unax' ),
 		            'slug' => 'primary',
-		            'color' => apply_filters( 'unax_editor_color_palette_primary', '#007bff' ),
+		            'color' => $colors['primary'],
 		        ),
 		        array(
 		            'name' => __( 'Secondary Color', 'unax' ),
 		            'slug' => 'secondary',
-		            'color' => apply_filters( 'unax_editor_color_palette_secondary', '#6c757d' ),
+		            'color' => $colors['secondary'],
 		        ),
 		        array(
 		            'name' => __( 'Success Color', 'unax' ),
 		            'slug' => 'success',
-		            'color' => apply_filters( 'unax_editor_color_palette_success', '#28a745' ),
+		            'color' => $colors['success'],
 		        ),
 		        array(
 		            'name' => __( 'Danger color', 'unax' ),
 		            'slug' => 'danger',
-		            'color' => apply_filters( 'unax_editor_color_palette_danger', '#dc3545' ),
+		            'color' => $colors['danger'],
 		        ),
 		        array(
 		            'name' => __( 'Warning color', 'unax' ),
 		            'slug' => 'warning',
-		            'color' => apply_filters( 'unax_editor_color_palette_warning', '#ffc107' ),
+		            'color' => $colors['warning'],
 		        ),
 		        array(
 		            'name' => __( 'Info Color', 'unax' ),
 		            'slug' => 'info',
-		            'color' => apply_filters( 'unax_editor_color_palette_info', '#17a2b8' ),
+		            'color' => $colors['info'],
 		        ),
 				array(
 					'name' => __( 'White', 'unax' ),
 					'slug' => 'white',
-					'color' => apply_filters( 'unax_editor_color_palette_white', '#fff' ),
+					'color' => $colors['white'],
 				),
 		        array(
 		            'name' => __( 'Light', 'unax' ),
 		            'slug' => 'light',
-		            'color' => apply_filters( 'unax_editor_color_palette_light', '#f8f9fa' ),
+		            'color' => $colors['light'],
 		        ),
 		        array(
 		            'name' => __( 'Dark', 'unax' ),
 		            'slug' => 'dark',
-		            'color' => apply_filters( 'unax_editor_color_palette_dark', '#495057' ),
+		            'color' => $colors['dark'],
 		        ),
 		        array(
 		            'name' => __( 'Black', 'unax' ),
 		            'slug' => 'black',
-		            'color' => apply_filters( 'unax_editor_color_palette_black', '#000' ),
+		            'color' => $colors['black'],
 		        ),
 		    )
 		)
@@ -167,99 +204,15 @@ function unax_setup() {
 	 */
 	add_theme_support( 'align-wide' );
 
-	// Define and register starter content to showcase the theme on new sites.
-	add_theme_support(
-		'starter-content',
-		apply_filters(
-			'unax_starter_content',
-			array(
-
-				// Default to a static front page and assign the front and posts pages.
-				'options' => array(
-					'show_on_front' => 'page',
-					'page_on_front' => '{{home}}',
-					'page_for_posts' => '{{blog}}',
-				),
-
-				// Starter pages to include.
-				'posts' => array(
-					'home',
-		            'about',
-		            'blog'
-				),
-
-				// Place example widgets.
-				'widgets' => array(
-					// Place core-defined widgets in the sidebar area.
-					'sidebar-main' => array(
-						'search',
-						'recent_posts',
-						'archives',
-						'tag_cloud',
-						'meta',
-					),
-
-					// Add the example text widget to header area.
-					'header-widget-area' => array(
-				        'example_header_widget' => array(
-							'text',
-							array(
-							  'title' => esc_html__( 'Widget title', 'unax' ),
-							  'text'  => esc_html__( 'Widget text', 'unax' ),
-							)
-						)
-					),
-
-					// Add the example text widget to the primary menu area.
-					'primary-menu-widget-area' => array(
-
-					),
-
-					// Add the example text widget to footer area.
-					'footer-widget-area' => array(
-						'example_footer_widget' => array(
-							'text',
-							array(
-							  'title' => esc_html__( 'Widget title', 'unax' ),
-							  'text'  => esc_html__( 'Widget text', 'unax' ),
-							)
-						)
-					),
-				),
-
-				// Set up nav menus for each area registered in the theme.
-				'nav_menus' => array(
-					// Assign a menu to the "primary-menu" location.
-					'primary-menu' => array(
-						'name' => esc_html__( 'Primary menu', 'unax' ),
-						'items' => array(
-							'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
-							'page_about',
-							'page_blog',
-						),
-					),
-
-					// Assign a menu to the "mobile-menu" location.
-					'mobile-menu' => array(
-						'name' => esc_html__( 'Mobile menu', 'unax' ),
-						'items' => array(
-							'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
-							'page_about',
-							'page_blog',
-						),
-					),
-
-					// Assign a menu to the "footer-menu" location.
-					'footer-menu' => array(
-						'name' => esc_html__( 'Footer menu', 'unax' ),
-						'items' => array(
-							'page_privacy',
-						),
-					),
-				),
-			)
-		)
-	);
+	/*
+	* Adds starter content to highlight the theme on fresh sites.
+	* This is done conditionally to avoid loading the starter content on every
+	* page load, as it is a one-off operation only needed once in the customizer.
+	*/
+	if ( is_customize_preview() ) {
+		require get_template_directory() . '/inc/starter-content.php';
+		add_theme_support( 'starter-content', unax_get_starter_content() );
+	}
 }
 
 /**
@@ -284,7 +237,7 @@ function unax_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'unax' ),
-			'id'            => 'sidebar-main',
+			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
@@ -341,6 +294,8 @@ function unax_scripts() {
 
 	wp_style_add_data( 'unax', 'rtl', 'replace' );
 
+	wp_add_inline_style( 'unax', unax_inline_style() );
+
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/dist/vendor/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '4.4.1', true );
 	wp_enqueue_script( 'unax', get_template_directory_uri() . '/dist/js/index.min.js', array( 'jquery', 'bootstrap' ), UNAX_THEME_VERSION, true );
 
@@ -348,6 +303,16 @@ function unax_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+}
+
+
+/**
+ * Adds inline css.
+ *
+ * @return string
+ */
+function unax_inline_style() {
+	return unax_color_palette_css();
 }
 
 
