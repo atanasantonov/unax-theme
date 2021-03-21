@@ -15,10 +15,10 @@
 		<div class="site-info container text-center">
 
 			<?php
-			if ( has_nav_menu( 'footer-menu' ) ) :
+			if ( has_nav_menu( 'footer' ) ) :
 				wp_nav_menu(
 					array(
-						'theme_location' => 'footer-menu',
+						'theme_location' => 'footer',
 					)
 				);
 			endif;

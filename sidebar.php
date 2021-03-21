@@ -6,12 +6,14 @@
  *
  * @package Unax
  */
-
-if ( ! is_active_sidebar( 'sidebar-main' ) ) {
-	return;
-}
 ?>
 
 <aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-main' ); ?>
+<?php
+
+if ( is_active_sidebar( 'sidebar-1' ) ) :
+	dynamic_sidebar( 'sidebar-1' );
+endif;
+
+?>
 </aside><!-- #secondary -->

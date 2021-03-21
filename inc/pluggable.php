@@ -102,12 +102,12 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 			<nav class="primary-menu-wrapper <?php if( is_active_sidebar( 'primary-menu-widget-area' ) ) { echo ' has-widget-area'; } ?>" aria-label="<?php esc_attr_e( 'Menu', 'unax' ); ?>">
 				<ul class="primary-menu">
 				<?php
-				if ( has_nav_menu( 'primary-menu' ) ) :
+				if ( has_nav_menu( 'primary' ) ) :
 					wp_nav_menu(
 						array(
 							'container'  => '',
 							'items_wrap' => '%3$s',
-							'theme_location' => 'primary-menu',
+							'theme_location' => 'primary',
 						)
 					);
 				endif;

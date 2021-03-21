@@ -25,14 +25,14 @@
 				<nav class="mobile-menu" aria-label="<?php esc_attr_e( 'Mobile menu', 'unax' ); ?>">
 					<ul class="modal-menu">
 					<?php
-					if ( has_nav_menu( 'mobile-menu' ) ) :
+					if ( has_nav_menu( 'mobile' ) ) :
 						wp_nav_menu(
 							array(
 								'container' => '',
 								'container_class' => '',
 								'items_wrap'      => '%3$s',
 								'show_toggles'    => true,
-								'theme_location'  => 'mobile-menu',
+								'theme_location'  => 'mobile',
 							)
 						);
 					else :
