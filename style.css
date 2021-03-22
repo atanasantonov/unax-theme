@@ -331,7 +331,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-family: verdana, sans-serif;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.25;
   color: #000; }
 
 h1, .h1 {
@@ -359,22 +359,22 @@ h6, .h6 {
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2; }
+  line-height: 1.25; }
 
 hr {
   margin-top: 1rem;
@@ -11701,7 +11701,9 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
     margin-top: auto;
     margin-bottom: auto;
     padding: 0;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    word-spacing: normal; }
     @media (min-width: 992px) {
       .site-header .site-title {
         font-size: 2rem; } }
@@ -12623,7 +12625,8 @@ ul.products {
 .page-template-full-width .site-header .container-md,
 .page-template-full-width .site-header .container-lg,
 .page-template-full-width .site-header .container-xl {
-  padding: 0 15px; }
+  padding-left: 15px;
+  padding-right: 15px; }
   @media (min-width: 992px) {
     .page-template-full-width .site-header .container,
     .page-template-full-width .site-header .container-fluid,
@@ -12631,7 +12634,8 @@ ul.products {
     .page-template-full-width .site-header .container-md,
     .page-template-full-width .site-header .container-lg,
     .page-template-full-width .site-header .container-xl {
-      padding: 0; } }
+      padding-left: 0;
+      padding-right: 0; } }
 
 .page-template-full-width .entry-content > *:not(.wp-block-cover) {
   padding: 0 15px; }
