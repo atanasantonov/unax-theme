@@ -23,7 +23,7 @@
 
         li {
 
-            padding: 0 0.5rem;
+            padding: 0.5rem;
             list-style-type: none;
             font-family: sans-serif;
             font-size: 1rem;
@@ -32,9 +32,21 @@
 
             @include media-breakpoint-up(lg) {
 		        display: inline-flex;
+                padding: 0 0.5rem;
+
+                &:first-child {
+                    padding: 0 0.5rem 0 0;
+                }
 		    }
         }
 
+    }
+
+    .site-info > div {
+        padding-top: 1rem;
+        @include media-breakpoint-up(lg) {
+            padding-top: 0;
+        }
     }
 
 }
