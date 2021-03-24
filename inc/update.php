@@ -46,7 +46,7 @@ function unax_migrate_menu_locations_and_sidebars() {
 	}
 
 	// Update sidebar.
-	if ( array_key_exists( 'sidebar-main', $theme_mods[ 'sidebars_widgets' ]['data'] ) ) {
+	if ( isset( $theme_mods[ 'sidebars_widgets' ]['data'] ) && array_key_exists( 'sidebar-main', $theme_mods[ 'sidebars_widgets' ]['data'] ) ) {
 		$theme_mods[ 'sidebars_widgets' ]['data']['sidebar-1'] = $theme_mods[ 'sidebars_widgets' ]['data']['sidebar-main'];
 		unset( $theme_mods[ 'sidebars_widgets' ]['data']['sidebar-main'] );
 		set_theme_mod( 'sidebars_widgets', $theme_mods[ 'sidebars_widgets' ]['data'] );
