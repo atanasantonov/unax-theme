@@ -1,7 +1,7 @@
 === Unax ===
 Contributors: unax
 Tags: blog, accessibility-ready, e-commerce, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, custom-logo, block-styles
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 Tested up to: 5.7
 Requires at least: 5.0
 Requires PHP: 5.6
