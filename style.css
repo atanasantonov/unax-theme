@@ -5,7 +5,7 @@ Author: Atanas Antonov
 Author URI: https://unax.org
 Description: Unax theme based on Underscores and Twitter Bootstrap. No sidebar and full width page templates. Plenty of widget areas are registered as well as several menu locations. Theme includes different filters for layout classes. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette. Web Content Accessibility Guidelines (WCAG) compatible.
 Tags: accessibility-ready, block-styles, blog, custom-logo, e-commerce, editor-style, featured-images, full-width-template, grid-layout, right-sidebar, translation-ready
-Version: 1.1.6
+Version: 1.1.7
 Tested up to: 5.7
 Requires at least: 5.0
 Requires PHP: 5.6
@@ -12511,6 +12511,38 @@ ul.products {
   margin: 0 0 1.5em; }
   .widget select {
     max-width: 100%; }
+
+.widget_unax_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  @media (min-width: 992px) {
+    .widget_unax_contacts {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .widget_unax_contacts .fa, .widget_unax_contacts .fab, .widget_unax_contacts .far, .widget_unax_contacts .fas {
+    font-size: 2rem; }
+    @media (min-width: 992px) {
+      .widget_unax_contacts .fa, .widget_unax_contacts .fab, .widget_unax_contacts .far, .widget_unax_contacts .fas {
+        font-size: 1.5rem; } }
+  @media (min-width: 992px) {
+    .widget_unax_contacts .socials {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
 
 /*--------------------------------------------------------------
 ## Content
