@@ -42,11 +42,40 @@
 
     }
 
-    .site-info > div {
-        padding-top: 1rem;
+    .footer-widget-area > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         @include media-breakpoint-up(lg) {
-            padding-top: 0;
+            flex-direction: row;
+            justify-content: space-between;
+            .widget {
+                padding-right: 2rem;
+            }
         }
     }
 
+    .site-info > div {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include media-breakpoint-up(lg) {
+            padding-top: 0;
+        }
+
+        .widget {
+            text-align: left;
+        }
+
+        ul {
+
+            li {
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                    padding: 0.5rem 0;
+                }
+            }
+        }
+    }
 }

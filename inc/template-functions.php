@@ -220,7 +220,7 @@ function unax_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Sidebar', 'unax' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
+			'description'   => esc_html__( 'Add widgets to the sidebar.', 'unax' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -230,9 +230,9 @@ function unax_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Header Widget Area', 'unax' ),
+			'name'          => esc_html__( 'Header', 'unax' ),
 			'id'            => 'header-widget-area',
-			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
+			'description'   => esc_html__( 'Add widgets to header.', 'unax' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<div class="widget-title">',
@@ -242,9 +242,9 @@ function unax_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Primary Menu Widget Area', 'unax' ),
+			'name'          => esc_html__( 'Primary Menu', 'unax' ),
 			'id'            => 'primary-menu-widget-area',
-			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
+			'description'   => esc_html__( 'Add widgets to right side of primary menu.', 'unax' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<div class="widget-title">',
@@ -254,9 +254,9 @@ function unax_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Widget Area', 'unax' ),
-			'id'            => 'footer-widget-area',
-			'description'   => esc_html__( 'Add widgets here.', 'unax' ),
+			'name'          => esc_html__( 'Footer Menu', 'unax' ),
+			'id'            => 'footer-menu-widget-area',
+			'description'   => esc_html__( 'Add widgets to right side of footer menu.', 'unax' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<div class="widget-title">',
@@ -264,6 +264,41 @@ function unax_widgets_init() {
 		)
 	);
 
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer', 'unax' ),
+			'id'            => 'footer-widget-area',
+			'description'   => esc_html__( 'Add widgets to footer.', 'unax' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="widget-title">',
+			'after_title'   => '</div>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Credits Left', 'unax' ),
+			'id'            => 'footer-credits-left-widget-area',
+			'description'   => esc_html__( 'Add widgets to footer credits left area.', 'unax' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="widget-title">',
+			'after_title'   => '</div>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Credits Right', 'unax' ),
+			'id'            => 'footer-credits-right-widget-area',
+			'description'   => esc_html__( 'Add widgets to footer credits right area.', 'unax' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="widget-title">',
+			'after_title'   => '</div>',
+		)
+	);
 }
 
 

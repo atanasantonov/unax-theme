@@ -33,6 +33,34 @@ function unax_customize_register( $wp_customize ) {
 		);
 	}
 
+	// Footer credits
+	$wp_customize->add_setting( 'unax_display_footer_credits' , array(
+			'default' => '1',
+			'sanitize_callback' => 'sanitize_text_field',
+	) );
+	$wp_customize->add_control(
+		 new WP_Customize_Control( $wp_customize, 'unax_display_footer_credits', [
+			'label'    => __( 'Display footer credits.', 'unax' ),
+			'priority' => 50,
+			'type'     => 'checkbox',
+			'section'  => 'title_tagline',
+		 ])
+ 	);
+
+	// Site title in footer.
+	$wp_customize->add_setting( 'unax_display_footer_title' , array(
+			'default' => '1',
+			'sanitize_callback' => 'sanitize_text_field',
+	) );
+	$wp_customize->add_control(
+		 new WP_Customize_Control( $wp_customize, 'unax_display_footer_title', [
+			'label'    => __( 'Display site title in footer.', 'unax' ),
+			'priority' => 51,
+			'type'     => 'checkbox',
+			'section'  => 'title_tagline',
+		 ])
+ 	);
+
 	/**
 	 * Section Theme settings.
 	 */
@@ -51,7 +79,6 @@ function unax_customize_register( $wp_customize ) {
 			 'label'       => esc_html__( 'Grid columns', 'unax' ),
 			 'description' => esc_html__( 'Choose the default columns count for archive pages.', 'unax' ),
 			 'section'     => 'unax_common_settings',
-			 'settings'    => 'grid_columns',
 			 'type'        => 'number',
 			 'input_attrs' => array(
 				'min'  => 1,
@@ -60,7 +87,6 @@ function unax_customize_register( $wp_customize ) {
 			 ),
 		 ])
  	);
-
 
 	/**
 	 * Section Contacts.

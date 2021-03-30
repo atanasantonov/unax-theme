@@ -11875,11 +11875,49 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
           padding: 0 0.5rem; }
           .site-footer ul li:first-child {
             padding: 0 0.5rem 0 0; } }
+  .site-footer .footer-widget-area > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (min-width: 992px) {
+      .site-footer .footer-widget-area > div {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .site-footer .footer-widget-area > div .widget {
+          padding-right: 2rem; } }
   .site-footer .site-info > div {
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     @media (min-width: 992px) {
       .site-footer .site-info > div {
         padding-top: 0; } }
+    .site-footer .site-info > div .widget {
+      text-align: left; }
+    @media (min-width: 992px) {
+      .site-footer .site-info > div ul li {
+        display: block;
+        padding: 0.5rem 0; } }
 
 /*--------------------------------------------------------------
 # Shop
