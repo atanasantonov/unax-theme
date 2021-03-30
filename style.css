@@ -11912,8 +11912,6 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
     @media (min-width: 992px) {
       .site-footer .site-info > div {
         padding-top: 0; } }
-    .site-footer .site-info > div .widget {
-      text-align: left; }
     @media (min-width: 992px) {
       .site-footer .site-info > div ul li {
         display: block;
