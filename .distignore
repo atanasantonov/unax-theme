@@ -1,0 +1,8 @@
+/.wordpress-org
+/.git
+/.github
+/phpcs.xml.dist
+/README.md
+
+.distignore
+.gitignore
