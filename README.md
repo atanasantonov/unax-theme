@@ -1,3 +1,6 @@
+[![PHP PSR Enforcer](https://github.com/atanasantonov/unax-theme/actions/workflows/phpcs.yml/badge.svg)](https://github.com/atanasantonov/unax-theme/actions/workflows/phpcs.yml)
+[![Theme Release](https://github.com/atanasantonov/unax-theme/actions/workflows/plugin-release.yml/badge.svg)](https://github.com/atanasantonov/unax-theme/actions/workflows/theme-release.yml)
+
 # Unax
 
 Unax starter theme based on Underscores and Twitter Bootstrap.
@@ -5,8 +8,6 @@ Unax starter theme based on Underscores and Twitter Bootstrap.
 No sidebar and full width page templates. Plenty of widget areas are registered as well as several menu locations. Theme includes different filters for layout classes. Theme uses Sass language in well organized files. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette.
 
 Web Content Accessibility Guidelines (WCAG) compatible.
-
-Code available on GitHub: https://github.com/atanasantonov/unax-theme
 
 Any comments are welcome and GitHub issues as well.
 
