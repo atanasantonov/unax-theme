@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-	<div id="content" class="site-content <?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ) ?>">
+	<div id="content" class="site-content <?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ); ?>">
 
 		<main id="primary" class="site-main">
 
@@ -35,15 +35,11 @@ get_header();
 					 * called content-search.php and that will be used instead.
 					 */
 					get_template_part( 'template-parts/content', 'search' );
-
 				endwhile;
 
 				the_posts_navigation();
-
 			else :
-
 				get_template_part( 'template-parts/content', 'none' );
-
 			endif;
 			?>
 

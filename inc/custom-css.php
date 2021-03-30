@@ -42,11 +42,11 @@ function unax_color_palette_css() {
 
 	/* cover */
 	.wp-block-cover {
-	    &.has-background-dim {
-	        p:not(.has-text-color) {
-	            color: <?php echo esc_html( $colors['white'] ); ?>;
-	        }
-	    }
+		&.has-background-dim {
+			p:not(.has-text-color) {
+				color: <?php echo esc_html( $colors['white'] ); ?>;
+			}
+		}
 	}
 
 	<?php

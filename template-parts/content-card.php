@@ -28,10 +28,10 @@
 					get_the_title()
 				);
 
-				$post_excerpt =  wp_trim_words( get_the_excerpt(), 15, $read_more );
+				$post_excerpt = wp_trim_words( get_the_excerpt(), 15, $read_more );
 
 				echo wp_kses( $post_excerpt, 'post' );
-			?>
+				?>
 		</p>
 
 	</div><!-- .card-body -->

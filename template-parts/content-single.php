@@ -14,7 +14,7 @@ if ( ! empty( get_the_title() ) ) {
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( apply_filters( 'unax_post_single_class', '' ) ); ?>>
 
-	<?php if( ! function_exists( 'is_product' ) || ! is_product() ) : ?>
+	<?php if ( ! function_exists( 'is_product' ) || ! is_product() ) : ?>
 	<header class="entry-header">
 
 		<?php unax_post_thumbnail(); ?>

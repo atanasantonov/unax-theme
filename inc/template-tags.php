@@ -16,7 +16,6 @@ if ( ! function_exists( 'unax_posted_on' ) ) :
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
 	function unax_posted_on() {
-
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
@@ -42,7 +41,6 @@ if ( ! function_exists( 'unax_posted_on' ) ) :
 		$date = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
 		echo '<span class="posted-on">' . $date . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-
 	}
 endif;
 
@@ -58,7 +56,6 @@ if ( ! function_exists( 'unax_posted_by' ) ) :
 		);
 
 		echo '<span class="byline"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-
 	}
 endif;
 
@@ -123,19 +120,16 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 	 * element when on single views.
 	 */
 	function unax_post_thumbnail() {
-
 		if ( post_password_required() || is_attachment() ) {
 			return;
 		}
 
 		$thumbnail_wrapper_class = apply_filters( 'unax_thumbnail_wrapper_class', 'post-thumbnail-wrapper' );
 
-		$thumbnail_class_default = get_post_type() === 'post' && !is_single() ? 'card-img-top' : '';
+		$thumbnail_class_default = get_post_type() === 'post' && ! is_single() ? 'card-img-top' : '';
 		$thumbnail_class = apply_filters( 'unax_thumbnail_class', $thumbnail_class_default );
 
-
-		if( has_post_thumbnail() ) :
-
+		if ( has_post_thumbnail() ) :
 			return printf(
 				'<div class="%s">%s</div>',
 				esc_attr( $thumbnail_wrapper_class ),
@@ -145,7 +139,6 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 					[ 'class' => $thumbnail_class ]
 				)
 			);
-
 		endif;
 	}
 

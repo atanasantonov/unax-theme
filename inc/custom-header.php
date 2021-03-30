@@ -15,18 +15,15 @@
  * Set up the WordPress core custom header feature.
  */
 function unax_custom_header_setup() {
-
 	add_theme_support(
-
 		'custom-header',
-
 		apply_filters(
 			'unax_custom_header_args',
 			array(
 				'width'              => 1000,
 				'height'             => 382,
 				'flex-width'         => true,
-	   			'flex-height'        => true,
+				'flex-height'        => true,
 				'wp-head-callback'   => 'unax_header_style',
 			)
 		)
@@ -80,12 +77,11 @@ function unax_header_style() {
  * Displays custom header.
  */
 function unax_custom_header() {
-
-	if( ! has_header_image() ) {
+	if ( ! has_header_image() ) {
 		return;
 	}
 
-	if( is_page_template( 'templates/full-width.php' ) ) {
+	if ( is_page_template( 'templates/full-width.php' ) ) {
 		return;
 	}
 

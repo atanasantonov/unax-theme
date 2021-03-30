@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-	<div id="content" class="site-content <?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ) ?>">
+	<div id="content" class="site-content <?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ); ?>">
 
 		<main id="primary" class="site-main">
 

@@ -31,10 +31,9 @@ class Unax_Contacts_Widget extends WP_Widget {
 	 * Echoes the widget content.
 	 *
 	 * @param array $args     Display arguments including 'before_title', 'after_title', 'before_widget', and 'after_widget'.
-     * @param array $instance The settings for the particular instan
+	 * @param array $instance The settings for the particular instan
 	 */
 	public function widget( $args, $instance ) {
-
 		echo wp_kses_post( $args['before_widget'] );
 
 		// Get widget title.
@@ -42,7 +41,7 @@ class Unax_Contacts_Widget extends WP_Widget {
 		if ( ! empty( $title ) ) {
 			echo wp_kses( $args['before_title'], array( 'div' => array( 'class' => array() ) ) );
 			echo esc_html( $title );
-			echo wp_kses( $args['after_title'],  array( 'div' => array() ) );
+			echo wp_kses( $args['after_title'], array( 'div' => array() ) );
 		}
 
 		// Markup for contacts data.
@@ -50,7 +49,7 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 		// Phone.
 		$unax_contact_phone = get_theme_mod( 'unax_contact_phone', '' );
-		if( ! empty( $unax_contact_phone ) ) {
+		if ( ! empty( $unax_contact_phone ) ) {
 			printf(
 				$markup,
 				'tel:' . esc_attr( $unax_contact_phone ),
@@ -63,7 +62,7 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 		// Email.
 		$unax_contact_email = get_theme_mod( 'unax_contact_email', '' );
-		if( ! empty( $unax_contact_email ) ) {
+		if ( ! empty( $unax_contact_email ) ) {
 			printf(
 				$markup,
 				'mailto:' . esc_attr( $unax_contact_email ),
@@ -76,7 +75,7 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 		// Address.
 		$unax_contact_address = get_theme_mod( 'unax_contact_address', '' );
-		if( ! empty( $unax_contact_address ) ) {
+		if ( ! empty( $unax_contact_address ) ) {
 			printf(
 				$markup,
 				'#',
@@ -89,7 +88,7 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 		// Working hours.
 		$unax_contact_working_hours = get_theme_mod( 'unax_contact_working_hours', '' );
-		if( ! empty( $unax_contact_working_hours ) ) {
+		if ( ! empty( $unax_contact_working_hours ) ) {
 			printf(
 				$markup,
 				'#',
@@ -104,7 +103,7 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 		// Facebook page.
 		$unax_contact_facebook_page = get_theme_mod( 'unax_contact_facebook_page', '' );
-		if( ! empty( $unax_contact_facebook_page ) ) {
+		if ( ! empty( $unax_contact_facebook_page ) ) {
 			printf(
 				$markup,
 				esc_url( $unax_contact_facebook_page ),
@@ -117,7 +116,7 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 		// Youtube.
 		$unax_contact_youtube = get_theme_mod( 'unax_contact_youtube', '' );
-		if( ! empty( $unax_contact_youtube ) ) {
+		if ( ! empty( $unax_contact_youtube ) ) {
 			printf(
 				$markup,
 				esc_url( $unax_contact_youtube ),
@@ -130,7 +129,7 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 		// LinkedIn.
 		$unax_contact_linkedin = get_theme_mod( 'unax_contact_linkedin', '' );
-		if( ! empty( $unax_contact_linkedin ) ) {
+		if ( ! empty( $unax_contact_linkedin ) ) {
 			printf(
 				$markup,
 				esc_url( $unax_contact_linkedin ),
@@ -143,7 +142,7 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 		// Skype.
 		$unax_contact_skype = get_theme_mod( 'unax_contact_skype', '' );
-		if( ! empty( $unax_contact_skype ) ) {
+		if ( ! empty( $unax_contact_skype ) ) {
 			printf(
 				$markup,
 				esc_url( $unax_contact_skype ),
@@ -164,8 +163,8 @@ class Unax_Contacts_Widget extends WP_Widget {
 	 * Updates a particular instance of a widget.
 	 *
 	 * @param  array $new_instance New settings for this instance as input by the user via WP_Widget::form().
-     * @param  array $old_instance Old settings for this instance.
-     * @return array Settings to save or bool false to cancel saving.
+	 * @param  array $old_instance Old settings for this instance.
+	 * @return array Settings to save or bool false to cancel saving.
 	 */
 	public function update( $new_instance, $old_instance ) {
 		$instance = array();
@@ -178,12 +177,11 @@ class Unax_Contacts_Widget extends WP_Widget {
 	/**
 	 * Outputs the settings update form.
 	 *
-	 * @param  array  $instance Current settings.
-     * @return string Default return is 'noform'.
+	 * @param  array $instance Current settings.
+	 * @return string Default return is 'noform'.
 	 */
 	public function form( $instance ) {
-
-		$title = isset( $instance[ 'title' ] ) ? $instance[ 'title' ] : esc_html__( 'Contacts', 'unax' );
+		$title = isset( $instance['title'] ) ? $instance['title'] : esc_html__( 'Contacts', 'unax' );
 
 		// Widget admin form.
 		?>
@@ -203,6 +201,6 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 // Register and load the widget.
 function unax_contacts_widget() {
-    register_widget( 'Unax_Contacts_Widget' );
+	register_widget( 'Unax_Contacts_Widget' );
 }
 add_action( 'widgets_init', 'unax_contacts_widget' );

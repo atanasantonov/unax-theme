@@ -44,7 +44,8 @@ function unax_get_starter_content() {
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph -->
-				<p>' . esc_html_x( '
+				<p>' . esc_html_x(
+					'
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 					been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took
 					a galley of type and scrambled it to make a type specimen book. It has survived not only five
@@ -52,7 +53,10 @@ function unax_get_starter_content() {
 					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
 					passages, and more recently with desktop publishing software like Aldus PageMaker including
 					versions of Lorem Ipsum.
-					', 'Theme starter content', 'unax' ) . '</p>
+					',
+					'Theme starter content',
+					'unax'
+				) . '</p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:spacer {"height":50} -->
@@ -107,12 +111,16 @@ function unax_get_starter_content() {
 				<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center">
 				<figure class="wp-block-image size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/dist/img/koral.jpg" alt="' . esc_attr( 'Koral beach, Bulgaria', 'unax' ) . '" class="size-full"/></figure>
 				<div class="wp-block-media-text__content">
-				<p>' . esc_html_x( '
+				<p>' . esc_html_x(
+					'
 					It is a long established fact that a reader will be distracted by the readable content of a
 					page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
 					normal distribution of letters, as opposed to using "Content here, content here", making it
 					look like readable text.
-					', 'Theme starter content', 'unax' ) . '</p>
+					',
+					'Theme starter content',
+					'unax'
+				) . '</p>
 				</div></div>
 				<!-- /wp:media-text -->
 
@@ -149,8 +157,8 @@ function unax_get_starter_content() {
 					'text',
 					array(
 						'title' => esc_html__( 'Example widget here', 'unax' ),
-					)
-				)
+					),
+				),
 			),
 
 			// Add the example text widget to the primary menu area.
@@ -159,8 +167,8 @@ function unax_get_starter_content() {
 					'text',
 					array(
 						'title' => esc_html__( 'Another widget', 'unax' ),
-					)
-				)
+					),
+				),
 			),
 
 			// Add the example text widget to footer area.
@@ -168,10 +176,10 @@ function unax_get_starter_content() {
 				'example_footer_widget' => array(
 					'text',
 					array(
-					  'title' => esc_html__( 'Widget title', 'unax' ),
-					  'text'  => esc_html__( 'Widget text', 'unax' ),
-					)
-				)
+						'title' => esc_html__( 'Widget title', 'unax' ),
+						'text'  => esc_html__( 'Widget text', 'unax' ),
+					),
+				),
 			),
 		),
 

@@ -15,13 +15,12 @@
 get_header();
 
 ?>
-	<div id="content" class="site-content <?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ) ?>">
+	<div id="content" class="site-content <?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ); ?>">
 
 		<main id="primary" class="site-main">
 
 			<?php
 			if ( have_posts() ) :
-
 				if ( is_home() && ! is_front_page() ) :
 					?>
 					<header>
@@ -31,7 +30,7 @@ get_header();
 				endif;
 				?>
 
-				<div class="<?php echo esc_attr( unax_loop_class() ) ?>">
+				<div class="<?php echo esc_attr( unax_loop_class() ); ?>">
 
 				<?php
 				/* Start the Loop */
@@ -44,7 +43,6 @@ get_header();
 					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 					 */
 					get_template_part( 'template-parts/content', get_post_type() );
-
 				endwhile;
 
 				?>
@@ -54,11 +52,8 @@ get_header();
 				<?php
 
 				the_posts_navigation();
-
 			else :
-
 				get_template_part( 'template-parts/content', 'none' );
-
 			endif;
 			?>
 
