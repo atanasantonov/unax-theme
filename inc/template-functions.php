@@ -5,9 +5,9 @@
  * @package unax
  */
 
- /**
-  * Define colors for editor palette
-  */
+/**
+ * Define colors for editor palette
+ */
 function unax_editor_color_palette() {
 	return array(
 		'primary'   => apply_filters( 'unax_editor_color_palette_primary', '#007bff' ),

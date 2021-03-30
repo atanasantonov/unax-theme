@@ -68,7 +68,7 @@ function unax_get_starter_content() {
 				<!-- /wp:heading -->
 
 				<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-				<figure class="wp-block-image size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/dist/img/koral.jpg" alt="' . esc_attr( 'Koral beach, Bulgaria', 'unax' ) . '"/></figure>
+				<figure class="wp-block-image size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/dist/img/koral.jpg" alt="' . esc_attr__( 'Koral beach, Bulgaria', 'unax' ) . '"/></figure>
 				<!-- /wp:image -->
 
 				<!-- wp:spacer {"height":50} -->
@@ -109,7 +109,7 @@ function unax_get_starter_content() {
 
 				<!-- wp:media-text {"mediaType":"image","verticalAlignment":"center"} -->
 				<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center">
-				<figure class="wp-block-image size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/dist/img/koral.jpg" alt="' . esc_attr( 'Koral beach, Bulgaria', 'unax' ) . '" class="size-full"/></figure>
+				<figure class="wp-block-image size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/dist/img/koral.jpg" alt="' . esc_attr__( 'Koral beach, Bulgaria', 'unax' ) . '" class="size-full"/></figure>
 				<div class="wp-block-media-text__content">
 				<p>' . esc_html_x(
 					'

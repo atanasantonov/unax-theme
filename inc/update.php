@@ -13,7 +13,6 @@
  *
  * @since 1.1.3
  */
-add_action( 'after_setup_theme', 'unax_migrate_menu_locations_and_sidebars', 1 );
 function unax_migrate_menu_locations_and_sidebars() {
 
 	// Get theme mods.
@@ -59,3 +58,4 @@ function unax_migrate_menu_locations_and_sidebars() {
 		update_option( 'sidebars_widgets', $sidebars_widgets );
 	}
 }
+add_action( 'after_setup_theme', 'unax_migrate_menu_locations_and_sidebars', 1 );

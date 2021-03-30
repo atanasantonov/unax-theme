@@ -67,7 +67,7 @@
 						'WordPress'
 					);
 
-					echo ' | ' . esc_html( 'Theme', 'unax' ) . ' ';
+					echo ' | ' . esc_html__( 'Theme', 'unax' ) . ' ';
 
 					printf(
 						'<a href="%s" target="_blank">%s</a>',

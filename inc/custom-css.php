@@ -8,16 +8,12 @@
 
 /**
  * Generate color palette CSS.
- *
- * @return string
  */
 function unax_color_palette_css() {
-
 	// Get color palette.
 	$colors = unax_editor_color_palette();
 
 	ob_start();
-
 	foreach ( $colors as $key => $value ) : ?>
 
 		/* <?php echo esc_html( $key ); ?> */
@@ -48,8 +44,8 @@ function unax_color_palette_css() {
 			}
 		}
 	}
-
 	<?php
+
 	$ob = ob_get_clean();
 	return $ob;
 }

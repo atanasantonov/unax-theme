@@ -32,7 +32,7 @@ function unax_customize_register( $wp_customize ) {
 		);
 	}
 
-	// Footer credits
+	// Footer credits.
 	$wp_customize->add_setting(
 		'unax_display_footer_credits',
 		array(

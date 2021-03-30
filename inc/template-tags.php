@@ -145,13 +145,13 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 endif;
 
 
-if ( ! function_exists( 'wp_body_open' ) ) :
+if ( ! function_exists( 'unax_wp_body_open' ) ) :
 	/**
 	 * Shim for sites older than 5.2.
 	 *
 	 * @link https://core.trac.wordpress.org/ticket/12563
 	 */
-	function wp_body_open() {
-		do_action( 'wp_body_open' );
+	function unax_wp_body_open() {
+		do_action( 'unax_wp_body_open' );
 	}
 endif;

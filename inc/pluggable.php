@@ -5,34 +5,24 @@
  * @package unax
  */
 
-
 if ( ! function_exists( 'unax_header_top' ) ) {
 
 	/**
 	 * Header top
 	 */
-	function unax_header_top()	{
-
-	?><div class="header-top">
-		<?php
-		/*
-		 * Apply the filters to wrapper
-		 */
-		?>
-		<div class="<?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ) ?>">
-
+	function unax_header_top() { ?>
+	<div class="header-top">
+		<div class="<?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ); ?>">
 			<div class="site-branding">
+			<?php
 
-				<?php
+			if ( has_custom_logo() ) :
+				the_custom_logo();
+			endif;
 
-				if( has_custom_logo() ) :
-					the_custom_logo();
-				endif;
-
-				if( display_header_text() ) :
+			if ( display_header_text() ) :
 
 				?>
-
 				<div class="site-branding-texts">
 
 					<?php if ( is_home() || is_front_page() ) : ?>
@@ -51,7 +41,7 @@ if ( ! function_exists( 'unax_header_top' ) ) {
 
 			</div><!-- .site-branding -->
 
-			<?php if( is_active_sidebar( 'header-widget-area' ) ) : ?>
+			<?php if ( is_active_sidebar( 'header-widget-area' ) ) : ?>
 			<div class="widget-area">
 				<?php dynamic_sidebar( 'header-widget-area' ); ?>
 			</div>
@@ -60,10 +50,8 @@ if ( ! function_exists( 'unax_header_top' ) ) {
 		</div><!-- .container -->
 
 	</div><!-- .header-top -->
-	<?php
-
+		<?php
 	}
-
 }
 
 
@@ -72,61 +60,58 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 	/**
 	 * Main navigation
 	 */
-	function unax_main_navigation()	{
-
-	?>
-	<div class="main-navigation">
-
-		<?php
-		/*
-		 * Apply the filters to container
-		 */
+	function unax_main_navigation() {
 		?>
-		<div class="<?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ) ?>">
-
-			<button
-				class="toggle nav-toggle mobile-nav-toggle"
-				data-toggle-target=".menu-modal"
-				data-toggle-body-class="showing-menu-modal"
-				aria-expanded="false"
-				data-set-focus=".close-nav-toggle"
-				>
-				<span class="toggle-inner">
-					<i class="fas fa-bars"></i>
-					<span class="screen-reader-text">
-						<?php esc_html_e( 'Menu', 'unax' ); ?>
-					</span>
-				</span>
-			</button><!-- .nav-toggle -->
+		<div class="main-navigation">
 
 			<?php
-			$container_class = is_active_sidebar( 'primary-menu-widget-area' ) ? ' has-widget-area' : '';
-			if ( has_nav_menu( 'primary' ) ) :
-				wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'menu_class'      => 'primary-menu',
-						'container_class' => 'primary-menu-wrapper' . $container_class,
-						'items_wrap'      => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
-						'fallback_cb'     => false,
-					)
-				);
-			endif;
+			/*
+			 * Apply the filters to container
+			 */
 			?>
+			<div class="<?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ); ?>">
 
-			<?php if( is_active_sidebar( 'primary-menu-widget-area' ) ) : ?>
-			<div class="widget-area text-right">
-				<?php dynamic_sidebar( 'primary-menu-widget-area' ); ?>
-			</div>
-			<?php endif; ?>
+				<button
+					class="toggle nav-toggle mobile-nav-toggle"
+					data-toggle-target=".menu-modal"
+					data-toggle-body-class="showing-menu-modal"
+					aria-expanded="false"
+					data-set-focus=".close-nav-toggle"
+					>
+					<span class="toggle-inner">
+						<i class="fas fa-bars"></i>
+						<span class="screen-reader-text">
+							<?php esc_html_e( 'Menu', 'unax' ); ?>
+						</span>
+					</span>
+				</button><!-- .nav-toggle -->
 
-		</div><!-- .container -->
+				<?php
+				$container_class = is_active_sidebar( 'primary-menu-widget-area' ) ? ' has-widget-area' : '';
+				if ( has_nav_menu( 'primary' ) ) :
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'primary',
+							'menu_class'      => 'primary-menu',
+							'container_class' => 'primary-menu-wrapper' . $container_class,
+							'items_wrap'      => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
+							'fallback_cb'     => false,
+						)
+					);
+				endif;
+				?>
 
-	</div><!-- .main-navigation -->
-	<?php
+				<?php if ( is_active_sidebar( 'primary-menu-widget-area' ) ) : ?>
+				<div class="widget-area text-right">
+					<?php dynamic_sidebar( 'primary-menu-widget-area' ); ?>
+				</div>
+				<?php endif; ?>
 
+			</div><!-- .container -->
+
+		</div><!-- .main-navigation -->
+		<?php
 	}
-
 }
 
 
@@ -135,28 +120,23 @@ if ( ! function_exists( 'unax_breadcrumbs' ) ) {
 	/**
 	 * Breadcrumbs (Yoast compatible)
 	 */
-	function unax_breadcrumbs()	{
-
-		if( !is_home() && !is_front_page() ) {
-
-		?>
+	function unax_breadcrumbs() {
+		if ( ! is_home() && ! is_front_page() ) {
+			?>
 		<div class="breadcrumbs">
-			<div class="<?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ) ?>">
+			<div class="<?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ); ?>">
 			<?php
 
-				if ( function_exists('yoast_breadcrumb') ) {
-				  	yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-				}
+			if ( function_exists( 'yoast_breadcrumb' ) ) {
+				yoast_breadcrumb( '<p id="breadcrumbs">', '</p>' );
+			}
 
 			?>
 			</div>
 		</div>
-		<?php
-
+			<?php
 		}
-
 	}
-
 }
 
 
@@ -174,22 +154,22 @@ if ( ! function_exists( 'unax_archive_header' ) ) {
 if ( ! function_exists( 'unax_loop_class' ) ) {
 	/**
 	 * Archive header
+	 *
+	 * @param string $class Class names.
 	 */
 	function unax_loop_class( $class = '' ) {
-
 		$archive_loop_class_array = [];
 
 		$archive_loop_class_array[] = 'archive-loop';
 		$archive_loop_class_array[] = unax_grid_columns();
 		$archive_loop_class_array[] = 'card-columns';
 
-		if( !empty( $class ) ) {
+		if ( ! empty( $class ) ) {
 			$archive_loop_class_array[] = $class;
 		}
 
 		$archive_loop_class = apply_filters( 'unax_archive_loop_class', $archive_loop_class_array );
 
 		return implode( ' ', $archive_loop_class );
-
 	}
 }

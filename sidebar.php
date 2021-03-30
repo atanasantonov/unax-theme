@@ -6,6 +6,7 @@
  *
  * @package Unax
  */
+
 ?>
 
 <aside id="secondary" class="widget-area">
