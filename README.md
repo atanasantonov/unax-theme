@@ -1,3 +1,6 @@
+[![PHP PSR Enforcer](https://github.com/atanasantonov/unax-theme/actions/workflows/phpcs.yml/badge.svg)](https://github.com/atanasantonov/unax-theme/actions/workflows/phpcs.yml)
+[![Theme Release](https://github.com/atanasantonov/unax-theme/actions/workflows/plugin-release.yml/badge.svg)](https://github.com/atanasantonov/unax-theme/actions/workflows/theme-release.yml)
+
 # Unax
 
 Unax starter theme based on Underscores and Twitter Bootstrap.
