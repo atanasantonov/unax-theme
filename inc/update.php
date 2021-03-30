@@ -57,5 +57,14 @@ function unax_migrate_menu_locations_and_sidebars() {
 		unset( $sidebars_widgets['sidebar-main'] );
 		update_option( 'sidebars_widgets', $sidebars_widgets );
 	}
+
+	// Update footer credits.
+	if ( false === get_theme_mod( 'unax_display_footer_credits' ) ) {
+		set_theme_mod( 'unax_display_footer_credits', '1' );
+	}
+
+	if ( false === get_theme_mod( 'unax_display_footer_title' ) ) {
+		set_theme_mod( 'unax_display_footer_title', '1' );
+	}
 }
 add_action( 'after_setup_theme', 'unax_migrate_menu_locations_and_sidebars', 1 );

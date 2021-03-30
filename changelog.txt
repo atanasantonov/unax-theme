@@ -1,5 +1,8 @@
 *** Unax Theme Changelog ***
 
+2020-03-30 - version 1.1.8
+* New: Footer credits migration from versions below 1.1.6
+
 2020-03-30 - version 1.1.7
 * New: Customizer contacts fields
 * New: Contacts widget
