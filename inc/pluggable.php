@@ -80,7 +80,7 @@ if ( ! function_exists( 'unax_main_navigation' ) ) {
 					>
 					<span class="toggle-inner">
 						<i class="fas fa-bars"></i>
-						<span class="screen-reader-text">
+						<span class="sr-only">
 							<?php esc_html_e( 'Menu', 'unax' ); ?>
 						</span>
 					</span>

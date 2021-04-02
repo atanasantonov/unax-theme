@@ -24,7 +24,7 @@
 	<?php unax_wp_body_open(); ?>
 
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'unax' ); ?></a>
+		<a class="skip-link sr-only sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'unax' ); ?></a>
 		<header id="masthead" class="site-header">
 			<?php
 			/**
