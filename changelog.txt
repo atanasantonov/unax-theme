@@ -3,6 +3,7 @@
 2020-04-02 - version 1.1.10
 * New: WordPress Core styles added
 * Fix: Mandatory screen-reader-text class added
+* Fix: Blocks cover and buttons styling fix
 
 2020-04-02 - version 1.1.9
 * New: Bulgarian translation added

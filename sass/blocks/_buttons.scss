@@ -7,6 +7,9 @@
     &:visited {
         color: inherit;
     }
+    &:not(.has-text-color) {
+        color: $white;
+    }
 }
 
 .is-style-outline {

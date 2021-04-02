@@ -12832,6 +12832,9 @@ a img.aligncenter {
   .wp-block-button__link:hover,
   .wp-block-button__link:visited {
     color: inherit; }
+  .wp-block-button:not(.has-text-color),
+  .wp-block-button__link:not(.has-text-color) {
+    color: #fff; }
 
 .is-style-outline {
   color: inherit; }
@@ -12859,6 +12862,9 @@ a img.aligncenter {
             flex-grow: 1;
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important; } }
+
+.wp-block-cover p:not(.has-text-color) {
+  color: #fff; }
 
 .blocks-gallery-grid,
 .blocks-gallery-caption {
