@@ -3,304 +3,506 @@
 # https://wpml.org
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version:WPML_EXPORT\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
+"Project-Id-Version: WPML_EXPORT\n"
+"POT-Creation-Date: 2021-04-02 15:44+0000\n"
+"PO-Revision-Date: 2021-04-02 15:45+0000\n"
 "Last-Translator: \n"
-"Language-Team: \n"
-"Language:bg\n"
+"Language-Team: Bulgarian\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.4.6; wp-5.7"
 
-#:
-#:
-#:
-# wpml-name: b8900d8adf598b6653bb8c071bc49a1d
-msgid "Product Details"
-msgstr "Детайли за продукт"
+#: inc/template-functions.php:282
+msgid "Add widgets to footer credits left area."
+msgstr "Добавете джаджи в кредитите в долна лява част."
 
-# wpml-name: 5d25ef0fe80918309a18b85c097eb22c
-msgid "Technical specifications"
-msgstr "Технически спецификации"
+#: inc/template-functions.php:294
+msgid "Add widgets to footer credits right area."
+msgstr "Добавете джаджи в кредитите в долна дясна част."
 
-# wpml-name: 10d0de28911c5f66463b9c8783f8148a
-msgid "Maintenance"
-msgstr "Поддръжка"
+#: inc/template-functions.php:270
+msgid "Add widgets to footer."
+msgstr "Добавете джаджи в долната част."
 
-# wpml-name: 3601146c4e948c32b6424d2c0a7f0118
-msgid "Price"
-msgstr "Цена"
+#: inc/template-functions.php:234
+msgid "Add widgets to header."
+msgstr "Добавете джаджи в заглавната част."
 
-# wpml-name: ece4c2ab5162d27e5874a6d33bf368a3
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Изглежда не успяхме да открием нищо. Може би търсене ще помогне."
+#: inc/template-functions.php:258
+msgid "Add widgets to right side of footer menu."
+msgstr "Добавете джаджи вдясно на менюто в долната част."
 
-# wpml-name: a83aa51c0da986da0b2762a68514f937
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Съжаляваме, но нищо не отговаря на вашите критерии."
+#: inc/template-functions.php:246
+msgid "Add widgets to right side of primary menu."
+msgstr "Добавете джаджи вдясно на менюто в заглавната част."
 
-# wpml-name: 795d59a96adcde416d31c5b1b6fae364
-msgid "Nothing Found"
-msgstr "Нищо не е открито."
+#: inc/template-functions.php:222
+msgid "Add widgets to the sidebar."
+msgstr "Добавете джаджи в страничната лента."
 
-# wpml-name: d26c560da4a5ffc2d7f556b6b7622fe6
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
+#: inc/customizer.php:253 inc/widgets/class-unax-contacts-widget.php:83
+msgid "Address"
+msgstr "Адрес"
 
-# wpml-name: 68f18f6b55f955ad05e4a174341bf3f1
-msgid "Close menu"
-msgstr "Затвори меню"
+#: inc/starter-content.php:169
+msgid "Another widget"
+msgstr "Друга джаджа"
 
-# wpml-name: 56a8a9eb05f9014da51a4f9b57322ac7
+#. Author of the theme
+msgid "Atanas Antonov"
+msgstr "Атанас Антонов"
+
+#: inc/template-functions.php:141
+msgid "Black"
+msgstr "Черно"
+
+#: template-parts/content-single.php:25
 msgid "Category:"
 msgstr "Категория:"
 
-# wpml-name: 0974d2c2f4c6420089275c2a41c4b41c
-msgid "Pages:"
-msgstr "Страници:"
+#: inc/customizer.php:102
+msgid "Choose the default columns count for archive pages."
+msgstr "Изберете броя на колоните по подразбиране за архивни страници."
 
-# wpml-name: b58273f254c2c7fb86624e9d41c35651
-msgid "Skip to content"
-msgstr "Продължете към съдържанието"
+# wpml-name: 68f18f6b55f955ad05e4a174341bf3f1
+#: template-parts/modal-menu.php:21
+msgid "Close menu"
+msgstr "Затвори меню"
 
-# wpml-name: 5234c7d4d29fadd5614763897c8332c5
-msgid "Add widgets here."
-msgstr "Добавете джаджи тук."
+# wpml-name: 496c558a09bbbcfc869aa80b2f037261
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "Коментарите са затворени."
 
-# wpml-name: 219ff7705d67d0c798779951dcf82e95
-msgid "Sidebar"
-msgstr "Странична лента"
+#. 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s коментар за \"%2$s\""
+msgstr[1] "%1$s коментара за \"%2$s\""
 
-# wpml-name: c05d4725090b1c928a0101cb86ca1672
-msgid "Products menu"
-msgstr "Меню продкти"
+#: inc/customizer.php:120 inc/widgets/class-unax-contacts-widget.php:22
+#: inc/widgets/class-unax-contacts-widget.php:183
+msgid "Contacts"
+msgstr "Контакти"
+
+#: template-parts/content-card.php:27
+msgid "Continue reading"
+msgstr "Продължете да четете"
+
+# wpml-name: 9b501beb0fb972ae957403e262b9b8f3
+#: inc/template-functions.php:111
+msgid "Danger color"
+msgstr "Цвят Опасност"
+
+# wpml-name: a18366b217ebf811ad1886e4f4f865b2
+#: inc/template-functions.php:136
+msgid "Dark"
+msgstr "Тъмно"
+
+#: inc/customizer.php:48
+msgid "Display footer credits."
+msgstr "Показване на кредити във футъра."
+
+#: inc/customizer.php:69
+msgid "Display site title in footer."
+msgstr "Показване на заглавието на сайта във футъра."
+
+# wpml-name: 088c09bba6a1638920e9720042563141
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:100 template-parts/content-page-full-width.php:39
+#: template-parts/content-page.php:39
+msgid "Edit <span class=\"sr-only\">%s</span>"
+msgstr "Редакция <span class=\"sr-only\">%s</span>"
+
+#: inc/customizer.php:158 inc/widgets/class-unax-contacts-widget.php:70
+#| msgid "email"
+msgid "Email"
+msgstr "е-поща"
+
+#: inc/starter-content.php:159
+msgid "Example widget here"
+msgstr "Примерна джаджа тук"
+
+#: inc/customizer.php:177 inc/widgets/class-unax-contacts-widget.php:111
+msgid "Facebook page"
+msgstr "Facebook страница"
+
+#: inc/template-functions.php:268
+msgid "Footer"
+msgstr "Футър"
+
+#: inc/template-functions.php:280
+msgid "Footer Credits Left"
+msgstr "Футър кредити вляво"
+
+#: inc/template-functions.php:292
+msgid "Footer Credits Right"
+msgstr "Футър кредити вдясно"
+
+#: inc/template-functions.php:256
+msgid "Footer Menu"
+msgstr "Футър меню"
 
 # wpml-name: ecf28384b6f6b902f803ae62f51c450e
+#: inc/starter-content.php:210 inc/template-functions.php:65
 msgid "Footer menu"
 msgstr "Футър меню"
 
-# wpml-name: 455b9d1db1dc0072a83bb16590e8b67a
-msgid "Mobile menu"
-msgstr "Мобилно меню"
+#. Name of the template
+msgid "Full Width"
+msgstr "Пълна ширина"
 
-# wpml-name: b59d0d04c35f607e4a6bccce14ad48ff
-msgid "Primary menu"
-msgstr "Основно меню"
+#: inc/customizer.php:101
+msgid "Grid columns"
+msgstr "Брой колони"
 
-# wpml-name: 3b0b126cd07e1c1f2677690f080ee723
-msgid "Submenu"
-msgstr "Подменю"
+#: inc/template-functions.php:232
+msgid "Header"
+msgstr "Хедър"
 
-# wpml-name: fc763cb31e9938f37737394681228f83
+#. Author URI of the theme
+msgid "https://unax.org"
+msgstr "https://unax.org"
+
+#. Theme credits url.
+#. URI of the theme
+#: footer.php:75
+msgid "https://unax.org/unax-theme"
+msgstr "https://unax.org/unax-theme"
+
+#. WordPress credits url.
+#: footer.php:66
+msgid "https://wordpress.org"
+msgstr "https://wordpress.org"
+
+# wpml-name: b5130e8095741617473b89151e352f98
+#: inc/template-functions.php:121
+msgid "Info Color"
+msgstr "Цвят Инфо"
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Изглежда нищо не е открито на този адрес. Може би ще опитате с директните "
+"връзки или търсене?"
+
+#: template-parts/content-none.php:41
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Изглежда не успяхме да открием нищо. Може би търсене ще помогне."
+
+#: inc/starter-content.php:71 inc/starter-content.php:112
+msgid "Koral beach, Bulgaria"
+msgstr "Плаж Корал, България"
+
+#. %s: post title
+#: inc/template-tags.php:83
+msgid "Leave a Comment<span class=\"sr-only\"> on %s</span>"
+msgstr "Оставете коментар<span class=\"sr-only\"> on %s</span>"
+
+#: inc/template-functions.php:131
+msgid "Light"
+msgstr "Светло"
+
+# 
+# 
+#: inc/customizer.php:215 inc/widgets/class-unax-contacts-widget.php:137
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+# 
+# 
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:70
 msgctxt "list item separator"
 msgid ", "
 msgstr ", "
 
-# wpml-name: 0757ad7923ea3e054466cc8c16c6b179
+# 
+# 
+#: inc/pluggable.php:84
+msgid "Menu"
+msgstr "Меню"
+
+# 
+# 
+#: inc/starter-content.php:200 inc/template-functions.php:64
+#: template-parts/modal-menu.php:25
+msgid "Mobile menu"
+msgstr "Мобилно меню"
+
+#. Name of the template
+msgid "No Sidebar"
+msgstr "Без странична лента"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Нищо не е открито."
+
+#. 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Един коментар за “%1$s”"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ууупс! Страницата не е открита."
+
+#: template-parts/content-single.php:43
+#: template-parts/content-page-full-width.php:25
+#: template-parts/content-page.php:25
+msgid "Pages:"
+msgstr "Страници:"
+
+#: inc/customizer.php:139 inc/widgets/class-unax-contacts-widget.php:57
+msgid "Phone"
+msgstr "Телефон"
+
+#. %s: post author.
+#: inc/template-tags.php:54
 msgctxt "post author"
 msgid "by %s"
 msgstr "по %s"
 
-# wpml-name: 83802779dae853e4b815acdc3e7712cb
+#. %s: post date.
+#: inc/template-tags.php:37
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "Публикувано на %s"
 
-# wpml-name: 93d1ca2aca17150ea2b5408fa18c0259
-msgid "Tagged %1$s"
-msgstr "Отбелязано %1$s"
+#. WordPress credits text.
+#: footer.php:64
+msgid "Powered by"
+msgstr "С подкрепата на"
 
-# wpml-name: 088c09bba6a1638920e9720042563141
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "Редакция <span class=\"screen-reader-text\">%s</span>"
-
-# wpml-name: 583718f3a15d8566ec0731eef84b3367
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr "Оставете коментар<span class=\"screen-reader-text\"> on %s</span>"
-
-# wpml-name: deb10517653c255364175796ace3553f
-msgid "Product"
-msgstr "Продукт"
-
-# wpml-name: 068f80c7519d0528fb08e82137a72131
-msgid "Products"
-msgstr "Продукти"
-
-# wpml-name: 05bbb43b3d923283e0b6ffafd088f41f
-msgid "Components"
-msgstr "Компоненти"
-
-# wpml-name: c7e61f30815ea807b2c62cf7cb92097b
-msgid "System component"
-msgstr "Системен компонент"
-
-# wpml-name: 000fb458b47995fb84311bb7ef7c7f62
-msgid "System components"
-msgstr "Системни компоненти"
-
-# wpml-name: b3529f5aa0d8a14de01022290eb0f617
-msgid "System Categories"
-msgstr "Системи категории"
-
-# wpml-name: 81a6bb2de79f6cf4a604fbae30032ebb
-msgid "Roof System"
-msgstr "Покривна система"
-
-# wpml-name: c54e851fd3244169080e248e02fe7bc3
-msgid "Roof Systems"
-msgstr "Покривни системи"
-
-# wpml-name: b61541208db7fa7dba42c85224405911
-msgid "Menu"
-msgstr "Меню"
-
-# wpml-name: 5af57bb8fb6a9a1e5ff93c7de4c5274d
-msgid "reCAPTCHA Secret Key"
-msgstr "reCAPTCHA Секретен ключ"
-
-# wpml-name: a58cac7ae1e5f08a2dba99ce50bae078
-msgid "reCAPTCHA Site Key"
-msgstr "reCAPTCHA Сайт ключ"
-
-# wpml-name: 437418d1694e82fd5ff2260670467c02
-msgid "Google Analytics ID"
-msgstr "Google Analytics ID"
-
-# wpml-name: c3833321ea1a640947a23fbee262f9d8
-msgid "Facebook page"
-msgstr "Facebook страница"
-
-# wpml-name: 3c2292f30e636ecf522743c3fa73749d
-msgid "Contact Email"
-msgstr "Контактен email"
-
-# wpml-name: c36399c42a754c8a0178dc986cc8525c
-msgid "Contact Phone"
-msgstr "Контактен телефон"
-
-# wpml-name: e90dfb84e30edf611e326eeb04d680de
-msgid "Black"
-msgstr "Черно"
-
-# wpml-name: a18366b217ebf811ad1886e4f4f865b2
-msgid "Dark"
-msgstr "Тъмно"
-
-# wpml-name: 994ae1d9731cebe455aff211bcb25b93
-msgid "Gray"
-msgstr "Сиво"
-
-# wpml-name: 9914a0ce04a7b7b6a8e39bec55064b82
-msgid "Light"
-msgstr "Светло"
-
-# wpml-name: 25a81701fbfa4a1efdf660a950c1d006
-msgid "White"
-msgstr "Бяло"
-
-# wpml-name: b5130e8095741617473b89151e352f98
-msgid "Info Color"
-msgstr "Цвят Инфо"
-
-# wpml-name: b2bf471390985e204a15064393f45a2d
-msgid "Warning color"
-msgstr "Цвят Внимание"
-
-# wpml-name: 9b501beb0fb972ae957403e262b9b8f3
-msgid "Danger color"
-msgstr "Цвят Опасност"
-
-# wpml-name: 714dd2946ce7200c8c869a4565bda1d5
-msgid "Success Color"
-msgstr "Цвят Успех"
-
-# wpml-name: 020a9f6a979825fc9349eccc66bef6db
-msgid "Secondary Color"
-msgstr "Вторичен цвят"
-
-# wpml-name: f951a1e1ff1ed0d24a2758b6441a3431
+#: inc/template-functions.php:96
 msgid "Primary Color"
 msgstr "Основен цвят"
 
-# wpml-name: a7fdf5c34998264f3693fdec2287cbd6
-msgid "Selected posts for cards"
-msgstr "Избрани публикации за картички"
+#: inc/template-functions.php:244
+msgid "Primary Menu"
+msgstr "Основно меню"
 
-# wpml-name: 4896f9ebf50c71e189324a7589e00471
-msgid "Selected posts"
-msgstr "Избрани публикации"
+#: inc/starter-content.php:190 inc/template-functions.php:63
+msgid "Primary menu"
+msgstr "Основно меню"
 
-# wpml-name: 892145ed83684cc507f073acc42336b2
-msgid "Carousel with changing images"
-msgstr "Карусел със сменящи се снимки"
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:23
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Готови ли сте да публикувате първата си публикация? <a href=\"%1$s\"> "
+"Започнете тук </a>."
 
-# wpml-name: 225bf3d9290b5f536b2e442259e78652
-msgid "Carousel"
-msgstr "Карусел"
-
-# wpml-name: ed9e37872f818f1e8903eba505917478
-msgctxt "comments title"
-msgid "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr "%1$s коментара за “%2$s”"
-
-# wpml-name: f22ad85909b230935593b8d269b2b86b
-msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgstr "%1$s коментар за “%2$s”"
-
-# wpml-name: 496c558a09bbbcfc869aa80b2f037261
-msgid "Comments are closed."
-msgstr "Коментарите са затворени."
-
-# wpml-name: 0658200c93d215fdb2c0f08915e982fd
-msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr "Един коментар за “%1$s”"
-
-# wpml-name: 0dc70b2dd418f7ff3e849159a4ae9fa6
-msgid "Web development by"
-msgstr "Изработка от "
-
-# wpml-name: 8dd1bae8da2e2408210d0656fbe6b7d1
-msgid "YouTube"
-msgstr "YouTube"
-
-# wpml-name: e884c507c5198a4578a84498f7a323e2
-msgid "LinkedIn"
-msgstr "LinkedIn"
-
-# wpml-name: d85544fce402c7a2a96a48078edaf203
-msgid "Facebook"
-msgstr "Facebook"
-
-# wpml-name: 0c83f57c786a0b4a39efab23731c7ebc
-msgid "email"
-msgstr "email"
-
-# wpml-name: c7847fb333a226a8960f79bc01f73fc6
-msgid "More information request"
-msgstr "Заявка за повече информация"
-
-# wpml-name: bcc254b55c4a1babdf1dcb82c207506b
-msgid "Phone"
-msgstr "Телефон"
-
-# wpml-name: 4783397292b42b601dee3397f9ca05f9
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr "Изглежда нищо не е открито на този адрес. Може би ще опитате с директните връзки или търсене?"
-
-# wpml-name: d3b0a4ab258b67c91f6f060f4da14401
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Ууупс! Страницата не е открита."
-
-# wpml-name: 70f99dda2217310b85403af9d39cafe8
-msgid "Systems menu"
-msgstr "Меню системи."
-
-# wpml-name: 53701c9606f95dd2754ff64d0b986ae1
-msgid "Roof systems"
-msgstr "Покривни системи"
-
-# wpml-name: 6a72ef42bbe774e009e378ce57f408e4
+#. %s: search query.
+#: search.php:22
 msgid "Search Results for: %s"
 msgstr "Резултати от търсене за: %s"
+
+#: inc/template-functions.php:101
+msgid "Secondary Color"
+msgstr "Вторичен цвят"
+
+#: inc/widgets/class-unax-contacts-widget.php:24
+msgid "Show contacts from theme customizer."
+msgstr "Показване на контакти от инструмента за персонализиране на теми."
+
+#: inc/template-functions.php:220
+msgid "Sidebar"
+msgstr "Странична лента"
+
+#: header.php:27
+msgid "Skip to content"
+msgstr "Продължете към съдържанието"
+
+#: inc/customizer.php:234 inc/widgets/class-unax-contacts-widget.php:150
+msgid "Skype"
+msgstr "Skype"
+
+#: template-parts/content-none.php:35
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Съжаляваме, но нищо не отговаря на вашите критерии."
+
+#: inc/template-functions.php:418
+msgid "Submenu"
+msgstr "Подменю"
+
+#: inc/template-functions.php:106
+msgid "Success Color"
+msgstr "Цвят Успех"
+
+#. 1: list of tags.
+#: inc/template-tags.php:73
+msgid "Tagged %1$s"
+msgstr "Отбелязано %1$s"
+
+#: footer.php:70
+msgid "Theme"
+msgstr "Тема"
+
+#: inc/customizer.php:83
+msgid "Theme Settings"
+msgstr "Настройки на темата"
+
+#: inc/starter-content.php:114
+msgctxt "Theme starter content"
+msgid ""
+"\n"
+"\t\t\t\t\tIt is a long established fact that a reader will be distracted by "
+"the readable content of a\n"
+"\t\t\t\t\tpage when looking at its layout. The point of using Lorem Ipsum is "
+"that it has a more-or-less\n"
+"\t\t\t\t\tnormal distribution of letters, as opposed to using \"Content here,"
+" content here\", making it\n"
+"\t\t\t\t\tlook like readable text.\n"
+"\t\t\t\t\t"
+msgstr ""
+"Отдавна е установено, че читателят ще се разсейва от четливото съдържание "
+"на\n"
+"страница, когато се гледа нейното оформление. Смисълът на използването на "
+"Lorem Ipsum е, че има повече или по-малко\n"
+"нормално разпространение на писма, за разлика от използването на "
+"\"Съдържание тук, съдържание тук\", което го прави\n"
+"изглеждат като четлив текст."
+
+#: inc/starter-content.php:47
+msgctxt "Theme starter content"
+msgid ""
+"\n"
+"\t\t\t\t\tLorem Ipsum is simply dummy text of the printing and typesetting "
+"industry. Lorem Ipsum has\n"
+"\t\t\t\t\tbeen the industry's standard dummy text ever since the 1500s, when "
+"an unknown printer took\n"
+"\t\t\t\t\ta galley of type and scrambled it to make a type specimen book. It "
+"has survived not only five\n"
+"\t\t\t\t\tcenturies, but also the leap into electronic typesetting, "
+"remaining essentially unchanged.\n"
+"\t\t\t\t\tIt was popularised in the 1960s with the release of Letraset "
+"sheets containing Lorem Ipsum\n"
+"\t\t\t\t\tpassages, and more recently with desktop publishing software like "
+"Aldus PageMaker including\n"
+"\t\t\t\t\tversions of Lorem Ipsum.\n"
+"\t\t\t\t\t"
+msgstr ""
+"Lorem Ipsum е просто фиктивен текст на печатарската и наборната индустрия. "
+"Lorem Ipsum има\n"
+"е стандартният манекен текст в бранша още от 1500-те, когато неизвестен "
+"принтер взе\n"
+"галера от тип и я разбърка, за да направи книжка за образци от типа. Оцеляла "
+"е не само пет\n"
+"векове, но също така и скокът в електронната набор, оставайки по същество "
+"непроменен.\n"
+"Той е популяризиран през 60-те години с пускането на листовете Letraset, "
+"съдържащи Lorem Ipsum\n"
+"пасажи, а напоследък и със софтуер за настолни издатели като Aldus PageMaker "
+"включително\n"
+"версии на Lorem Ipsum."
+
+#: inc/starter-content.php:85
+msgctxt "Theme starter content"
+msgid "Column 1"
+msgstr "Колона 1"
+
+#: inc/starter-content.php:91
+msgctxt "Theme starter content"
+msgid "Column 2"
+msgstr "Колона 2"
+
+#: inc/starter-content.php:97
+msgctxt "Theme starter content"
+msgid "Column 3"
+msgstr "Колона 3"
+
+#: inc/starter-content.php:79
+msgctxt "Theme starter content"
+msgid "Columns block"
+msgstr "Блок колони"
+
+#: inc/starter-content.php:28
+msgctxt "Theme starter content"
+msgid "Create your website with blocks"
+msgstr "Създайте своя уебсайт с блокове"
+
+#: inc/starter-content.php:107
+msgctxt "Theme starter content"
+msgid "Media &amp; text block"
+msgstr "Блок Медия и текст"
+
+#: inc/starter-content.php:43
+msgctxt "Theme starter content"
+msgid "Paragraph block"
+msgstr "Блок параграф"
+
+#: inc/starter-content.php:35
+msgctxt "Theme starter content"
+msgid "Say Hello to Gutenberg editor"
+msgstr "Кажете Здравей на редактора Gutenberg"
+
+#: inc/widgets/class-unax-contacts-widget.php:189
+msgid "Title"
+msgstr "Заглавие"
+
+#. Theme credits text.
+#. Name of the theme
+#: footer.php:77
+msgid "Unax"
+msgstr "Unax"
+
+#. Description of the theme
+msgid ""
+"Unax theme based on Underscores and Twitter Bootstrap. No sidebar and full "
+"width page templates. Plenty of widget areas are registered as well as "
+"several menu locations. Theme includes different filters for layout classes. "
+"Bootstrap colors with the appropriate filters integrated in Gutenberg color "
+"palette. Web Content Accessibility Guidelines (WCAG) compatible."
+msgstr ""
+"Темата Unax е базирана на Underscores и Twitter Bootstrap. Шаблони за "
+"страници без странична лента и с пълна ширина. Регистрирани са много зони за "
+"джаджи, както и няколко позиции за менюта. Темата включва различни филтри за "
+"класове за оформление. Bootstrap цветове с подходящи филтри, интегрирани в "
+"цветовата палитра на Gutenberg. Съвместима с насоките за достъпност на уеб "
+"съдържание (WCAG)."
+
+#: inc/customizer.php:121
+msgid "Use contact details with Contacts Widget. Blank fields not rendered."
+msgstr ""
+"Използвайте данни за контакт за джаджа за контакти. Празните полета не се "
+"показват."
+
+#: inc/template-functions.php:116
+msgid "Warning color"
+msgstr "Цвят Внимание"
+
+#: inc/template-functions.php:126
+msgid "White"
+msgstr "Бяло"
+
+#: inc/starter-content.php:180
+msgid "Widget text"
+msgstr "Текст на джаджата"
+
+#: inc/starter-content.php:179
+msgid "Widget title"
+msgstr "Заглавие на джаджата"
+
+#: inc/customizer.php:272 inc/widgets/class-unax-contacts-widget.php:96
+msgid "Working hours"
+msgstr "Работно време"
+
+#: inc/customizer.php:196 inc/widgets/class-unax-contacts-widget.php:124
+#| msgid "YouTube"
+msgid "Youtube"
+msgstr "Youtube"

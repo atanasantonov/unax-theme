@@ -10,33 +10,71 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-07-15 10:52+0000\n"
+"POT-Creation-Date: 2021-04-02 15:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: unax\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
 
-#. %s: search query.
-#: search.php:22
-#, php-format
-msgid "Search Results for: %s"
+#: inc/template-functions.php:282
+msgid "Add widgets to footer credits left area."
 msgstr ""
 
-#: 404.php:18
-msgid "Oops! That page can&rsquo;t be found."
+#: inc/template-functions.php:294
+msgid "Add widgets to footer credits right area."
 msgstr ""
 
-#: 404.php:22
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
+#: inc/template-functions.php:270
+msgid "Add widgets to footer."
 msgstr ""
 
-#. 1: title.
-#: comments.php:35
-#, php-format
-msgid "One thought on &ldquo;%1$s&rdquo;"
+#: inc/template-functions.php:234
+msgid "Add widgets to header."
+msgstr ""
+
+#: inc/template-functions.php:258
+msgid "Add widgets to right side of footer menu."
+msgstr ""
+
+#: inc/template-functions.php:246
+msgid "Add widgets to right side of primary menu."
+msgstr ""
+
+#: inc/template-functions.php:222
+msgid "Add widgets to the sidebar."
+msgstr ""
+
+#: inc/customizer.php:253 inc/widgets/class-unax-contacts-widget.php:83
+msgid "Address"
+msgstr ""
+
+#: inc/starter-content.php:169
+msgid "Another widget"
+msgstr ""
+
+#. Author of the theme
+msgid "Atanas Antonov"
+msgstr ""
+
+#: inc/template-functions.php:141
+msgid "Black"
+msgstr ""
+
+#: template-parts/content-single.php:25
+msgid "Category:"
+msgstr ""
+
+#: inc/customizer.php:102
+msgid "Choose the default columns count for archive pages."
+msgstr ""
+
+#: template-parts/modal-menu.php:21
+msgid "Close menu"
+msgstr ""
+
+#: comments.php:68
+msgid "Comments are closed."
 msgstr ""
 
 #. 1: comment count number, 2: title.
@@ -48,231 +86,383 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:68
-msgid "Comments are closed."
+#: inc/customizer.php:120 inc/widgets/class-unax-contacts-widget.php:22
+#: inc/widgets/class-unax-contacts-widget.php:183
+msgid "Contacts"
 msgstr ""
 
-#: header.php:26
-msgid "Skip to content"
+#: template-parts/content-card.php:27
+msgid "Continue reading"
 msgstr ""
 
-#: inc/gutenberg.php:9
-msgid "Primary Color"
-msgstr ""
-
-#: inc/gutenberg.php:14
-msgid "Secondary Color"
-msgstr ""
-
-#: inc/gutenberg.php:19
-msgid "Success Color"
-msgstr ""
-
-#: inc/gutenberg.php:24
+#: inc/template-functions.php:111
 msgid "Danger color"
 msgstr ""
 
-#: inc/gutenberg.php:29
-msgid "Warning color"
+#: inc/template-functions.php:136
+msgid "Dark"
 msgstr ""
 
-#: inc/gutenberg.php:34
-msgid "Info Color"
+#: inc/customizer.php:48
+msgid "Display footer credits."
 msgstr ""
 
-#: inc/gutenberg.php:39
-msgid "White"
-msgstr ""
-
-#: inc/gutenberg.php:44
-msgid "Light Gray"
-msgstr ""
-
-#: inc/gutenberg.php:49
-msgid "Medium Gray"
-msgstr ""
-
-#: inc/gutenberg.php:54
-msgid "Dark Gray"
-msgstr ""
-
-#: inc/gutenberg.php:59
-msgid "Black"
-msgstr ""
-
-#: inc/gutenberg.php:71 inc/gutenberg.php:79
-msgid "Container"
-msgstr ""
-
-#: inc/customizer.php:37
-msgid "Unax Settings"
-msgstr ""
-
-#: inc/customizer.php:47
-msgid "Grid columns"
-msgstr ""
-
-#: inc/customizer.php:59
-msgid "Google Analytics ID"
-msgstr ""
-
-#: inc/customizer.php:70
-msgid "Facebook Page"
-msgstr ""
-
-#: inc/pluggable.php:93 inc/pluggable.php:98
-msgid "Menu"
-msgstr ""
-
-#. %s: post date.
-#: inc/template-tags.php:32
-#, php-format
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr ""
-
-#. %s: post author.
-#: inc/template-tags.php:50
-#, php-format
-msgctxt "post author"
-msgid "by %s"
-msgstr ""
-
-#. used between list items, there is a space after the comma
-#: inc/template-tags.php:67
-msgid ", "
-msgstr ""
-
-#. 1: list of categories.
-#: inc/template-tags.php:70
-#, php-format
-msgid "Posted in %1$s"
-msgstr ""
-
-#. used between list items, there is a space after the comma
-#: inc/template-tags.php:74
-msgctxt "list item separator"
-msgid ", "
-msgstr ""
-
-#. 1: list of tags.
-#: inc/template-tags.php:77
-#, php-format
-msgid "Tagged %1$s"
-msgstr ""
-
-#. %s: post title
-#: inc/template-tags.php:87
-#, php-format
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+#: inc/customizer.php:69
+msgid "Display site title in footer."
 msgstr ""
 
 #. %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:104 template-parts/content-page.php:40
+#: inc/template-tags.php:100 template-parts/content-page-full-width.php:39
+#: template-parts/content-page.php:39
 #, php-format
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgid "Edit <span class=\"sr-only\">%s</span>"
 msgstr ""
 
-#: inc/template-functions.php:45
-msgid "Primary menu"
+#: inc/customizer.php:158 inc/widgets/class-unax-contacts-widget.php:70
+msgid "Email"
 msgstr ""
 
-#: inc/template-functions.php:46 template-parts/modal-menu.php:25
-msgid "Mobile menu"
+#: inc/starter-content.php:159
+msgid "Example widget here"
 msgstr ""
 
-#: inc/template-functions.php:47
+#: inc/customizer.php:177 inc/widgets/class-unax-contacts-widget.php:111
+msgid "Facebook page"
+msgstr ""
+
+#: inc/template-functions.php:268
+msgid "Footer"
+msgstr ""
+
+#: inc/template-functions.php:280
+msgid "Footer Credits Left"
+msgstr ""
+
+#: inc/template-functions.php:292
+msgid "Footer Credits Right"
+msgstr ""
+
+#: inc/template-functions.php:256
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/starter-content.php:210 inc/template-functions.php:65
 msgid "Footer menu"
-msgstr ""
-
-#: inc/template-functions.php:110
-msgid "Sidebar"
-msgstr ""
-
-#: inc/template-functions.php:112 inc/template-functions.php:123
-#: inc/template-functions.php:133 inc/template-functions.php:143
-msgid "Add widgets here."
-msgstr ""
-
-#: inc/template-functions.php:121
-msgid "Header Widget Area"
-msgstr ""
-
-#: inc/template-functions.php:131
-msgid "Primary Menu Widget Area"
-msgstr ""
-
-#: inc/template-functions.php:141
-msgid "Footer Widget Area"
-msgstr ""
-
-#: inc/template-functions.php:251
-msgid "Submenu"
-msgstr ""
-
-#: inc/template-functions.php:336
-msgid "Facebook Message"
-msgstr ""
-
-#: template-parts/content-single.php:37 template-parts/content-page.php:26
-msgid "Pages:"
-msgstr ""
-
-#: template-parts/modal-menu.php:21
-msgid "Close menu"
-msgstr ""
-
-#: template-parts/content-none.php:14
-msgid "Nothing Found"
-msgstr ""
-
-#. 1: link to WP admin new post page.
-#: template-parts/content-none.php:24
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: template-parts/content-none.php:37
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: template-parts/content-none.php:44
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#: template-parts/content-card.php:25
-msgid "<br><span class=\"more\">Read more</span>"
-msgstr ""
-
-#. Name of the template
-msgid "No Sidebar"
 msgstr ""
 
 #. Name of the template
 msgid "Full Width"
 msgstr ""
 
-#. Name of the theme
-msgid "Unax"
+#: inc/customizer.php:101
+msgid "Grid columns"
 msgstr ""
 
-#. Description of the theme
-msgid "Custom theme for Unax services based on _s"
-msgstr ""
-
-#. URI of the theme
-msgid "http://underscores.me/"
-msgstr ""
-
-#. Author of the theme
-msgid "Atanas Antonov"
+#: inc/template-functions.php:232
+msgid "Header"
 msgstr ""
 
 #. Author URI of the theme
 msgid "https://unax.org"
+msgstr ""
+
+#. Theme credits url.
+#. URI of the theme
+#: footer.php:75
+msgid "https://unax.org/unax-theme"
+msgstr ""
+
+#. WordPress credits url.
+#: footer.php:66
+msgid "https://wordpress.org"
+msgstr ""
+
+#: inc/template-functions.php:121
+msgid "Info Color"
+msgstr ""
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:41
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/starter-content.php:71 inc/starter-content.php:112
+msgid "Koral beach, Bulgaria"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:83
+#, php-format
+msgid "Leave a Comment<span class=\"sr-only\"> on %s</span>"
+msgstr ""
+
+#: inc/template-functions.php:131
+msgid "Light"
+msgstr ""
+
+#: inc/customizer.php:215 inc/widgets/class-unax-contacts-widget.php:137
+msgid "LinkedIn"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:70
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/pluggable.php:84
+msgid "Menu"
+msgstr ""
+
+#: inc/starter-content.php:200 inc/template-functions.php:64
+#: template-parts/modal-menu.php:25
+msgid "Mobile menu"
+msgstr ""
+
+#. Name of the template
+msgid "No Sidebar"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: template-parts/content-single.php:43
+#: template-parts/content-page-full-width.php:25
+#: template-parts/content-page.php:25
+msgid "Pages:"
+msgstr ""
+
+#: inc/customizer.php:139 inc/widgets/class-unax-contacts-widget.php:57
+msgid "Phone"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:54
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:37
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. WordPress credits text.
+#: footer.php:64
+msgid "Powered by"
+msgstr ""
+
+#: inc/template-functions.php:96
+msgid "Primary Color"
+msgstr ""
+
+#: inc/template-functions.php:244
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/starter-content.php:190 inc/template-functions.php:63
+msgid "Primary menu"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:23
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. %s: search query.
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/template-functions.php:101
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/widgets/class-unax-contacts-widget.php:24
+msgid "Show contacts from theme customizer."
+msgstr ""
+
+#: inc/template-functions.php:220
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:27
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:234 inc/widgets/class-unax-contacts-widget.php:150
+msgid "Skype"
+msgstr ""
+
+#: template-parts/content-none.php:35
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/template-functions.php:418
+msgid "Submenu"
+msgstr ""
+
+#: inc/template-functions.php:106
+msgid "Success Color"
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:73
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: footer.php:70
+msgid "Theme"
+msgstr ""
+
+#: inc/customizer.php:83
+msgid "Theme Settings"
+msgstr ""
+
+#: inc/starter-content.php:114
+msgctxt "Theme starter content"
+msgid ""
+"\n"
+"\t\t\t\t\tIt is a long established fact that a reader will be distracted by "
+"the readable content of a\n"
+"\t\t\t\t\tpage when looking at its layout. The point of using Lorem Ipsum is "
+"that it has a more-or-less\n"
+"\t\t\t\t\tnormal distribution of letters, as opposed to using \"Content here,"
+" content here\", making it\n"
+"\t\t\t\t\tlook like readable text.\n"
+"\t\t\t\t\t"
+msgstr ""
+
+#: inc/starter-content.php:47
+msgctxt "Theme starter content"
+msgid ""
+"\n"
+"\t\t\t\t\tLorem Ipsum is simply dummy text of the printing and typesetting "
+"industry. Lorem Ipsum has\n"
+"\t\t\t\t\tbeen the industry's standard dummy text ever since the 1500s, when "
+"an unknown printer took\n"
+"\t\t\t\t\ta galley of type and scrambled it to make a type specimen book. It "
+"has survived not only five\n"
+"\t\t\t\t\tcenturies, but also the leap into electronic typesetting, "
+"remaining essentially unchanged.\n"
+"\t\t\t\t\tIt was popularised in the 1960s with the release of Letraset "
+"sheets containing Lorem Ipsum\n"
+"\t\t\t\t\tpassages, and more recently with desktop publishing software like "
+"Aldus PageMaker including\n"
+"\t\t\t\t\tversions of Lorem Ipsum.\n"
+"\t\t\t\t\t"
+msgstr ""
+
+#: inc/starter-content.php:85
+msgctxt "Theme starter content"
+msgid "Column 1"
+msgstr ""
+
+#: inc/starter-content.php:91
+msgctxt "Theme starter content"
+msgid "Column 2"
+msgstr ""
+
+#: inc/starter-content.php:97
+msgctxt "Theme starter content"
+msgid "Column 3"
+msgstr ""
+
+#: inc/starter-content.php:79
+msgctxt "Theme starter content"
+msgid "Columns block"
+msgstr ""
+
+#: inc/starter-content.php:28
+msgctxt "Theme starter content"
+msgid "Create your website with blocks"
+msgstr ""
+
+#: inc/starter-content.php:107
+msgctxt "Theme starter content"
+msgid "Media &amp; text block"
+msgstr ""
+
+#: inc/starter-content.php:43
+msgctxt "Theme starter content"
+msgid "Paragraph block"
+msgstr ""
+
+#: inc/starter-content.php:35
+msgctxt "Theme starter content"
+msgid "Say Hello to Gutenberg editor"
+msgstr ""
+
+#: inc/widgets/class-unax-contacts-widget.php:189
+msgid "Title"
+msgstr ""
+
+#. Theme credits text.
+#. Name of the theme
+#: footer.php:77
+msgid "Unax"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Unax theme based on Underscores and Twitter Bootstrap. No sidebar and full "
+"width page templates. Plenty of widget areas are registered as well as "
+"several menu locations. Theme includes different filters for layout classes. "
+"Bootstrap colors with the appropriate filters integrated in Gutenberg color "
+"palette. Web Content Accessibility Guidelines (WCAG) compatible."
+msgstr ""
+
+#: inc/customizer.php:121
+msgid "Use contact details with Contacts Widget. Blank fields not rendered."
+msgstr ""
+
+#: inc/template-functions.php:116
+msgid "Warning color"
+msgstr ""
+
+#: inc/template-functions.php:126
+msgid "White"
+msgstr ""
+
+#: inc/starter-content.php:180
+msgid "Widget text"
+msgstr ""
+
+#: inc/starter-content.php:179
+msgid "Widget title"
+msgstr ""
+
+#: inc/customizer.php:272 inc/widgets/class-unax-contacts-widget.php:96
+msgid "Working hours"
+msgstr ""
+
+#: inc/customizer.php:196 inc/widgets/class-unax-contacts-widget.php:124
+msgid "Youtube"
 msgstr ""
