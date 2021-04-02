@@ -118,8 +118,8 @@ msgstr "Показване на заглавието на сайта във фу
 #. %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:100 template-parts/content-page-full-width.php:39
 #: template-parts/content-page.php:39
-msgid "Edit <span class=\"sr-only\">%s</span>"
-msgstr "Редакция <span class=\"sr-only\">%s</span>"
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Редакция <span class=\"screen-reader-text\">%s</span>"
 
 #: inc/customizer.php:158 inc/widgets/class-unax-contacts-widget.php:70
 #| msgid "email"
@@ -207,8 +207,8 @@ msgstr "Плаж Корал, България"
 
 #. %s: post title
 #: inc/template-tags.php:83
-msgid "Leave a Comment<span class=\"sr-only\"> on %s</span>"
-msgstr "Оставете коментар<span class=\"sr-only\"> on %s</span>"
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Оставете коментар<span class=\"screen-reader-text\"> on %s</span>"
 
 #: inc/template-functions.php:131
 msgid "Light"

@@ -115,7 +115,7 @@ msgstr ""
 #: inc/template-tags.php:100 template-parts/content-page-full-width.php:39
 #: template-parts/content-page.php:39
 #, php-format
-msgid "Edit <span class=\"sr-only\">%s</span>"
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
 #: inc/customizer.php:158 inc/widgets/class-unax-contacts-widget.php:70
@@ -200,7 +200,7 @@ msgstr ""
 #. %s: post title
 #: inc/template-tags.php:83
 #, php-format
-msgid "Leave a Comment<span class=\"sr-only\"> on %s</span>"
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #: inc/template-functions.php:131

@@ -22,7 +22,7 @@
 		<p class="card-text">
 			<?php
 				$unax_read_more = sprintf(
-					'... <a href="%s" class="read-more">%s <span class="sr-only">%s</span></a>',
+					'... <a href="%s" class="read-more">%s <span class="screen-reader-text">%s</span></a>',
 					esc_url( get_the_permalink() ),
 					apply_filters( 'unax_text_more', esc_html__( 'Continue reading', 'unax' ) ),
 					get_the_title()
