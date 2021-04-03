@@ -10,23 +10,41 @@
 .widget_unax_contacts {
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: wrap;
 
 	@include media-breakpoint-up(lg) {
 		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	& > * {
+		padding-bottom: 0.5rem;
 	}
 
 	.fa, .fab, .far, .fas {
 		font-size: 2rem;
+		margin-left: 0.5rem;
 		@include media-breakpoint-up(lg) {
 			font-size: 1.5rem;
+			margin-right: 0.5rem;
 		}
 	}
 
 	.socials {
+		margin-top: 0.5rem;
 		@include media-breakpoint-up(lg) {
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
+		}
+		.fa, .fab, .far, .fas {
+			font-size: 2rem;
+			margin-top: 0.5rem;
+			margin-left: 0.5rem;
+			@include media-breakpoint-up(lg) {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
