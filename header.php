@@ -32,7 +32,7 @@
 			 *
 			 * @hooked unax_header_top - 10
 			 * @hooked unax_main_navigation - 30
-			 * @hooked unax_header_image - 40
+			 * @hooked unax_custom_header - 40
 			 * @hooked unax_breadcrumbs (Yoast compatible) - 50
 			 */
 			do_action( 'unax_header' );
