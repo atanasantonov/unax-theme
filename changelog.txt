@@ -1,8 +1,9 @@
 *** Unax Theme Changelog ***
 
-2020-04-03 - version 1.1.11
+2020-04-08 - version 1.1.11
 * Fix: Header hooked function name
 * Fix: Widget Contacts fixes
+* Fix: Bootstrap buttons colors
 
 2020-04-02 - version 1.1.10
 * New: WordPress Core styles added
