@@ -1,26 +1,47 @@
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: $border-color;
-	border-radius: 3px;
-	background: transperant;
-	color: $link-color;
-
-	@include font-size(0.75);
-
-	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+button:not(.btn),
+input[type="button"]:not(.btn),
+input[type="reset"]:not(.btn),
+input[type="submit"]:not(.btn) {
+	display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    color: $body-color;
+    text-align: center;
+    white-space: $btn-white-space;
+    vertical-align: middle;
+    cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
+    user-select: none;
+    background-color: $light;
+    border: $btn-border-width solid transparent;
+    @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+    @include transition($btn-transition);
 
 	&:hover {
-		border-color: darken($border-color, 15%);
+		color: $body-color;
+	    text-decoration: none;
 	}
 
 	&:active,
 	&:focus {
-		border-color: darken($border-color, 10%);
+		outline: 0;
+	    box-shadow: $btn-focus-box-shadow;
 	}
+
+	// Disabled comes first so active can properly restyle
+    &.disabled,
+    &:disabled {
+      opacity: $btn-disabled-opacity;
+      @include box-shadow(none);
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+      @include box-shadow($btn-active-box-shadow);
+
+      &:focus {
+        @include box-shadow($btn-active-box-shadow);
+      }
+    }
 }
 
 .search-form {

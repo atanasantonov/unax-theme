@@ -18,7 +18,7 @@ function unax_editor_color_palette() {
 		'info'      => apply_filters( 'unax_editor_color_palette_info', '#17a2b8' ),
 		'white'     => apply_filters( 'unax_editor_color_palette_white', '#fff' ),
 		'light'     => apply_filters( 'unax_editor_color_palette_light', '#f8f9fa' ),
-		'dark'      => apply_filters( 'unax_editor_color_palette_dark', '#495057' ),
+		'dark'      => apply_filters( 'unax_editor_color_palette_dark', '#343a40' ),
 		'black'     => apply_filters( 'unax_editor_color_palette_black', '#000' ),
 	);
 }
