@@ -5,12 +5,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unax 1.0.2\n"
 "Report-Msgid-Bugs-To: https://unax.org/contacts/\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Atanas Antonov <contact@unax.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-04-02 15:20+0000\n"
+"POT-Creation-Date: 2021-04-13 13:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: unax\n"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Add widgets to the sidebar."
 msgstr ""
 
-#: inc/customizer.php:253 inc/widgets/class-unax-contacts-widget.php:83
+#: inc/customizer.php:253 inc/widgets/class-unax-contacts-widget.php:85
 msgid "Address"
 msgstr ""
 
@@ -53,16 +53,36 @@ msgstr ""
 msgid "Another widget"
 msgstr ""
 
+#: inc/pluggable.php:150 inc/pluggable.php:192
+msgid "Archives"
+msgstr ""
+
+#: inc/pluggable.php:172
+msgid "Asides"
+msgstr ""
+
 #. Author of the theme
 msgid "Atanas Antonov"
+msgstr ""
+
+#: inc/pluggable.php:186
+msgid "Audio"
+msgstr ""
+
+#: inc/pluggable.php:160
+msgid "Author"
 msgstr ""
 
 #: inc/template-functions.php:141
 msgid "Black"
 msgstr ""
 
-#: template-parts/content-single.php:25
-msgid "Category:"
+#: inc/pluggable.php:154 template-parts/content-single.php:25
+msgid "Category"
+msgstr ""
+
+#: inc/pluggable.php:188
+msgid "Chats"
 msgstr ""
 
 #: inc/customizer.php:102
@@ -87,7 +107,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: inc/customizer.php:120 inc/widgets/class-unax-contacts-widget.php:22
-#: inc/widgets/class-unax-contacts-widget.php:183
+#: inc/widgets/class-unax-contacts-widget.php:185
 msgid "Contacts"
 msgstr ""
 
@@ -101,6 +121,10 @@ msgstr ""
 
 #: inc/template-functions.php:136
 msgid "Dark"
+msgstr ""
+
+#: inc/pluggable.php:169
+msgid "Day"
 msgstr ""
 
 #: inc/customizer.php:48
@@ -118,7 +142,7 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/customizer.php:158 inc/widgets/class-unax-contacts-widget.php:70
+#: inc/customizer.php:158 inc/widgets/class-unax-contacts-widget.php:72
 msgid "Email"
 msgstr ""
 
@@ -126,7 +150,7 @@ msgstr ""
 msgid "Example widget here"
 msgstr ""
 
-#: inc/customizer.php:177 inc/widgets/class-unax-contacts-widget.php:111
+#: inc/customizer.php:177 inc/widgets/class-unax-contacts-widget.php:113
 msgid "Facebook page"
 msgstr ""
 
@@ -154,6 +178,10 @@ msgstr ""
 msgid "Full Width"
 msgstr ""
 
+#: inc/pluggable.php:174
+msgid "Galleries"
+msgstr ""
+
 #: inc/customizer.php:101
 msgid "Grid columns"
 msgstr ""
@@ -175,6 +203,10 @@ msgstr ""
 #. WordPress credits url.
 #: footer.php:66
 msgid "https://wordpress.org"
+msgstr ""
+
+#: inc/pluggable.php:176
+msgid "Images"
 msgstr ""
 
 #: inc/template-functions.php:121
@@ -207,8 +239,12 @@ msgstr ""
 msgid "Light"
 msgstr ""
 
-#: inc/customizer.php:215 inc/widgets/class-unax-contacts-widget.php:137
+#: inc/customizer.php:215 inc/widgets/class-unax-contacts-widget.php:139
 msgid "LinkedIn"
+msgstr ""
+
+#: inc/pluggable.php:182
+msgid "Links"
 msgstr ""
 
 #. used between list items, there is a space after the comma
@@ -224,6 +260,10 @@ msgstr ""
 #: inc/starter-content.php:200 inc/template-functions.php:64
 #: template-parts/modal-menu.php:25
 msgid "Mobile menu"
+msgstr ""
+
+#: inc/pluggable.php:166
+msgid "Month"
 msgstr ""
 
 #. Name of the template
@@ -244,13 +284,13 @@ msgstr ""
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: template-parts/content-single.php:43
+#: template-parts/content-single.php:42
 #: template-parts/content-page-full-width.php:25
 #: template-parts/content-page.php:25
 msgid "Pages:"
 msgstr ""
 
-#: inc/customizer.php:139 inc/widgets/class-unax-contacts-widget.php:57
+#: inc/customizer.php:139 inc/widgets/class-unax-contacts-widget.php:59
 msgid "Phone"
 msgstr ""
 
@@ -285,6 +325,10 @@ msgstr ""
 msgid "Primary menu"
 msgstr ""
 
+#: inc/pluggable.php:180
+msgid "Quotes"
+msgstr ""
+
 #. 1: link to WP admin new post page.
 #: template-parts/content-none.php:23
 #, php-format
@@ -314,7 +358,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/customizer.php:234 inc/widgets/class-unax-contacts-widget.php:150
+#: inc/customizer.php:234 inc/widgets/class-unax-contacts-widget.php:152
 msgid "Skype"
 msgstr ""
 
@@ -324,12 +368,20 @@ msgid ""
 "different keywords."
 msgstr ""
 
+#: inc/pluggable.php:184
+msgid "Statuses"
+msgstr ""
+
 #: inc/template-functions.php:418
 msgid "Submenu"
 msgstr ""
 
 #: inc/template-functions.php:106
 msgid "Success Color"
+msgstr ""
+
+#: inc/pluggable.php:157
+msgid "Tag"
 msgstr ""
 
 #. 1: list of tags.
@@ -420,7 +472,7 @@ msgctxt "Theme starter content"
 msgid "Say Hello to Gutenberg editor"
 msgstr ""
 
-#: inc/widgets/class-unax-contacts-widget.php:189
+#: inc/widgets/class-unax-contacts-widget.php:191
 msgid "Title"
 msgstr ""
 
@@ -443,6 +495,10 @@ msgstr ""
 msgid "Use contact details with Contacts Widget. Blank fields not rendered."
 msgstr ""
 
+#: inc/pluggable.php:178
+msgid "Videos"
+msgstr ""
+
 #: inc/template-functions.php:116
 msgid "Warning color"
 msgstr ""
@@ -459,10 +515,14 @@ msgstr ""
 msgid "Widget title"
 msgstr ""
 
-#: inc/customizer.php:272 inc/widgets/class-unax-contacts-widget.php:96
+#: inc/customizer.php:272 inc/widgets/class-unax-contacts-widget.php:98
 msgid "Working hours"
 msgstr ""
 
-#: inc/customizer.php:196 inc/widgets/class-unax-contacts-widget.php:124
+#: inc/pluggable.php:163
+msgid "Year"
+msgstr ""
+
+#: inc/customizer.php:196 inc/widgets/class-unax-contacts-widget.php:126
 msgid "Youtube"
 msgstr ""
