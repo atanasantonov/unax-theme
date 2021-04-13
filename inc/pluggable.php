@@ -145,70 +145,69 @@ if ( ! function_exists( 'unax_archive_header' ) ) {
 	 * Archive header
 	 */
 	function unax_archive_header() {
-
 		$prefix = '';
 		$title  = __( 'Archives', 'unax' );
 
 		if ( is_category() ) {
 			$title  = single_cat_title( '', false );
 			$prefix = __( 'Category', 'unax' );
-	    } elseif ( is_tag() ) {
+		} elseif ( is_tag() ) {
 			$title  = single_tag_title( '', false );
 			$prefix = __( 'Tag', 'unax' );
-	    } elseif ( is_author() ) {
-	        $title  = get_the_author();
+		} elseif ( is_author() ) {
+			$title  = get_the_author();
 			$prefix = __( 'Author', 'unax' );
-	    } elseif ( is_year() ) {
-	        $title  =  get_the_date( _x( 'Y', 'yearly archives date format' ) );
+		} elseif ( is_year() ) {
+			$title  = get_the_date( _x( 'Y', 'yearly archives date format', 'unax' ) );
 			$prefix = __( 'Year', 'unax' );
-	    } elseif ( is_month() ) {
-	        $title  = get_the_date( _x( 'F Y', 'monthly archives date format' ) );
-	        $prefix = __( 'Month', 'unax' );
-	    } elseif ( is_day() ) {
-	        $title  = get_the_date( _x( 'F j, Y', 'daily archives date format' ) );
-	        $prefix = __( 'Day', 'unax' );
-	    } elseif ( is_tax( 'post_format' ) ) {
-	        if ( is_tax( 'post_format', 'post-format-aside' ) ) {
-	            $title = __( 'Asides', 'unax' );
-	        } elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) {
-	            $title = __( 'Galleries', 'unax' );
-	        } elseif ( is_tax( 'post_format', 'post-format-image' ) ) {
-	            $title = __( 'Images', 'unax' );
-	        } elseif ( is_tax( 'post_format', 'post-format-video' ) ) {
-	            $title = __( 'Videos', 'unax' );
-	        } elseif ( is_tax( 'post_format', 'post-format-quote' ) ) {
-	            $title = __( 'Quotes', 'unax' );
-	        } elseif ( is_tax( 'post_format', 'post-format-link' ) ) {
-	            $title = __( 'Links',  'unax');
-	        } elseif ( is_tax( 'post_format', 'post-format-status' ) ) {
-	            $title = __( 'Statuses', 'unax' );
-	        } elseif ( is_tax( 'post_format', 'post-format-audio' ) ) {
-	            $title = __( 'Audio',  'unax');
-	        } elseif ( is_tax( 'post_format', 'post-format-chat' ) ) {
-	            $title = __( 'Chats',  'unax');
-	        }
-	    } elseif ( is_post_type_archive() ) {
-	        $title  = post_type_archive_title( '', false );
-	        $prefix = __( 'Archives', 'unax' );
-	    } elseif ( is_tax() ) {
-	        $queried_object = get_queried_object();
-	        if ( $queried_object ) {
-	            $tax    = get_taxonomy( $queried_object->taxonomy );
-	            $title  = single_term_title( '', false );
-	            $prefix = sprintf(
-	                /* translators: %s: Taxonomy singular name. */
-	                _x( '%s:', 'taxonomy term archive title prefix' ),
-	                $tax->labels->singular_name
-	            );
-	        }
-	    }
+		} elseif ( is_month() ) {
+			$title  = get_the_date( _x( 'F Y', 'monthly archives date format', 'unax' ) );
+			$prefix = __( 'Month', 'unax' );
+		} elseif ( is_day() ) {
+			$title  = get_the_date( _x( 'F j, Y', 'daily archives date format', 'unax' ) );
+			$prefix = __( 'Day', 'unax' );
+		} elseif ( is_tax( 'post_format' ) ) {
+			if ( is_tax( 'post_format', 'post-format-aside' ) ) {
+				$title = __( 'Asides', 'unax' );
+			} elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) {
+				$title = __( 'Galleries', 'unax' );
+			} elseif ( is_tax( 'post_format', 'post-format-image' ) ) {
+				$title = __( 'Images', 'unax' );
+			} elseif ( is_tax( 'post_format', 'post-format-video' ) ) {
+				$title = __( 'Videos', 'unax' );
+			} elseif ( is_tax( 'post_format', 'post-format-quote' ) ) {
+				$title = __( 'Quotes', 'unax' );
+			} elseif ( is_tax( 'post_format', 'post-format-link' ) ) {
+				$title = __( 'Links', 'unax' );
+			} elseif ( is_tax( 'post_format', 'post-format-status' ) ) {
+				$title = __( 'Statuses', 'unax' );
+			} elseif ( is_tax( 'post_format', 'post-format-audio' ) ) {
+				$title = __( 'Audio', 'unax' );
+			} elseif ( is_tax( 'post_format', 'post-format-chat' ) ) {
+				$title = __( 'Chats', 'unax' );
+			}
+		} elseif ( is_post_type_archive() ) {
+			$title  = post_type_archive_title( '', false );
+			$prefix = __( 'Archives', 'unax' );
+		} elseif ( is_tax() ) {
+			$queried_object = get_queried_object();
+			if ( $queried_object ) {
+				$tax    = get_taxonomy( $queried_object->taxonomy );
+				$title  = single_term_title( '', false );
+				$prefix = sprintf(
+					/* translators: %s: Taxonomy singular name. */
+					_x( '%s:', 'taxonomy term archive title prefix', 'unax' ),
+					$tax->labels->singular_name
+				);
+			}
+		}
 
 		printf(
 			'<h1 class="page-title">%s: %s</h1>',
 			esc_html( $prefix ),
-			esc_html( $title ),
+			esc_html( $title )
 		);
-		
+
 		the_archive_description( '<div class="archive-description">', '</div>' );
 	}
 }
