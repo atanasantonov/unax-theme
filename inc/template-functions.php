@@ -85,7 +85,9 @@ function unax_setup() {
 		)
 	);
 
-	// Add colors palette to the editor.
+	/*
+	 * Add colors palette to the editor.
+	 */
 	$colors = unax_editor_color_palette();
 	add_theme_support(
 		'editor-color-palette',
@@ -353,7 +355,58 @@ function unax_body_classes( $classes ) {
 
 
 /**
- * Get columns count for post grid
+ * Archive loop container class.
+ *
+ * @param string $class Class names.
+ * @return string
+ */
+function unax_loop_class( $class = '' ) {
+	$archive_loop_class_array = [];
+
+	$archive_loop_class_array[] = 'archive-loop';
+
+	if ( 'card' === unax_archive_post_content() ) {
+		$archive_loop_class_array[] = unax_grid_columns();
+		$archive_loop_class_array[] = 'card-columns';
+	}
+
+	if ( ! empty( $class ) ) {
+		$archive_loop_class_array[] = $class;
+	}
+
+	$archive_loop_class = apply_filters( 'unax_archive_loop_class', $archive_loop_class_array );
+
+	return implode( ' ', $archive_loop_class );
+}
+
+
+/**
+ * Get archive display option.
+ *
+ * @return string
+ */
+function unax_archive_post_content() {
+	$archive_post_content_default = 'excerpt';
+
+	$archive_post_content = get_theme_mod( 'archive_display', $archive_post_content_default );
+
+	if ( ! in_array( $archive_post_content, array( 'card', 'excerpt' ) ) ) {
+		$archive_post_content = $archive_post_content_default;
+	}
+
+	if ( 'post' !== get_post_type() ) {
+		$archive_post_content = get_post_type();
+	}
+
+	/*
+	 * Apply filter to archive display.
+	 */
+	return apply_filters( 'unax_archive_post_content', $archive_post_content );
+}
+
+
+/**
+ * Get columns count for post grid.
  */
 function unax_grid_columns() {
 	$grid_columns_default = 3;
@@ -361,7 +414,7 @@ function unax_grid_columns() {
 	$grid_columns = (int) get_theme_mod( 'grid_columns', $grid_columns_default );
 
 	/*
-	 * Apply filter to columns count
+	 * Apply filter to columns count.
 	 */
 	$grid_columns = (int) apply_filters( 'unax_grid_columns', $grid_columns );
 

@@ -85,6 +85,32 @@ function unax_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Archive display option.
+	$wp_customize->add_setting(
+		'archive_display',
+		array(
+			'capability'        => 'edit_theme_options',
+			'default'           => 'card',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'archive_display',
+			[
+				'label'       => esc_html__( 'Archive display option', 'unax' ),
+				'description' => esc_html__( 'Choose the archive display for archive pages.', 'unax' ),
+				'section'     => 'unax_common_settings',
+				'type'        => 'select',
+				'choices' => array(
+					'card' => __( 'Grid', 'unax' ),
+					'excerpt' => __( 'List', 'unax' ),
+				),
+			]
+		)
+	);
+
 	// Grid columns.
 	$wp_customize->add_setting(
 		'grid_columns',
