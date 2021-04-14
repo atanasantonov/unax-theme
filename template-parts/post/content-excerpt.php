@@ -15,13 +15,13 @@
 	</header><!-- .entry-header -->
 
 	<div class="row">
-		<?php $class_entry_summary = has_post_thumbnail() ? 'col-8 col-lg-9' : 'col-12'; ?>
+		<?php $unax_entry_summary_class = has_post_thumbnail() ? 'col-8 col-lg-9' : 'col-12'; ?>
 		<?php if ( has_post_thumbnail() ) : ?>
 		<div class="entry-thumbnail col-4 col-lg-3">
 			<?php unax_post_thumbnail(); ?>
 		</div>
 		<?php endif; ?>
-		<div class="entry-summary <?php echo esc_attr( $class_entry_summary ); ?>">
+		<div class="entry-summary <?php echo esc_attr( $unax_entry_summary_class ); ?>">
 		<?php
 			$unax_read_more = sprintf(
 				'... <a href="%s" class="read-more">%s <span class="screen-reader-text">%s</span></a>',
@@ -33,7 +33,7 @@
 			$unax_read_more = wp_trim_words( get_the_excerpt(), 55, $unax_read_more );
 
 			echo wp_kses( $unax_read_more, 'post' );
-		?>
+			?>
 		</div>
 	</div><!-- .entry-summary -->
 

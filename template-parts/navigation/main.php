@@ -32,13 +32,13 @@
 		</button><!-- .nav-toggle -->
 
 		<?php
-		$container_class = is_active_sidebar( 'primary-menu-widget-area' ) ? ' has-widget-area' : '';
+		$unax_primary_menu_container_class = is_active_sidebar( 'primary-menu-widget-area' ) ? ' has-widget-area' : '';
 		if ( has_nav_menu( 'primary' ) ) :
 			wp_nav_menu(
 				array(
 					'theme_location'  => 'primary',
 					'menu_class'      => 'primary-menu',
-					'container_class' => 'primary-menu-wrapper' . $container_class,
+					'container_class' => 'primary-menu-wrapper' . $unax_primary_menu_container_class,
 					'items_wrap'      => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
 					'fallback_cb'     => false,
 				)

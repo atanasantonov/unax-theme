@@ -390,7 +390,7 @@ function unax_archive_post_content() {
 
 	$archive_post_content = get_theme_mod( 'archive_display', $archive_post_content_default );
 
-	if ( ! in_array( $archive_post_content, array( 'card', 'excerpt' ) ) ) {
+	if ( ! in_array( $archive_post_content, array( 'card', 'excerpt' ), true ) ) {
 		$archive_post_content = $archive_post_content_default;
 	}
 
