@@ -1,9 +1,5 @@
 /* Main Navigation ----------------------------- */
 .main-navigation {
-
-	clear: both;
-	display: block;
-	float: left;
 	width: 100%;
 	border-top: 1px solid $gray-400;
 	border-bottom: 1px solid $gray-400;
@@ -43,7 +39,7 @@
 
 			.widget {
 				margin: auto;
-				text-align: right;				
+				text-align: right;
 				& > * {
 					margin: 0;
 					padding: 0;

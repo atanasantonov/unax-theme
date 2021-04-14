@@ -25,6 +25,10 @@ Any comments are welcome and GitHub issues as well.
 
 No notice.
 
+## Changelog
+
+[changelog.txt](changelog.txt?raw=true "Changelog")
+
 ## Donations
 
 Support the development with PayPal:
