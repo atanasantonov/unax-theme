@@ -39,4 +39,4 @@
 			?>
 
 		</header><!-- .site-header -->
-		<?php get_template_part( 'template-parts/modal-menu' ); ?>
+		<?php get_template_part( 'template-parts/navigation/modal-menu' ); ?>
