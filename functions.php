@@ -10,6 +10,10 @@ if ( ! defined( 'UNAX_THEME_VERSION' ) ) {
 	define( 'UNAX_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
 }
 
+if ( ! isset( $content_width ) ) {
+	$content_width = 992;
+}
+
 /**
  * Updates related actions.
  */
