@@ -205,7 +205,7 @@ function unax_setup() {
 function unax_add_editor_style() {
 	wp_enqueue_style(
 		'custom-editor-style',
-		get_template_directory_uri() . '/editor-style.css',
+		get_template_directory_uri() . '/dist/css/editor-style.css',
 		array( 'wp-edit-blocks' ),
 		wp_get_theme()->get( 'Version' )
 	);
@@ -307,11 +307,11 @@ function unax_widgets_init() {
  * Enqueue scripts and styles.
  */
 function unax_scripts() {
-	wp_enqueue_style( 'unax', get_template_directory_uri() . '/style.css', array(), UNAX_THEME_VERSION );
+	wp_enqueue_style( 'unax', get_template_directory_uri() . '/dist/css/style.min.css', array(), UNAX_THEME_VERSION );
 	wp_add_inline_style( 'unax', unax_inline_style() );
 
 	if ( is_rtl() ) {
-		wp_enqueue_style( 'unax-rtl', get_template_directory_uri() . '/style-rtl.css', array( 'unax' ), UNAX_THEME_VERSION );
+		wp_enqueue_style( 'unax-rtl', get_template_directory_uri() . '/dist/css/style-rtl.css', array( 'unax' ), UNAX_THEME_VERSION );
 	}
 
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/dist/vendor/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '4.4.1', true );

@@ -4,8 +4,8 @@
     "notify": true
   },
   "browserSyncWatchFiles" : [
-    "./css/*.min.css",
-    "./js/*.min.js",
+    "./*.min.css",
+    "./dist/js/*.min.js",
     "./sass/**/*.scss",
     "./**/*.php"
   ],

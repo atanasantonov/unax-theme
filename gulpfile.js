@@ -57,8 +57,8 @@ gulp.task( 'sass', function() {
         } ) )
         .pipe( sass( { errLogToConsole: true } ) )
         .pipe( autoprefixer( 'last 2 versions' ) )
-        .pipe( sourcemaps.write( './' ) )
-        .pipe( gulp.dest( './' ) );
+        .pipe( sourcemaps.write( `./` ) )
+        .pipe( gulp.dest( `${paths.dist}/css` ) );
 
 });
 
@@ -85,7 +85,7 @@ gulp.task( 'scripts', function() {
 
 gulp.task( 'minifycss', function() {
 
-  return gulp.src( `/*.css` )
+  return gulp.src( `${paths.dist}/css/style.css` )
     .pipe( sourcemaps.init( { loadMaps: true } ) )
     .pipe( cleanCSS( { compatibility: '*' } ) )
     .pipe( plumber( {
@@ -94,13 +94,13 @@ gulp.task( 'minifycss', function() {
                 this.emit( 'end' );
             }
         } ) )
-    // .pipe( rename( { suffix: '.min' } ) )
-    .pipe( sourcemaps.write( './' ) )
-    .pipe( gulp.dest( './' ) );
+    .pipe( rename( { suffix: '.min' } ) )
+    .pipe( sourcemaps.write( `./` ) )
+    .pipe( gulp.dest( `${paths.dist}/css` ) );
 
 });
 
-gulp.task( 'styles', gulp.series( 'sass' )); // , 'minifycss'
+gulp.task( 'styles', gulp.series( 'sass', 'minifycss' ));
 
 // Run:
 // gulp browser-sync
