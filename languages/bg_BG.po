@@ -10,54 +10,58 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-04-13 12:55+0000\n"
-"PO-Revision-Date: 2021-04-13 13:54+0000\n"
+"PO-Revision-Date: 2021-04-21 15:58+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: unax\n"
 "Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.5.2; wp-5.7"
 
-#: inc/template-functions.php:282
+#: inc/template-functions.php:284
 msgid "Add widgets to footer credits left area."
 msgstr "Добавете джаджи в кредитите в долна лява част."
 
-#: inc/template-functions.php:294
+#: inc/template-functions.php:296
 msgid "Add widgets to footer credits right area."
 msgstr "Добавете джаджи в кредитите в долна дясна част."
 
-#: inc/template-functions.php:270
+#: inc/template-functions.php:272
 msgid "Add widgets to footer."
 msgstr "Добавете джаджи в долната част."
 
-#: inc/template-functions.php:234
+#: inc/template-functions.php:236
 msgid "Add widgets to header."
 msgstr "Добавете джаджи в заглавната част."
 
-#: inc/template-functions.php:258
+#: inc/template-functions.php:260
 msgid "Add widgets to right side of footer menu."
 msgstr "Добавете джаджи вдясно на менюто в долната част."
 
-#: inc/template-functions.php:246
+#: inc/template-functions.php:248
 msgid "Add widgets to right side of primary menu."
 msgstr "Добавете джаджи вдясно на менюто в заглавната част."
 
-#: inc/template-functions.php:222
+#: inc/template-functions.php:224
 msgid "Add widgets to the sidebar."
 msgstr "Добавете джаджи в страничната лента."
 
-#: inc/customizer.php:253 inc/widgets/class-unax-contacts-widget.php:85
+#: inc/customizer.php:279 inc/widgets/class-unax-contacts-widget.php:85
 msgid "Address"
 msgstr "Адрес"
 
-#: inc/starter-content.php:169
+#: inc/starter-content.php:61
 msgid "Another widget"
 msgstr "Друга джаджа"
 
-#: inc/pluggable.php:150 inc/pluggable.php:192
+#: inc/customizer.php:102
+msgid "Archive display option"
+msgstr "Опция за показване на архив"
+
+#: inc/template-tags.php:28 inc/template-tags.php:70
 msgid "Archives"
 msgstr "Архиви"
 
-#: inc/pluggable.php:172
+#: inc/template-tags.php:50
 msgid "Asides"
 msgstr "Странични"
 
@@ -65,32 +69,36 @@ msgstr "Странични"
 msgid "Atanas Antonov"
 msgstr "Атанас Антонов"
 
-#: inc/pluggable.php:186
+#: inc/template-tags.php:64
 msgid "Audio"
 msgstr "Аудио"
 
-#: inc/pluggable.php:160
+#: inc/template-tags.php:38
 msgid "Author"
 msgstr "Автор"
 
-#: inc/template-functions.php:141
+#: inc/template-functions.php:143
 msgid "Black"
 msgstr "Черно"
 
-#: inc/pluggable.php:154 template-parts/content-single.php:25
+#: inc/template-tags.php:32 template-parts/post/content-single.php:25
 msgid "Category"
 msgstr "Категория"
 
-#: inc/pluggable.php:188
+#: inc/template-tags.php:66
 msgid "Chats"
 msgstr "Чатове"
 
-#: inc/customizer.php:102
+#: inc/customizer.php:103
+msgid "Choose the archive display for archive pages."
+msgstr "Изберете стила на показване на архивни страници."
+
+#: inc/customizer.php:128
 msgid "Choose the default columns count for archive pages."
 msgstr "Изберете броя на колоните по подразбиране за архивни страници."
 
 # wpml-name: 68f18f6b55f955ad05e4a174341bf3f1
-#: template-parts/modal-menu.php:21
+#: template-parts/navigation/modal-menu.php:19
 msgid "Close menu"
 msgstr "Затвори меню"
 
@@ -107,26 +115,27 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "%1$s коментар за \"%2$s\""
 msgstr[1] "%1$s коментара за \"%2$s\""
 
-#: inc/customizer.php:120 inc/widgets/class-unax-contacts-widget.php:22
+#: inc/customizer.php:146 inc/widgets/class-unax-contacts-widget.php:22
 #: inc/widgets/class-unax-contacts-widget.php:185
 msgid "Contacts"
 msgstr "Контакти"
 
-#: template-parts/content-card.php:27
+#: template-parts/post/content-card.php:36
+#: template-parts/post/content-excerpt.php:36
 msgid "Continue reading"
 msgstr "Продължете да четете"
 
 # wpml-name: 9b501beb0fb972ae957403e262b9b8f3
-#: inc/template-functions.php:111
+#: inc/template-functions.php:113
 msgid "Danger color"
 msgstr "Цвят Опасност"
 
 # wpml-name: a18366b217ebf811ad1886e4f4f865b2
-#: inc/template-functions.php:136
+#: inc/template-functions.php:138
 msgid "Dark"
 msgstr "Тъмно"
 
-#: inc/pluggable.php:169
+#: inc/template-tags.php:47
 msgid "Day"
 msgstr "Ден"
 
@@ -140,42 +149,42 @@ msgstr "Показване на заглавието на сайта във фу
 
 # wpml-name: 088c09bba6a1638920e9720042563141
 #. %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:100 template-parts/content-page-full-width.php:39
-#: template-parts/content-page.php:39
+#: inc/template-tags.php:182 template-parts/page/content-page-full-width.php:39
+#: template-parts/page/content-page.php:39
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Редакция <span class=\"screen-reader-text\">%s</span>"
 
-#: inc/customizer.php:158 inc/widgets/class-unax-contacts-widget.php:72
+#: inc/customizer.php:184 inc/widgets/class-unax-contacts-widget.php:72
 #| msgid "email"
 msgid "Email"
 msgstr "е-поща"
 
-#: inc/starter-content.php:159
+#: inc/starter-content.php:51
 msgid "Example widget here"
 msgstr "Примерна джаджа тук"
 
-#: inc/customizer.php:177 inc/widgets/class-unax-contacts-widget.php:113
+#: inc/customizer.php:203 inc/widgets/class-unax-contacts-widget.php:113
 msgid "Facebook page"
 msgstr "Facebook страница"
 
-#: inc/template-functions.php:268
+#: inc/template-functions.php:270
 msgid "Footer"
 msgstr "Футър"
 
-#: inc/template-functions.php:280
+#: inc/template-functions.php:282
 msgid "Footer Credits Left"
 msgstr "Футър кредити вляво"
 
-#: inc/template-functions.php:292
+#: inc/template-functions.php:294
 msgid "Footer Credits Right"
 msgstr "Футър кредити вдясно"
 
-#: inc/template-functions.php:256
+#: inc/template-functions.php:258
 msgid "Footer Menu"
 msgstr "Футър меню"
 
 # wpml-name: ecf28384b6f6b902f803ae62f51c450e
-#: inc/starter-content.php:210 inc/template-functions.php:65
+#: inc/starter-content.php:102 inc/template-functions.php:65
 msgid "Footer menu"
 msgstr "Футър меню"
 
@@ -183,15 +192,19 @@ msgstr "Футър меню"
 msgid "Full Width"
 msgstr "Пълна ширина"
 
-#: inc/pluggable.php:174
+#: inc/template-tags.php:52
 msgid "Galleries"
 msgstr "Галерии"
 
-#: inc/customizer.php:101
+#: inc/customizer.php:107
+msgid "Grid"
+msgstr "Решетка"
+
+#: inc/customizer.php:127
 msgid "Grid columns"
 msgstr "Брой колони"
 
-#: inc/template-functions.php:232
+#: inc/template-functions.php:234
 msgid "Header"
 msgstr "Хедър"
 
@@ -210,12 +223,12 @@ msgstr "https://unax.org/unax-theme"
 msgid "https://wordpress.org"
 msgstr "https://wordpress.org"
 
-#: inc/pluggable.php:176
+#: inc/template-tags.php:54
 msgid "Images"
 msgstr "Изображения"
 
 # wpml-name: b5130e8095741617473b89151e352f98
-#: inc/template-functions.php:121
+#: inc/template-functions.php:123
 msgid "Info Color"
 msgstr "Цвят Инфо"
 
@@ -227,57 +240,77 @@ msgstr ""
 "Изглежда нищо не е открито на този адрес. Може би ще опитате с директните "
 "връзки или търсене?"
 
-#: template-parts/content-none.php:41
+#: template-parts/post/content-none.php:41
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr "Изглежда не успяхме да открием нищо. Може би търсене ще помогне."
 
-#: inc/starter-content.php:71 inc/starter-content.php:112
-msgid "Koral beach, Bulgaria"
-msgstr "Плаж Корал, България"
-
 #. %s: post title
-#: inc/template-tags.php:83
+#: inc/template-tags.php:165
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Оставете коментар<span class=\"screen-reader-text\"> on %s</span>"
 
-#: inc/template-functions.php:131
+#: inc/template-functions.php:133
 msgid "Light"
 msgstr "Светло"
 
-#: inc/customizer.php:215 inc/widgets/class-unax-contacts-widget.php:139
+#. Description of the theme
+msgid ""
+"Lightweight theme based on Underscores and Twitter Bootstrap. Clean and "
+"modern design. No sidebar and full width page templates. Plenty of widget "
+"areas are registered as well as several menu locations. Theme includes "
+"different filters for layout classes. Bootstrap colors with the appropriate "
+"filters integrated in Gutenberg color palette. Web Content Accessibility "
+"Guidelines (WCAG) compatible."
+msgstr ""
+"Лека тема, базирана на Underscores и Twitter Bootstrap. Изчистен и модерен "
+"дизайн. Шаблони за страници без странична лента и за пълна ширина. "
+"Регистрирани са много зони с джаджи, включително и на няколко места в менюто."
+" Темата включва различни филтри за класове за оформление. Bootstrap цветове "
+"с подходящи филтри, интегрирани в цветовата палитра на Gutenberg. Съвместими "
+"с насоките за достъпност на уеб съдържание (WCAG). "
+
+#: inc/customizer.php:241 inc/widgets/class-unax-contacts-widget.php:139
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: inc/pluggable.php:182
+#: inc/template-tags.php:60
 msgid "Links"
 msgstr "Връзки"
 
+#: inc/customizer.php:108
+msgid "List"
+msgstr "Списък"
+
 #. used between list items, there is a space after the comma
-#: inc/template-tags.php:70
+#: inc/template-tags.php:152
 msgctxt "list item separator"
 msgid ", "
 msgstr ", "
 
-#: inc/pluggable.php:84
+#: template-parts/navigation/main.php:29
 msgid "Menu"
 msgstr "Меню"
 
-#: inc/starter-content.php:200 inc/template-functions.php:64
-#: template-parts/modal-menu.php:25
+#: inc/starter-content.php:92 inc/template-functions.php:64
+#: template-parts/navigation/modal-menu.php:23
 msgid "Mobile menu"
 msgstr "Мобилно меню"
 
-#: inc/pluggable.php:166
+#: inc/template-tags.php:44
 msgid "Month"
 msgstr "Месец"
+
+#: search.php:43 index.php:57 archive.php:48
+msgid "Next page"
+msgstr "Следваща страница"
 
 #. Name of the template
 msgid "No Sidebar"
 msgstr "Без странична лента"
 
-#: template-parts/content-none.php:14
+#: template-parts/post/content-none.php:14
 msgid "Nothing Found"
 msgstr "Нищо не е открито."
 
@@ -290,24 +323,24 @@ msgstr "Един коментар за “%1$s”"
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Ууупс! Страницата не е открита."
 
-#: template-parts/content-single.php:42
-#: template-parts/content-page-full-width.php:25
-#: template-parts/content-page.php:25
+#: template-parts/page/content-page-full-width.php:25
+#: template-parts/page/content-page.php:25
+#: template-parts/post/content-single.php:42
 msgid "Pages:"
 msgstr "Страници:"
 
-#: inc/customizer.php:139 inc/widgets/class-unax-contacts-widget.php:59
+#: inc/customizer.php:165 inc/widgets/class-unax-contacts-widget.php:59
 msgid "Phone"
 msgstr "Телефон"
 
 #. %s: post author.
-#: inc/template-tags.php:54
+#: inc/template-tags.php:135
 msgctxt "post author"
 msgid "by %s"
 msgstr "по %s"
 
 #. %s: post date.
-#: inc/template-tags.php:37
+#: inc/template-tags.php:117
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "Публикувано на %s"
@@ -317,24 +350,28 @@ msgstr "Публикувано на %s"
 msgid "Powered by"
 msgstr "С подкрепата на"
 
-#: inc/template-functions.php:96
+#: search.php:42 index.php:56 archive.php:47
+msgid "Previous page"
+msgstr "Предишна страница"
+
+#: inc/template-functions.php:98
 msgid "Primary Color"
 msgstr "Основен цвят"
 
-#: inc/template-functions.php:244
+#: inc/template-functions.php:246
 msgid "Primary Menu"
 msgstr "Основно меню"
 
-#: inc/starter-content.php:190 inc/template-functions.php:63
+#: inc/starter-content.php:82 inc/template-functions.php:63
 msgid "Primary menu"
 msgstr "Основно меню"
 
-#: inc/pluggable.php:180
+#: inc/template-tags.php:58
 msgid "Quotes"
 msgstr "Цитати"
 
 #. 1: link to WP admin new post page.
-#: template-parts/content-none.php:23
+#: template-parts/post/content-none.php:23
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
@@ -346,7 +383,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr "Резултати от търсене за: %s"
 
-#: inc/template-functions.php:101
+#: inc/template-functions.php:103
 msgid "Secondary Color"
 msgstr "Вторичен цвят"
 
@@ -354,7 +391,7 @@ msgstr "Вторичен цвят"
 msgid "Show contacts from theme customizer."
 msgstr "Показване на контакти от инструмента за персонализиране на теми."
 
-#: inc/template-functions.php:220
+#: inc/template-functions.php:222
 msgid "Sidebar"
 msgstr "Странична лента"
 
@@ -362,36 +399,36 @@ msgstr "Странична лента"
 msgid "Skip to content"
 msgstr "Продължете към съдържанието"
 
-#: inc/customizer.php:234 inc/widgets/class-unax-contacts-widget.php:152
+#: inc/customizer.php:260 inc/widgets/class-unax-contacts-widget.php:152
 msgid "Skype"
 msgstr "Skype"
 
-#: template-parts/content-none.php:35
+#: template-parts/post/content-none.php:35
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr "Съжаляваме, но нищо не отговаря на вашите критерии."
 
-#: inc/pluggable.php:184
+#: inc/template-tags.php:62
 msgid "Statuses"
 msgstr "Статуси"
 
-#: inc/template-functions.php:418
+#: inc/template-functions.php:472
 msgid "Submenu"
 msgstr "Подменю"
 
-#: inc/template-functions.php:106
+#: inc/template-functions.php:108
 msgid "Success Color"
 msgstr "Цвят Успех"
 
-#: inc/pluggable.php:157
+#: inc/template-tags.php:35
 msgid "Tag"
-msgstr "Отбелязано"
+msgstr "Таг"
 
 #. 1: list of tags.
-#: inc/template-tags.php:73
-msgid "Tagged %1$s"
-msgstr "Отбелязано %1$s"
+#: inc/template-tags.php:155
+msgid "Tagged"
+msgstr "Тагове"
 
 #: footer.php:70
 msgid "Theme"
@@ -400,100 +437,6 @@ msgstr "Тема"
 #: inc/customizer.php:83
 msgid "Theme Settings"
 msgstr "Настройки на темата"
-
-#: inc/starter-content.php:114
-msgctxt "Theme starter content"
-msgid ""
-"\n"
-"\t\t\t\t\tIt is a long established fact that a reader will be distracted by "
-"the readable content of a\n"
-"\t\t\t\t\tpage when looking at its layout. The point of using Lorem Ipsum is "
-"that it has a more-or-less\n"
-"\t\t\t\t\tnormal distribution of letters, as opposed to using \"Content here,"
-" content here\", making it\n"
-"\t\t\t\t\tlook like readable text.\n"
-"\t\t\t\t\t"
-msgstr ""
-"Отдавна е установено, че читателят ще се разсейва от четливото съдържание "
-"на\n"
-"страница, когато се гледа нейното оформление. Смисълът на използването на "
-"Lorem Ipsum е, че има повече или по-малко\n"
-"нормално разпространение на писма, за разлика от използването на "
-"\"Съдържание тук, съдържание тук\", което го прави\n"
-"изглеждат като четлив текст."
-
-#: inc/starter-content.php:47
-msgctxt "Theme starter content"
-msgid ""
-"\n"
-"\t\t\t\t\tLorem Ipsum is simply dummy text of the printing and typesetting "
-"industry. Lorem Ipsum has\n"
-"\t\t\t\t\tbeen the industry's standard dummy text ever since the 1500s, when "
-"an unknown printer took\n"
-"\t\t\t\t\ta galley of type and scrambled it to make a type specimen book. It "
-"has survived not only five\n"
-"\t\t\t\t\tcenturies, but also the leap into electronic typesetting, "
-"remaining essentially unchanged.\n"
-"\t\t\t\t\tIt was popularised in the 1960s with the release of Letraset "
-"sheets containing Lorem Ipsum\n"
-"\t\t\t\t\tpassages, and more recently with desktop publishing software like "
-"Aldus PageMaker including\n"
-"\t\t\t\t\tversions of Lorem Ipsum.\n"
-"\t\t\t\t\t"
-msgstr ""
-"Lorem Ipsum е просто фиктивен текст на печатарската и наборната индустрия. "
-"Lorem Ipsum има\n"
-"е стандартният манекен текст в бранша още от 1500-те, когато неизвестен "
-"принтер взе\n"
-"галера от тип и я разбърка, за да направи книжка за образци от типа. Оцеляла "
-"е не само пет\n"
-"векове, но също така и скокът в електронната набор, оставайки по същество "
-"непроменен.\n"
-"Той е популяризиран през 60-те години с пускането на листовете Letraset, "
-"съдържащи Lorem Ipsum\n"
-"пасажи, а напоследък и със софтуер за настолни издатели като Aldus PageMaker "
-"включително\n"
-"версии на Lorem Ipsum."
-
-#: inc/starter-content.php:85
-msgctxt "Theme starter content"
-msgid "Column 1"
-msgstr "Колона 1"
-
-#: inc/starter-content.php:91
-msgctxt "Theme starter content"
-msgid "Column 2"
-msgstr "Колона 2"
-
-#: inc/starter-content.php:97
-msgctxt "Theme starter content"
-msgid "Column 3"
-msgstr "Колона 3"
-
-#: inc/starter-content.php:79
-msgctxt "Theme starter content"
-msgid "Columns block"
-msgstr "Блок колони"
-
-#: inc/starter-content.php:28
-msgctxt "Theme starter content"
-msgid "Create your website with blocks"
-msgstr "Създайте своя уебсайт с блокове"
-
-#: inc/starter-content.php:107
-msgctxt "Theme starter content"
-msgid "Media &amp; text block"
-msgstr "Блок Медия и текст"
-
-#: inc/starter-content.php:43
-msgctxt "Theme starter content"
-msgid "Paragraph block"
-msgstr "Блок параграф"
-
-#: inc/starter-content.php:35
-msgctxt "Theme starter content"
-msgid "Say Hello to Gutenberg editor"
-msgstr "Кажете Здравей на редактора Gutenberg"
 
 #: inc/widgets/class-unax-contacts-widget.php:191
 msgid "Title"
@@ -505,56 +448,41 @@ msgstr "Заглавие"
 msgid "Unax"
 msgstr "Unax"
 
-#. Description of the theme
-msgid ""
-"Unax theme based on Underscores and Twitter Bootstrap. No sidebar and full "
-"width page templates. Plenty of widget areas are registered as well as "
-"several menu locations. Theme includes different filters for layout classes. "
-"Bootstrap colors with the appropriate filters integrated in Gutenberg color "
-"palette. Web Content Accessibility Guidelines (WCAG) compatible."
-msgstr ""
-"Темата Unax е базирана на Underscores и Twitter Bootstrap. Шаблони за "
-"страници без странична лента и с пълна ширина. Регистрирани са много зони за "
-"джаджи, както и няколко позиции за менюта. Темата включва различни филтри за "
-"класове за оформление. Bootstrap цветове с подходящи филтри, интегрирани в "
-"цветовата палитра на Gutenberg. Съвместима с насоките за достъпност на уеб "
-"съдържание (WCAG)."
-
-#: inc/customizer.php:121
+#: inc/customizer.php:147
 msgid "Use contact details with Contacts Widget. Blank fields not rendered."
 msgstr ""
 "Използвайте данни за контакт за джаджа за контакти. Празните полета не се "
 "показват."
 
-#: inc/pluggable.php:178
+#: inc/template-tags.php:56
 msgid "Videos"
 msgstr "Видео"
 
-#: inc/template-functions.php:116
+#: inc/template-functions.php:118
 msgid "Warning color"
 msgstr "Цвят Внимание"
 
-#: inc/template-functions.php:126
+#: inc/template-functions.php:128
 msgid "White"
 msgstr "Бяло"
 
-#: inc/starter-content.php:180
+#: inc/starter-content.php:72
 msgid "Widget text"
 msgstr "Текст на джаджата"
 
-#: inc/starter-content.php:179
+#: inc/starter-content.php:71
 msgid "Widget title"
 msgstr "Заглавие на джаджата"
 
-#: inc/customizer.php:272 inc/widgets/class-unax-contacts-widget.php:98
+#: inc/customizer.php:298 inc/widgets/class-unax-contacts-widget.php:98
 msgid "Working hours"
 msgstr "Работно време"
 
-#: inc/pluggable.php:163
+#: inc/template-tags.php:41
 msgid "Year"
 msgstr "Година"
 
-#: inc/customizer.php:196 inc/widgets/class-unax-contacts-widget.php:126
+#: inc/customizer.php:222 inc/widgets/class-unax-contacts-widget.php:126
 #| msgid "YouTube"
 msgid "Youtube"
 msgstr "Youtube"

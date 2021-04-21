@@ -10,54 +10,58 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-04-13 13:52+0000\n"
+"POT-Creation-Date: 2021-04-21 15:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: unax\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
 
-#: inc/template-functions.php:282
+#: inc/template-functions.php:284
 msgid "Add widgets to footer credits left area."
 msgstr ""
 
-#: inc/template-functions.php:294
+#: inc/template-functions.php:296
 msgid "Add widgets to footer credits right area."
 msgstr ""
 
-#: inc/template-functions.php:270
+#: inc/template-functions.php:272
 msgid "Add widgets to footer."
 msgstr ""
 
-#: inc/template-functions.php:234
+#: inc/template-functions.php:236
 msgid "Add widgets to header."
 msgstr ""
 
-#: inc/template-functions.php:258
+#: inc/template-functions.php:260
 msgid "Add widgets to right side of footer menu."
 msgstr ""
 
-#: inc/template-functions.php:246
+#: inc/template-functions.php:248
 msgid "Add widgets to right side of primary menu."
 msgstr ""
 
-#: inc/template-functions.php:222
+#: inc/template-functions.php:224
 msgid "Add widgets to the sidebar."
 msgstr ""
 
-#: inc/customizer.php:253 inc/widgets/class-unax-contacts-widget.php:85
+#: inc/customizer.php:279 inc/widgets/class-unax-contacts-widget.php:85
 msgid "Address"
 msgstr ""
 
-#: inc/starter-content.php:169
+#: inc/starter-content.php:61
 msgid "Another widget"
 msgstr ""
 
-#: inc/pluggable.php:150 inc/pluggable.php:192
+#: inc/customizer.php:102
+msgid "Archive display option"
+msgstr ""
+
+#: inc/template-tags.php:28 inc/template-tags.php:70
 msgid "Archives"
 msgstr ""
 
-#: inc/pluggable.php:172
+#: inc/template-tags.php:50
 msgid "Asides"
 msgstr ""
 
@@ -65,31 +69,35 @@ msgstr ""
 msgid "Atanas Antonov"
 msgstr ""
 
-#: inc/pluggable.php:186
+#: inc/template-tags.php:64
 msgid "Audio"
 msgstr ""
 
-#: inc/pluggable.php:160
+#: inc/template-tags.php:38
 msgid "Author"
 msgstr ""
 
-#: inc/template-functions.php:141
+#: inc/template-functions.php:143
 msgid "Black"
 msgstr ""
 
-#: inc/pluggable.php:154 template-parts/content-single.php:25
+#: inc/template-tags.php:32 template-parts/post/content-single.php:25
 msgid "Category"
 msgstr ""
 
-#: inc/pluggable.php:188
+#: inc/template-tags.php:66
 msgid "Chats"
 msgstr ""
 
-#: inc/customizer.php:102
+#: inc/customizer.php:103
+msgid "Choose the archive display for archive pages."
+msgstr ""
+
+#: inc/customizer.php:128
 msgid "Choose the default columns count for archive pages."
 msgstr ""
 
-#: template-parts/modal-menu.php:21
+#: template-parts/navigation/modal-menu.php:19
 msgid "Close menu"
 msgstr ""
 
@@ -106,24 +114,25 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/customizer.php:120 inc/widgets/class-unax-contacts-widget.php:22
+#: inc/customizer.php:146 inc/widgets/class-unax-contacts-widget.php:22
 #: inc/widgets/class-unax-contacts-widget.php:185
 msgid "Contacts"
 msgstr ""
 
-#: template-parts/content-card.php:27
+#: template-parts/post/content-card.php:36
+#: template-parts/post/content-excerpt.php:36
 msgid "Continue reading"
 msgstr ""
 
-#: inc/template-functions.php:111
+#: inc/template-functions.php:113
 msgid "Danger color"
 msgstr ""
 
-#: inc/template-functions.php:136
+#: inc/template-functions.php:138
 msgid "Dark"
 msgstr ""
 
-#: inc/pluggable.php:169
+#: inc/template-tags.php:47
 msgid "Day"
 msgstr ""
 
@@ -136,41 +145,41 @@ msgid "Display site title in footer."
 msgstr ""
 
 #. %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:100 template-parts/content-page-full-width.php:39
-#: template-parts/content-page.php:39
+#: inc/template-tags.php:182 template-parts/page/content-page-full-width.php:39
+#: template-parts/page/content-page.php:39
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/customizer.php:158 inc/widgets/class-unax-contacts-widget.php:72
+#: inc/customizer.php:184 inc/widgets/class-unax-contacts-widget.php:72
 msgid "Email"
 msgstr ""
 
-#: inc/starter-content.php:159
+#: inc/starter-content.php:51
 msgid "Example widget here"
 msgstr ""
 
-#: inc/customizer.php:177 inc/widgets/class-unax-contacts-widget.php:113
+#: inc/customizer.php:203 inc/widgets/class-unax-contacts-widget.php:113
 msgid "Facebook page"
 msgstr ""
 
-#: inc/template-functions.php:268
+#: inc/template-functions.php:270
 msgid "Footer"
 msgstr ""
 
-#: inc/template-functions.php:280
+#: inc/template-functions.php:282
 msgid "Footer Credits Left"
 msgstr ""
 
-#: inc/template-functions.php:292
+#: inc/template-functions.php:294
 msgid "Footer Credits Right"
 msgstr ""
 
-#: inc/template-functions.php:256
+#: inc/template-functions.php:258
 msgid "Footer Menu"
 msgstr ""
 
-#: inc/starter-content.php:210 inc/template-functions.php:65
+#: inc/starter-content.php:102 inc/template-functions.php:65
 msgid "Footer menu"
 msgstr ""
 
@@ -178,15 +187,19 @@ msgstr ""
 msgid "Full Width"
 msgstr ""
 
-#: inc/pluggable.php:174
+#: inc/template-tags.php:52
 msgid "Galleries"
 msgstr ""
 
-#: inc/customizer.php:101
+#: inc/customizer.php:107
+msgid "Grid"
+msgstr ""
+
+#: inc/customizer.php:127
 msgid "Grid columns"
 msgstr ""
 
-#: inc/template-functions.php:232
+#: inc/template-functions.php:234
 msgid "Header"
 msgstr ""
 
@@ -205,11 +218,11 @@ msgstr ""
 msgid "https://wordpress.org"
 msgstr ""
 
-#: inc/pluggable.php:176
+#: inc/template-tags.php:54
 msgid "Images"
 msgstr ""
 
-#: inc/template-functions.php:121
+#: inc/template-functions.php:123
 msgid "Info Color"
 msgstr ""
 
@@ -219,58 +232,72 @@ msgid ""
 "below or a search?"
 msgstr ""
 
-#: template-parts/content-none.php:41
+#: template-parts/post/content-none.php:41
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: inc/starter-content.php:71 inc/starter-content.php:112
-msgid "Koral beach, Bulgaria"
-msgstr ""
-
 #. %s: post title
-#: inc/template-tags.php:83
+#: inc/template-tags.php:165
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#: inc/template-functions.php:131
+#: inc/template-functions.php:133
 msgid "Light"
 msgstr ""
 
-#: inc/customizer.php:215 inc/widgets/class-unax-contacts-widget.php:139
+#. Description of the theme
+msgid ""
+"Lightweight theme based on Underscores and Twitter Bootstrap. Clean and "
+"modern design. No sidebar and full width page templates. Plenty of widget "
+"areas are registered as well as several menu locations. Theme includes "
+"different filters for layout classes. Bootstrap colors with the appropriate "
+"filters integrated in Gutenberg color palette. Web Content Accessibility "
+"Guidelines (WCAG) compatible."
+msgstr ""
+
+#: inc/customizer.php:241 inc/widgets/class-unax-contacts-widget.php:139
 msgid "LinkedIn"
 msgstr ""
 
-#: inc/pluggable.php:182
+#: inc/template-tags.php:60
 msgid "Links"
 msgstr ""
 
+#: inc/customizer.php:108
+msgid "List"
+msgstr ""
+
 #. used between list items, there is a space after the comma
-#: inc/template-tags.php:70
+#: inc/template-tags.php:152
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
-#: inc/pluggable.php:84
+#: template-parts/navigation/main.php:29
 msgid "Menu"
 msgstr ""
 
-#: inc/starter-content.php:200 inc/template-functions.php:64
-#: template-parts/modal-menu.php:25
+#: inc/starter-content.php:92 inc/template-functions.php:64
+#: template-parts/navigation/modal-menu.php:23
 msgid "Mobile menu"
 msgstr ""
 
-#: inc/pluggable.php:166
+#: inc/template-tags.php:44
 msgid "Month"
+msgstr ""
+
+#: search.php:43 index.php:57 archive.php:48
+msgid "Next page"
 msgstr ""
 
 #. Name of the template
 msgid "No Sidebar"
 msgstr ""
 
-#: template-parts/content-none.php:14
+#: template-parts/post/content-none.php:14
 msgid "Nothing Found"
 msgstr ""
 
@@ -284,25 +311,25 @@ msgstr ""
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: template-parts/content-single.php:42
-#: template-parts/content-page-full-width.php:25
-#: template-parts/content-page.php:25
+#: template-parts/page/content-page-full-width.php:25
+#: template-parts/page/content-page.php:25
+#: template-parts/post/content-single.php:42
 msgid "Pages:"
 msgstr ""
 
-#: inc/customizer.php:139 inc/widgets/class-unax-contacts-widget.php:59
+#: inc/customizer.php:165 inc/widgets/class-unax-contacts-widget.php:59
 msgid "Phone"
 msgstr ""
 
 #. %s: post author.
-#: inc/template-tags.php:54
+#: inc/template-tags.php:135
 #, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
 #. %s: post date.
-#: inc/template-tags.php:37
+#: inc/template-tags.php:117
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
@@ -313,24 +340,28 @@ msgstr ""
 msgid "Powered by"
 msgstr ""
 
-#: inc/template-functions.php:96
+#: search.php:42 index.php:56 archive.php:47
+msgid "Previous page"
+msgstr ""
+
+#: inc/template-functions.php:98
 msgid "Primary Color"
 msgstr ""
 
-#: inc/template-functions.php:244
+#: inc/template-functions.php:246
 msgid "Primary Menu"
 msgstr ""
 
-#: inc/starter-content.php:190 inc/template-functions.php:63
+#: inc/starter-content.php:82 inc/template-functions.php:63
 msgid "Primary menu"
 msgstr ""
 
-#: inc/pluggable.php:180
+#: inc/template-tags.php:58
 msgid "Quotes"
 msgstr ""
 
 #. 1: link to WP admin new post page.
-#: template-parts/content-none.php:23
+#: template-parts/post/content-none.php:23
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
@@ -342,7 +373,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/template-functions.php:101
+#: inc/template-functions.php:103
 msgid "Secondary Color"
 msgstr ""
 
@@ -350,7 +381,7 @@ msgstr ""
 msgid "Show contacts from theme customizer."
 msgstr ""
 
-#: inc/template-functions.php:220
+#: inc/template-functions.php:222
 msgid "Sidebar"
 msgstr ""
 
@@ -358,36 +389,35 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: inc/customizer.php:234 inc/widgets/class-unax-contacts-widget.php:152
+#: inc/customizer.php:260 inc/widgets/class-unax-contacts-widget.php:152
 msgid "Skype"
 msgstr ""
 
-#: template-parts/content-none.php:35
+#: template-parts/post/content-none.php:35
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: inc/pluggable.php:184
+#: inc/template-tags.php:62
 msgid "Statuses"
 msgstr ""
 
-#: inc/template-functions.php:418
+#: inc/template-functions.php:472
 msgid "Submenu"
 msgstr ""
 
-#: inc/template-functions.php:106
+#: inc/template-functions.php:108
 msgid "Success Color"
 msgstr ""
 
-#: inc/pluggable.php:157
+#: inc/template-tags.php:35
 msgid "Tag"
 msgstr ""
 
 #. 1: list of tags.
-#: inc/template-tags.php:73
-#, php-format
-msgid "Tagged %1$s"
+#: inc/template-tags.php:155
+msgid "Tagged"
 msgstr ""
 
 #: footer.php:70
@@ -396,80 +426,6 @@ msgstr ""
 
 #: inc/customizer.php:83
 msgid "Theme Settings"
-msgstr ""
-
-#: inc/starter-content.php:114
-msgctxt "Theme starter content"
-msgid ""
-"\n"
-"\t\t\t\t\tIt is a long established fact that a reader will be distracted by "
-"the readable content of a\n"
-"\t\t\t\t\tpage when looking at its layout. The point of using Lorem Ipsum is "
-"that it has a more-or-less\n"
-"\t\t\t\t\tnormal distribution of letters, as opposed to using \"Content here,"
-" content here\", making it\n"
-"\t\t\t\t\tlook like readable text.\n"
-"\t\t\t\t\t"
-msgstr ""
-
-#: inc/starter-content.php:47
-msgctxt "Theme starter content"
-msgid ""
-"\n"
-"\t\t\t\t\tLorem Ipsum is simply dummy text of the printing and typesetting "
-"industry. Lorem Ipsum has\n"
-"\t\t\t\t\tbeen the industry's standard dummy text ever since the 1500s, when "
-"an unknown printer took\n"
-"\t\t\t\t\ta galley of type and scrambled it to make a type specimen book. It "
-"has survived not only five\n"
-"\t\t\t\t\tcenturies, but also the leap into electronic typesetting, "
-"remaining essentially unchanged.\n"
-"\t\t\t\t\tIt was popularised in the 1960s with the release of Letraset "
-"sheets containing Lorem Ipsum\n"
-"\t\t\t\t\tpassages, and more recently with desktop publishing software like "
-"Aldus PageMaker including\n"
-"\t\t\t\t\tversions of Lorem Ipsum.\n"
-"\t\t\t\t\t"
-msgstr ""
-
-#: inc/starter-content.php:85
-msgctxt "Theme starter content"
-msgid "Column 1"
-msgstr ""
-
-#: inc/starter-content.php:91
-msgctxt "Theme starter content"
-msgid "Column 2"
-msgstr ""
-
-#: inc/starter-content.php:97
-msgctxt "Theme starter content"
-msgid "Column 3"
-msgstr ""
-
-#: inc/starter-content.php:79
-msgctxt "Theme starter content"
-msgid "Columns block"
-msgstr ""
-
-#: inc/starter-content.php:28
-msgctxt "Theme starter content"
-msgid "Create your website with blocks"
-msgstr ""
-
-#: inc/starter-content.php:107
-msgctxt "Theme starter content"
-msgid "Media &amp; text block"
-msgstr ""
-
-#: inc/starter-content.php:43
-msgctxt "Theme starter content"
-msgid "Paragraph block"
-msgstr ""
-
-#: inc/starter-content.php:35
-msgctxt "Theme starter content"
-msgid "Say Hello to Gutenberg editor"
 msgstr ""
 
 #: inc/widgets/class-unax-contacts-widget.php:191
@@ -482,47 +438,38 @@ msgstr ""
 msgid "Unax"
 msgstr ""
 
-#. Description of the theme
-msgid ""
-"Unax theme based on Underscores and Twitter Bootstrap. No sidebar and full "
-"width page templates. Plenty of widget areas are registered as well as "
-"several menu locations. Theme includes different filters for layout classes. "
-"Bootstrap colors with the appropriate filters integrated in Gutenberg color "
-"palette. Web Content Accessibility Guidelines (WCAG) compatible."
-msgstr ""
-
-#: inc/customizer.php:121
+#: inc/customizer.php:147
 msgid "Use contact details with Contacts Widget. Blank fields not rendered."
 msgstr ""
 
-#: inc/pluggable.php:178
+#: inc/template-tags.php:56
 msgid "Videos"
 msgstr ""
 
-#: inc/template-functions.php:116
+#: inc/template-functions.php:118
 msgid "Warning color"
 msgstr ""
 
-#: inc/template-functions.php:126
+#: inc/template-functions.php:128
 msgid "White"
 msgstr ""
 
-#: inc/starter-content.php:180
+#: inc/starter-content.php:72
 msgid "Widget text"
 msgstr ""
 
-#: inc/starter-content.php:179
+#: inc/starter-content.php:71
 msgid "Widget title"
 msgstr ""
 
-#: inc/customizer.php:272 inc/widgets/class-unax-contacts-widget.php:98
+#: inc/customizer.php:298 inc/widgets/class-unax-contacts-widget.php:98
 msgid "Working hours"
 msgstr ""
 
-#: inc/pluggable.php:163
+#: inc/template-tags.php:41
 msgid "Year"
 msgstr ""
 
-#: inc/customizer.php:196 inc/widgets/class-unax-contacts-widget.php:126
+#: inc/customizer.php:222 inc/widgets/class-unax-contacts-widget.php:126
 msgid "Youtube"
 msgstr ""

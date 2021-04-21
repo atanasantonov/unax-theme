@@ -37,13 +37,13 @@ if ( ! function_exists( 'unax_archive_header' ) ) {
 			$title  = get_the_author();
 			$prefix = __( 'Author', 'unax' );
 		} elseif ( is_year() ) {
-			$title  = get_the_date( _x( 'Y', 'yearly archives date format', 'unax' ) );
+			$title  = get_the_date( 'Y' );
 			$prefix = __( 'Year', 'unax' );
 		} elseif ( is_month() ) {
-			$title  = get_the_date( _x( 'F Y', 'monthly archives date format', 'unax' ) );
+			$title  = get_the_date( 'F Y' );
 			$prefix = __( 'Month', 'unax' );
 		} elseif ( is_day() ) {
-			$title  = get_the_date( _x( 'F j, Y', 'daily archives date format', 'unax' ) );
+			$title  = get_the_date( 'F j, Y' );
 			$prefix = __( 'Day', 'unax' );
 		} elseif ( is_tax( 'post_format' ) ) {
 			if ( is_tax( 'post_format', 'post-format-aside' ) ) {
@@ -74,8 +74,7 @@ if ( ! function_exists( 'unax_archive_header' ) ) {
 				$tax    = get_taxonomy( $queried_object->taxonomy );
 				$title  = single_term_title( '', false );
 				$prefix = sprintf(
-					/* translators: %s: Taxonomy singular name. */
-					_x( '%s:', 'taxonomy term archive title prefix', 'unax' ),
+					'%s:',
 					$tax->labels->singular_name
 				);
 			}
