@@ -12739,6 +12739,18 @@ a img.aligncenter {
 .entry-summary {
   margin: 0; }
 
+.posts-navigation .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }

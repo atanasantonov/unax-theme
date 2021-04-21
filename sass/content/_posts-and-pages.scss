@@ -36,6 +36,14 @@
 	margin: 0;
 }
 
+.posts-navigation {
+	.nav-links {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
