@@ -307,7 +307,7 @@ function unax_widgets_init() {
  * Enqueue scripts and styles.
  */
 function unax_scripts() {
-	wp_enqueue_style( 'unax', get_template_directory_uri() . '/dist/css/style.min.css', array(), UNAX_THEME_VERSION );
+	wp_enqueue_style( 'unax', get_template_directory_uri() . '/style.min.css', array(), UNAX_THEME_VERSION );
 	wp_add_inline_style( 'unax', unax_inline_style() );
 
 	if ( is_rtl() ) {

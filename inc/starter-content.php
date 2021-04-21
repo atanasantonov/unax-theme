@@ -21,114 +21,8 @@ function unax_get_starter_content() {
 	// Define and register starter content to showcase the theme on new sites.
 	$starter_content = array(
 
-		// Specify the core-defined pages to create and add custom thumbnails to some of them.
+		// // Specify the core-defined pages to create and add custom thumbnails to some of them.
 		'posts'     => array(
-			'front' => array(
-				'post_type'    => 'page',
-				'post_title'   => esc_html_x( 'Create your website with blocks', 'Theme starter content', 'unax' ),
-				'post_content' => '
-				<!-- wp:spacer {"height":50} -->
-				<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-				<!-- /wp:spacer -->
-
-				<!-- wp:paragraph {"fontSize":"medium"} -->
-				<p class="has-medium-font-size"><a href="https://wordpress.org/gutenberg/" target="_blank" rel="noreferrer noopener">' . esc_html_x( 'Say Hello to Gutenberg editor', 'Theme starter content', 'unax' ) . '</a></p>
-				<!-- /wp:paragraph -->
-
-				<!-- wp:spacer {"height":50} -->
-				<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-				<!-- /wp:spacer -->
-
-				<!-- wp:heading {"level":3} -->
-				<h3><strong>' . esc_html_x( 'Paragraph block', 'Theme starter content', 'unax' ) . '</strong></h3>
-				<!-- /wp:heading -->
-
-				<!-- wp:paragraph -->
-				<p>' . esc_html_x(
-					'
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took
-					a galley of type and scrambled it to make a type specimen book. It has survived not only five
-					centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-					passages, and more recently with desktop publishing software like Aldus PageMaker including
-					versions of Lorem Ipsum.
-					',
-					'Theme starter content',
-					'unax'
-				) . '</p>
-				<!-- /wp:paragraph -->
-
-				<!-- wp:spacer {"height":50} -->
-				<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-				<!-- /wp:spacer -->
-
-				<!-- wp:heading {"level":3} -->
-				<h3>Image block</h3>
-				<!-- /wp:heading -->
-
-				<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-				<figure class="wp-block-image size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/dist/img/koral.jpg" alt="' . esc_attr__( 'Koral beach, Bulgaria', 'unax' ) . '"/></figure>
-				<!-- /wp:image -->
-
-				<!-- wp:spacer {"height":50} -->
-				<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-				<!-- /wp:spacer -->
-
-				<!-- wp:heading {"level":3} -->
-				<h3>' . esc_html_x( 'Columns block', 'Theme starter content', 'unax' ) . '</h3>
-				<!-- /wp:heading -->
-
-				<!-- wp:columns -->
-				<div class="wp-block-columns"><!-- wp:column -->
-				<div class="wp-block-column"><!-- wp:paragraph -->
-				<p>' . esc_html_x( 'Column 1', 'Theme starter content', 'unax' ) . '</p>
-				<!-- /wp:paragraph --></div>
-				<!-- /wp:column -->
-
-				<!-- wp:column -->
-				<div class="wp-block-column"><!-- wp:paragraph -->
-				<p>' . esc_html_x( 'Column 2', 'Theme starter content', 'unax' ) . '</p>
-				<!-- /wp:paragraph --></div>
-				<!-- /wp:column -->
-
-				<!-- wp:column -->
-				<div class="wp-block-column"><!-- wp:paragraph -->
-				<p>' . esc_html_x( 'Column 3', 'Theme starter content', 'unax' ) . '</p>
-				<!-- /wp:paragraph --></div>
-				<!-- /wp:column --></div>
-				<!-- /wp:columns -->
-
-				<!-- wp:spacer {"height":50} -->
-				<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-				<!-- /wp:spacer -->
-
-				<!-- wp:heading {"level":3} -->
-				<h3>' . esc_html_x( 'Media &amp; text block', 'Theme starter content', 'unax' ) . '</h3>
-				<!-- /wp:heading -->
-
-				<!-- wp:media-text {"mediaType":"image","verticalAlignment":"center"} -->
-				<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center">
-				<figure class="wp-block-image size-large"><img src="' . esc_url( get_template_directory_uri() ) . '/dist/img/koral.jpg" alt="' . esc_attr__( 'Koral beach, Bulgaria', 'unax' ) . '" class="size-full"/></figure>
-				<div class="wp-block-media-text__content">
-				<p>' . esc_html_x(
-					'
-					It is a long established fact that a reader will be distracted by the readable content of a
-					page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-					normal distribution of letters, as opposed to using "Content here, content here", making it
-					look like readable text.
-					',
-					'Theme starter content',
-					'unax'
-				) . '</p>
-				</div></div>
-				<!-- /wp:media-text -->
-
-				<!-- wp:spacer {"height":50} -->
-				<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-				<!-- /wp:spacer -->
-				',
-			),
 			'about',
 			'contact',
 			'blog',
@@ -136,8 +30,7 @@ function unax_get_starter_content() {
 
 		// Default to a static front page and assign the front and posts pages.
 		'options'   => array(
-			'show_on_front'  => 'page',
-			'page_on_front'  => '{{front}}',
+			'show_on_front'  => 'posts',
 			'page_for_posts' => '{{blog}}',
 		),
 

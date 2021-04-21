@@ -42,25 +42,6 @@ gulp.task( 'watch', function() {
 
 });
 
-// Run:
-// gulp sass
-// Compiles SCSS files in CSS
-gulp.task( 'sass', function() {
-
-    return gulp.src( `${paths.sass}/*.scss` )
-        .pipe( sourcemaps.init( { loadMaps: true } ) )
-        .pipe( plumber( {
-            errorHandler: function( err ) {
-                console.log( err );
-                this.emit( 'end' );
-            }
-        } ) )
-        .pipe( sass( { errLogToConsole: true } ) )
-        .pipe( autoprefixer( 'last 2 versions' ) )
-        .pipe( sourcemaps.write( `./` ) )
-        .pipe( gulp.dest( `${paths.dist}/css` ) );
-
-});
 
 // Run:
 // gulp scripts.
@@ -83,9 +64,29 @@ gulp.task( 'scripts', function() {
 
 });
 
+// Run:
+// gulp sass
+// Compiles SCSS files in CSS
+gulp.task( 'sass', function() {
+
+    return gulp.src( `${paths.sass}/*.scss` )
+        .pipe( sourcemaps.init( { loadMaps: true } ) )
+        .pipe( plumber( {
+            errorHandler: function( err ) {
+                console.log( err );
+                this.emit( 'end' );
+            }
+        } ) )
+        .pipe( sass( { errLogToConsole: true } ) )
+        .pipe( autoprefixer( 'last 2 versions' ) )
+        .pipe( sourcemaps.write( `./` ) )
+        .pipe( gulp.dest( `./` ) );
+
+});
+
 gulp.task( 'minifycss', function() {
 
-  return gulp.src( `${paths.dist}/css/style.css` )
+  return gulp.src( `style.css` )
     .pipe( sourcemaps.init( { loadMaps: true } ) )
     .pipe( cleanCSS( { compatibility: '*' } ) )
     .pipe( plumber( {
@@ -96,7 +97,7 @@ gulp.task( 'minifycss', function() {
         } ) )
     .pipe( rename( { suffix: '.min' } ) )
     .pipe( sourcemaps.write( `./` ) )
-    .pipe( gulp.dest( `${paths.dist}/css` ) );
+    .pipe( gulp.dest( `./` ) );
 
 });
 
