@@ -11,9 +11,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( apply_filters( 'unax_card_post_class', 'card mb-4' ) ); ?>>
 
-	<a class="thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-		<?php unax_post_thumbnail(); ?>
-	</a>
+	<?php
+
+	$unax_post_thumbnail = unax_post_thumbnail();
+	if ( ! empty( $unax_post_thumbnail ) ) {
+		printf(
+			'<a class="thumbnail" href="%s" aria-hidden="true" tabindex="-1">%s</a>',
+			esc_url( get_the_permalink() ),
+			wp_kses_post( $unax_post_thumbnail )
+		);
+	}
+
+	?>
 
 	<div class="card-body">
 

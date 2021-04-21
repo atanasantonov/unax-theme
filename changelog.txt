@@ -1,5 +1,6 @@
 2020-04-15 - version 1.2.0
 * New: Grid or list archive display theme option
+* New: YouTube and WordPress TV embeds preview in archive
 * Update: Template parts folder structure
 * Fix: Archive styling
 * Fix: Default font weight decreased

@@ -202,6 +202,8 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 	 *
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
+	 *
+	 * @return string
 	 */
 	function unax_post_thumbnail() {
 		if ( post_password_required() || is_attachment() ) {
@@ -213,8 +215,8 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 		$thumbnail_class_default = get_post_type() === 'post' && ! is_single() ? 'card-img-top' : '';
 		$thumbnail_class = apply_filters( 'unax_thumbnail_class', $thumbnail_class_default );
 
-		if ( has_post_thumbnail() ) :
-			return printf(
+		if ( has_post_thumbnail() ) {
+			return sprintf(
 				'<div class="%s">%s</div>',
 				esc_attr( $thumbnail_wrapper_class ),
 				get_the_post_thumbnail(
@@ -223,7 +225,16 @@ if ( ! function_exists( 'unax_post_thumbnail' ) ) :
 					[ 'class' => $thumbnail_class ]
 				)
 			);
-		endif;
+		}
+
+		if ( is_single() ) {
+			return;
+		}
+
+		$embed_preview = unax_block_core_embed_preview();
+		if ( ! empty( $embed_preview ) ) {
+			return $embed_preview;
+		}
 	}
 
 endif;

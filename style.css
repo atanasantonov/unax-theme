@@ -12726,6 +12726,11 @@ a img.aligncenter {
   margin: 0;
   padding: 0 0 0.25rem 0; }
 
+.search figure.wp-block-embed figcaption,
+.archive figure.wp-block-embed figcaption,
+.archive-loop figure.wp-block-embed figcaption {
+  display: none; }
+
 .updated:not(.published) {
   display: none; }
 

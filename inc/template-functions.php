@@ -485,3 +485,58 @@ function unax_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 
 	return $args;
 }
+
+
+/**
+ * Extends allowed html for wp_kses.
+ *
+ * @param array  $tags An array of arguments.
+ * @param string $context Menu item.
+ *
+ * @return array
+ */
+function unax_wp_kses_allowed_html( $tags, $context ) {
+	if ( 'post' === $context ) {
+		$tags['iframe'] = array(
+			'src'             => true,
+			'height'          => true,
+			'width'           => true,
+			'frameborder'     => true,
+			'allowfullscreen' => true,
+		);
+	}
+	return $tags;
+}
+
+
+/**
+ * Add a preview of embeded content.
+ *
+ * @return string
+ */
+function unax_block_core_embed_preview() {
+	$core_embeds = array(
+		'youtube',
+		'wordpress-tv',
+	);
+
+	$blocks = parse_blocks( get_the_content() );
+	foreach ( $core_embeds as $core_embed ) {
+		if ( ! has_block( 'core-embed/' . $core_embed ) ) {
+			return;
+		}
+
+		foreach ( $blocks as $block ) {
+			if ( 'core-embed/' . $core_embed === $block['blockName'] ) {
+				$block['attrs']['url']              = esc_url( $block['attrs']['url'] );
+				$block['attrs']['type']             = esc_attr( $block['attrs']['type'] );
+				$block['attrs']['providerNameSlug'] = esc_attr( $block['attrs']['providerNameSlug'] );
+				$block['attrs']['className']        = esc_attr( $block['attrs']['className'] );
+
+				add_filter( 'wp_kses_allowed_html', 'unax_wp_kses_allowed_html', 10, 2 );
+
+				return apply_filters( 'the_content', render_block( $block ) ); // phpcs:ignore.
+			}
+		}
+	}
+}

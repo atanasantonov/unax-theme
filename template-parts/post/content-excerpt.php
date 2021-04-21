@@ -15,10 +15,17 @@
 	</header><!-- .entry-header -->
 
 	<div class="row">
-		<?php $unax_entry_summary_class = has_post_thumbnail() ? 'col-8 col-lg-9' : 'col-12'; ?>
-		<?php if ( has_post_thumbnail() ) : ?>
+		<?php $unax_post_thumbnail = unax_post_thumbnail(); ?>
+		<?php $unax_entry_summary_class = ! empty( $unax_post_thumbnail ) ? 'col-8 col-lg-9' : 'col-12'; ?>
+		<?php if ( ! empty( $unax_post_thumbnail ) ) : ?>
 		<div class="entry-thumbnail col-4 col-lg-3">
-			<?php unax_post_thumbnail(); ?>
+			<?php
+			printf(
+				'<a class="thumbnail" href="%s" aria-hidden="true" tabindex="-1">%s</a>',
+				esc_url( get_the_permalink() ),
+				wp_kses_post( $unax_post_thumbnail )
+			);
+			?>
 		</div>
 		<?php endif; ?>
 		<div class="entry-summary <?php echo esc_attr( $unax_entry_summary_class ); ?>">
