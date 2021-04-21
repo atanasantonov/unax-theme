@@ -14,7 +14,7 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         filename: 'unax.zip'
-        exclusions: '*.git* *.github* /*node_modules/* /vendor .gitignore .distignore composer.* gulp* package.json phpcs.xml.dist README.md style.css.map'
+        exclusions: '*.css.map *.git* *.github* /*node_modules/* /vendor .gitignore .distignore composer.* gulp* package.json phpcs.xml.dist README.md'
 
     - name: Upload Release
       uses: ncipollo/release-action@v1
