@@ -308,10 +308,11 @@ function unax_widgets_init() {
  */
 function unax_scripts() {
 	wp_enqueue_style( 'unax', get_template_directory_uri() . '/style.css', array(), UNAX_THEME_VERSION );
-
-	wp_style_add_data( 'unax', 'rtl', 'replace' );
-
 	wp_add_inline_style( 'unax', unax_inline_style() );
+
+	if ( is_rtl() ) {
+		wp_enqueue_style( 'unax-rtl', get_template_directory_uri() . '/style-rtl.css', array( 'unax' ), UNAX_THEME_VERSION );
+	}
 
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/dist/vendor/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '4.4.1', true );
 	wp_enqueue_script( 'unax', get_template_directory_uri() . '/dist/js/index.min.js', array( 'jquery', 'bootstrap' ), UNAX_THEME_VERSION, true );

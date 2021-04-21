@@ -6,6 +6,7 @@
 * Fix: Default font weight decreased
 * Fix: Customizer partial edit buttons
 * Fix: Posts navigation styling and buttons texts
+* Fix: RTL support
 
 2020-04-13 - version 1.1.12
 * Update: Unax archive header function

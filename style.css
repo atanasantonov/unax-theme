@@ -12739,7 +12739,9 @@ a img.aligncenter {
 .entry-summary {
   margin: 0; }
 
-.posts-navigation .nav-links {
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
