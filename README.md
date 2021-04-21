@@ -3,9 +3,9 @@
 
 # Unax
 
-Unax starter theme based on Underscores and Twitter Bootstrap.
+Lightweight theme based on Underscores and Twitter Bootstrap.
 
-No sidebar and full width page templates. Plenty of widget areas are registered as well as several menu locations. Theme includes different filters for layout classes. Theme uses Sass language in well organized files. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette.
+Clean and modern design. No sidebar and full width page templates. Plenty of widget areas are registered as well as several menu locations. Theme includes different filters for layout classes. Theme uses Sass language in well organized files. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette.
 
 Web Content Accessibility Guidelines (WCAG) compatible.
 
