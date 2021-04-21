@@ -1,7 +1,7 @@
 === Unax ===
 Contributors: unax
 Tags: blog, accessibility-ready, e-commerce, grid-layout, right-sidebar, editor-style, featured-images, full-width-template, translation-ready, custom-logo, block-styles
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 Tested up to: 5.7.1
 Requires at least: 5.0
 Requires PHP: 5.6
@@ -12,7 +12,7 @@ Lightweight theme based on Underscores and Twitter Bootstrap.
 
 == Description ==
 
-Clean and modern design. 
+Clean and modern design.
 
 No sidebar and full width page templates. Plenty of widget areas are registered as well as several menu locations. Theme includes different filters for layout classes. Theme uses Sass language in well organized files. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette.
 

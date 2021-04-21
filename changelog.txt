@@ -1,4 +1,5 @@
 2020-04-21 - version 1.2.1
+* Fix: Icons hotfix
 * Update: Translation
 
 2020-04-21 - version 1.2.0
