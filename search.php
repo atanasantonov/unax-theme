@@ -37,12 +37,7 @@ get_header();
 					get_template_part( 'template-parts/post/content', 'excerpt' );
 				endwhile;
 
-				the_posts_navigation(
-					array(
-						'prev_text' => esc_html__( 'Previous page', 'unax' ),
-						'next_text' => esc_html__( 'Next page', 'unax' ),
-					)
-				);
+				the_posts_navigation();
 			else :
 				get_template_part( 'template-parts/post/content', 'none' );
 			endif;
