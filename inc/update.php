@@ -19,7 +19,7 @@ function unax_migrate_menu_locations_and_sidebars() {
 	$theme_mods = get_option( 'theme_mods_unax' );
 
 	// Update menu locations.
-	$nav_menu_locations = $theme_mods['nav_menu_locations'];
+	$nav_menu_locations = isset( $theme_mods['nav_menu_locations'] ) ? $theme_mods['nav_menu_locations'] : array();
 	$nav_menu_locations_needs_update = false;
 
 	if ( array_key_exists( 'primary-menu', $nav_menu_locations ) ) {
