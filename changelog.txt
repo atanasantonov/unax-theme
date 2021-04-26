@@ -1,3 +1,7 @@
+2020-04-26 - version 1.2.2
+* Fix: Updater
+* Fix: Posts navigation buttons texts
+
 2020-04-21 - version 1.2.1
 * Fix: Icons hotfix
 * Update: Translation
