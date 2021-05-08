@@ -31,9 +31,7 @@ No notice.
 
 ## Donations
 
-Support the development with PayPal:
-
-[![PayPal Donate Button](dist/img/paypal-donate-button.png?raw=true "PayPal Donate Button")](https://www.paypal.com/donate?hosted_button_id=4CZP4EL93G6VJ)
+[![PayPal Donate Button](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "Donate with PayPal button")](https://www.paypal.com/donate?hosted_button_id=4CZP4EL93G6VJ)
 
 ## Third Party Libraries
 
