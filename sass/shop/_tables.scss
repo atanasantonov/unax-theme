@@ -84,4 +84,21 @@ table.shop_table_responsive {
 			}
 		}
 	}
+
+	.woocommerce-address-fields {
+		p {
+
+			label {
+				width: 36%;
+			}
+			.woocommerce-input-wrapper {
+				width: 64%;
+			}
+			input:not(#createaccount),
+			textarea {
+				width: 100%;
+			}
+
+		}
+	}
 }

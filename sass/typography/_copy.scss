@@ -20,8 +20,6 @@ address {
 pre {
 	background: $gray-200;
 	font-family: $font-family-monospace;
-
-	@include font-size(0.9375);
 	line-height: 1.75;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -34,8 +32,6 @@ kbd,
 tt,
 var {
 	font-family: $font-family-monospace;
-
-	@include font-size(0.9375);
 }
 
 abbr,

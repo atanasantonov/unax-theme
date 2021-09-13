@@ -61,15 +61,15 @@
 			.woocommerce-billing-fields,
 			.woocommerce-shipping-fields {
 
-				p:not(#billing_first_name_field):not(#billing_last_name_field) {
+				p {
 
-					label:not(#billing_first_name_field) {
+					label {
 						width: 36%;
 					}
 					.woocommerce-input-wrapper {
 						width: 64%;
 					}
-					input:not(#createaccount),
+					input,
 					textarea {
 						width: 100%;
 					}

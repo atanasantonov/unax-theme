@@ -4413,7 +4413,6 @@ button.bg-dark:focus {
   position: fixed !important; }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important; }
 
 .fixed-top {
@@ -4430,9 +4429,8 @@ button.bg-dark:focus {
   left: 0;
   z-index: 1030; }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020; } }
@@ -10643,7 +10641,6 @@ address {
 pre {
   background: #e9ecef;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.05859rem;
   line-height: 1.75;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -10654,8 +10651,7 @@ code,
 kbd,
 tt,
 var {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.05859rem; }
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 abbr,
 acronym {
@@ -12119,7 +12115,14 @@ table.shop_table_responsive tr td {
   table.shop_table_responsive tr td {
     display: table-cell; }
     table.shop_table_responsive tr td::before {
-      display: none; } }
+      display: none; }
+  .woocommerce-address-fields p label {
+    width: 36%; }
+  .woocommerce-address-fields p .woocommerce-input-wrapper {
+    width: 64%; }
+  .woocommerce-address-fields p input:not(#createaccount),
+  .woocommerce-address-fields p textarea {
+    width: 100%; } }
 
 .woocommerce .columns-1 {
   width: 100%; }
@@ -12310,24 +12313,24 @@ ul.products {
     .woocommerce-page .col2-set .col-1,
     .woocommerce-page .col2-set .col-2 {
       padding: 0; }
-    .woocommerce .col2-set .woocommerce-billing-fields p:not(#billing_first_name_field):not(#billing_last_name_field) label:not(#billing_first_name_field),
-    .woocommerce .col2-set .woocommerce-shipping-fields p:not(#billing_first_name_field):not(#billing_last_name_field) label:not(#billing_first_name_field),
-    .woocommerce-page .col2-set .woocommerce-billing-fields p:not(#billing_first_name_field):not(#billing_last_name_field) label:not(#billing_first_name_field),
-    .woocommerce-page .col2-set .woocommerce-shipping-fields p:not(#billing_first_name_field):not(#billing_last_name_field) label:not(#billing_first_name_field) {
+    .woocommerce .col2-set .woocommerce-billing-fields p label,
+    .woocommerce .col2-set .woocommerce-shipping-fields p label,
+    .woocommerce-page .col2-set .woocommerce-billing-fields p label,
+    .woocommerce-page .col2-set .woocommerce-shipping-fields p label {
       width: 36%; }
-    .woocommerce .col2-set .woocommerce-billing-fields p:not(#billing_first_name_field):not(#billing_last_name_field) .woocommerce-input-wrapper,
-    .woocommerce .col2-set .woocommerce-shipping-fields p:not(#billing_first_name_field):not(#billing_last_name_field) .woocommerce-input-wrapper,
-    .woocommerce-page .col2-set .woocommerce-billing-fields p:not(#billing_first_name_field):not(#billing_last_name_field) .woocommerce-input-wrapper,
-    .woocommerce-page .col2-set .woocommerce-shipping-fields p:not(#billing_first_name_field):not(#billing_last_name_field) .woocommerce-input-wrapper {
+    .woocommerce .col2-set .woocommerce-billing-fields p .woocommerce-input-wrapper,
+    .woocommerce .col2-set .woocommerce-shipping-fields p .woocommerce-input-wrapper,
+    .woocommerce-page .col2-set .woocommerce-billing-fields p .woocommerce-input-wrapper,
+    .woocommerce-page .col2-set .woocommerce-shipping-fields p .woocommerce-input-wrapper {
       width: 64%; }
-    .woocommerce .col2-set .woocommerce-billing-fields p:not(#billing_first_name_field):not(#billing_last_name_field) input:not(#createaccount),
-    .woocommerce .col2-set .woocommerce-billing-fields p:not(#billing_first_name_field):not(#billing_last_name_field) textarea,
-    .woocommerce .col2-set .woocommerce-shipping-fields p:not(#billing_first_name_field):not(#billing_last_name_field) input:not(#createaccount),
-    .woocommerce .col2-set .woocommerce-shipping-fields p:not(#billing_first_name_field):not(#billing_last_name_field) textarea,
-    .woocommerce-page .col2-set .woocommerce-billing-fields p:not(#billing_first_name_field):not(#billing_last_name_field) input:not(#createaccount),
-    .woocommerce-page .col2-set .woocommerce-billing-fields p:not(#billing_first_name_field):not(#billing_last_name_field) textarea,
-    .woocommerce-page .col2-set .woocommerce-shipping-fields p:not(#billing_first_name_field):not(#billing_last_name_field) input:not(#createaccount),
-    .woocommerce-page .col2-set .woocommerce-shipping-fields p:not(#billing_first_name_field):not(#billing_last_name_field) textarea {
+    .woocommerce .col2-set .woocommerce-billing-fields p input,
+    .woocommerce .col2-set .woocommerce-billing-fields p textarea,
+    .woocommerce .col2-set .woocommerce-shipping-fields p input,
+    .woocommerce .col2-set .woocommerce-shipping-fields p textarea,
+    .woocommerce-page .col2-set .woocommerce-billing-fields p input,
+    .woocommerce-page .col2-set .woocommerce-billing-fields p textarea,
+    .woocommerce-page .col2-set .woocommerce-shipping-fields p input,
+    .woocommerce-page .col2-set .woocommerce-shipping-fields p textarea {
       width: 100%; }
     .woocommerce .col2-set .form-row-first,
     .woocommerce-page .col2-set .form-row-first {
