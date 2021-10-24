@@ -17,7 +17,7 @@
 	<div class="<?php echo esc_attr( apply_filters( 'unax_container_class', 'container' ) ); ?>">
 
 		<button
-			class="toggle nav-toggle mobile-nav-toggle"
+			class="toggle nav-toggle"
 			data-toggle-target=".menu-modal"
 			data-toggle-body-class="showing-menu-modal"
 			aria-expanded="false"

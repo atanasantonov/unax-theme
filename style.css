@@ -11470,8 +11470,8 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
     width: 100%; }
   /* HEADER TOGGLES */
   .mobile-search-toggle,
-  .mobile-nav-toggle {
-    display: none !important; }
+  .nav-toggle {
+    display: none; }
   .primary-menu-wrapper + .header-toggles {
     margin-left: 3rem; }
   .header-toggles {

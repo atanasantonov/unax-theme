@@ -75,10 +75,9 @@
 	}
 
 	/* HEADER TOGGLES */
-
 	.mobile-search-toggle,
-	.mobile-nav-toggle {
-		display: none !important;
+	.nav-toggle {
+		display: none;
 	}
 
 	.primary-menu-wrapper + .header-toggles {
