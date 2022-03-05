@@ -10,5 +10,5 @@
 
 /* Width of "full-wide" blocks */
 .wp-block[data-align="full"] {
-    max-width: none;
+    max-width: 100%;
 }
