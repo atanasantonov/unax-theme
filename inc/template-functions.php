@@ -194,7 +194,7 @@ function unax_setup() {
 	* page load, as it is a one-off operation only needed once in the customizer.
 	*/
 	if ( is_customize_preview() ) {
-		require get_template_directory() . '/inc/starter-content.php';
+		get_template_part( 'inc/starter-content', '' );
 		add_theme_support( 'starter-content', unax_get_starter_content() );
 	}
 }
