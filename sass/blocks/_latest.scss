@@ -1,0 +1,15 @@
+.wp-block-latest-posts {
+    &.wp-block-latest-posts__list {
+        padding-left: 2.5rem;
+        list-style: initial;
+        list-style-type: initial;
+
+        @include media-breakpoint-up(lg) {
+			padding-left: 0;
+		}
+    }
+}
+
+ol.wp-block-latest-comments .wp-block-latest-comments__comment {
+    list-style: decimal;
+}

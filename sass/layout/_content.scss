@@ -28,8 +28,10 @@
 			overflow: hidden;
 		}
 
-		ul {
-			margin-left: -1rem;
+		@include media-breakpoint-up(lg) {
+			ul {
+				padding-left: 0;
+			}
 		}
 
 		input {
