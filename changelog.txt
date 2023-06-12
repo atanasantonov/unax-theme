@@ -1,3 +1,7 @@
+2020-09-13 - version 1.2.5
+* Fix: List styling in recent posts and recent comments blocks
+* Fix: Posts archive styling on mobile
+
 2020-09-13 - version 1.2.2
 * Fix: WooCommerce address fields width
 
