@@ -197,6 +197,14 @@ function unax_setup() {
 		get_template_part( 'inc/starter-content', '' );
 		add_theme_support( 'starter-content', unax_get_starter_content() );
 	}
+
+	/**
+	 * Add support of WooCommerce.
+	 *
+	 * @link https://woocommerce.com/document/woocommerce-theme-developer-handbook/
+	 */
+	add_theme_support( 'woocommerce' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
 }
 
 /**
@@ -334,6 +342,14 @@ function unax_inline_style() {
 
 
 /**
+ * Unax theme wrapper start.
+ */
+function unax_get_sidebar() {
+	get_sidebar();
+}
+
+
+/**
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.
@@ -352,6 +368,25 @@ function unax_body_classes( $classes ) {
 	}
 
 	return $classes;
+}
+
+
+/**
+ * Unax theme wrapper start.
+ */
+function unax_woocommerce_wrapper_start() {
+	printf( " <div id=\"content\" class=\"site-content no-sidebar %s\">\n", esc_attr( apply_filters( 'unax_container_class', 'container' ) ) );
+	echo '<main id="primary" class="site-main">';
+}
+
+
+/**
+ * Unax theme wrapper end.
+ */
+function unax_woocommerce_wrapper_end() {
+	echo "	</main>\n";
+	get_sidebar();
+	echo '</div>';
 }
 
 
