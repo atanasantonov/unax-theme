@@ -6,21 +6,38 @@
  */
 
 /**
+* Define colors for editor palette
+*/
+function unax_default_colors() {
+	return array(
+		'primary'   => '#007bff',
+		'secondary' => '#6c757d',
+		'success'   => '#28a745',
+		'danger'    => '#dc3545',
+		'warning'   => '#ffc107',
+		'info'      => '#17a2b8',
+		'white'     => '#fff',
+		'light'     => '#f8f9fa',
+		'dark'      => '#343a40',
+		'black'     => '#000',
+	);
+}
+
+/**
  * Define colors for editor palette
  */
 function unax_editor_color_palette() {
-	return array(
-		'primary'   => apply_filters( 'unax_editor_color_palette_primary', '#007bff' ),
-		'secondary' => apply_filters( 'unax_editor_color_palette_secondary', '#6c757d' ),
-		'success'   => apply_filters( 'unax_editor_color_palette_success', '#28a745' ),
-		'danger'    => apply_filters( 'unax_editor_color_palette_danger', '#dc3545' ),
-		'warning'   => apply_filters( 'unax_editor_color_palette_warning', '#ffc107' ),
-		'info'      => apply_filters( 'unax_editor_color_palette_info', '#17a2b8' ),
-		'white'     => apply_filters( 'unax_editor_color_palette_white', '#fff' ),
-		'light'     => apply_filters( 'unax_editor_color_palette_light', '#f8f9fa' ),
-		'dark'      => apply_filters( 'unax_editor_color_palette_dark', '#343a40' ),
-		'black'     => apply_filters( 'unax_editor_color_palette_black', '#000' ),
-	);
+	$unax_theme_default_colors = unax_default_colors();
+
+	$unax_theme_colors = array();
+	$mods              = get_theme_mods();
+
+	foreach ( $unax_theme_default_colors as $key => $value ) {
+		$unax_theme_colors[$key] = empty( $mods[sprintf( 'unax_editor_color_palette_%s', $key )] ) ? $value : $mods[sprintf( 'unax_editor_color_palette_%s', $key )];
+		$unax_theme_colors[$key] = apply_filters( sprintf( 'unax_editor_color_palette_%s', $key ), $unax_theme_colors[$key] );
+	}
+
+	return $unax_theme_colors;
 }
 
 /**

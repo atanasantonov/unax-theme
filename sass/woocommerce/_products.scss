@@ -27,7 +27,7 @@ ul.products {
 
 			.onsale {
 				padding: 0;
-				background-color: $blue;
+				background-color: $secondary;
 			}
 
 			img {
@@ -39,7 +39,7 @@ ul.products {
 			}
 
 			.price {
-				color: $blue;
+				color: $secondary;
 			}
 
 			.button {
@@ -75,11 +75,11 @@ ul.products {
 
 		span.onsale {
 			padding: 0;
-			background-color: $blue;
+			background-color: $secondary;
 		}
 
 		p.price {
-			color: $blue;
+			color: $secondary;
 		}
 
 	}

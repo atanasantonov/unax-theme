@@ -40,6 +40,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "mixins/mixins-effects";
 @import "mixins/mixins-master";
 
+$primary:   var( --wp--preset--color--primary );
+$secondary: var( --wp--preset--color--secondary );
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/

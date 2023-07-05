@@ -5,6 +5,7 @@
 * New: WooCommerce breadcrumbs integrated
 * New: Sidebar removed from WooCommerce pages
 * New: Top widget area added
+* New: Color palette settings added
 
 
 2020-09-13 - version 1.2.3

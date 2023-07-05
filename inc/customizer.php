@@ -32,6 +32,40 @@ function unax_customize_register( $wp_customize ) {
 		);
 	}
 
+	// Colors.
+	// Add Settings
+    $wp_customize->add_setting( 'diwp_theme_color', array(
+        'default' => '#04bfbf',
+    ));
+
+
+    $wp_customize->add_setting( 'diwp_header_bgcolor', array(
+        'default' => '#45ace0',
+    ));
+
+
+    // Add Controls
+	$unax_theme_default_colors = unax_default_colors();
+	foreach ( $unax_theme_default_colors as $key => $value ) {
+		$wp_customize->add_setting( 'diwp_theme_color', array(
+	        'default' => '#04bfbf',
+	    ));
+
+		$wp_customize->add_setting( sprintf( 'unax_editor_color_palette_%s', $key ), array( 'default' => $value, ) );
+
+	    $wp_customize->add_control(
+			new WP_Customize_Color_Control(
+				$wp_customize,
+				sprintf( 'unax_editor_color_palette_%s', $key ),
+				array(
+					'label'    => sprintf( esc_html__( '%s color.', 'unax' ), ucfirst( $key ) ),
+					'section'  => 'colors',
+					'settings' => sprintf( 'unax_editor_color_palette_%s', $key ),
+				)
+			)
+		);
+	}
+
 	// Footer credits.
 	$wp_customize->add_setting(
 		'unax_display_footer_credits',
@@ -45,7 +79,7 @@ function unax_customize_register( $wp_customize ) {
 			$wp_customize,
 			'unax_display_footer_credits',
 			[
-				'label'    => __( 'Display footer credits.', 'unax' ),
+				'label'    => esc_html__( 'Display footer credits.', 'unax' ),
 				'priority' => 50,
 				'type'     => 'checkbox',
 				'section'  => 'title_tagline',
