@@ -12304,6 +12304,10 @@ ul.products {
 .woocommerce-page .woocommerce-checkout-review-order {
   width: 100%; }
 
+.woocommerce ul.woocommerce-thankyou-order-details,
+.woocommerce-page ul.woocommerce-thankyou-order-details {
+  padding-left: 0; }
+
 @media screen and (min-width: 992px) {
   .woocommerce .col2-set,
   .woocommerce-page .col2-set {

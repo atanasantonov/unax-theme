@@ -3,7 +3,9 @@
 * Fix: Posts archive styling on mobile
 * New: WooCommerce support added
 * New: WooCommerce breadcrumbs integrated
+* New: Sidebar removed from WooCommerce pages
 * New: Top widget area added
+
 
 2020-09-13 - version 1.2.3
 * Fix: WooCommerce address fields width
