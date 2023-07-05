@@ -12517,6 +12517,13 @@ ul.products {
   .widget select {
     max-width: 100%; }
 
+.top-widget-area .widget {
+  margin-bottom: 0; }
+
+.top-widget-area .widget > * {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .widget_unax_contacts {
   display: -webkit-box;
   display: -ms-flexbox;

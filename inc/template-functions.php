@@ -263,6 +263,18 @@ function unax_widgets_init() {
 
 	register_sidebar(
 		array(
+			'name'          => esc_html__( 'Top widget area', 'unax' ),
+			'id'            => 'top-widget-area',
+			'description'   => esc_html__( 'Add widgets below header.', 'unax' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<div class="widget-title">',
+			'after_title'   => '</div>',
+		)
+	);
+
+	register_sidebar(
+		array(
 			'name'          => esc_html__( 'Footer Menu', 'unax' ),
 			'id'            => 'footer-menu-widget-area',
 			'description'   => esc_html__( 'Add widgets to right side of footer menu.', 'unax' ),
@@ -312,6 +324,20 @@ function unax_widgets_init() {
 
 
 /**
+ * Top widget area.
+ */
+function unax_top_widget_area() {
+	if ( ! is_active_sidebar( 'top-widget-area' ) ) {
+		return;
+	}
+
+	echo sprintf( '<div class="widget-area top-widget-area text-center %s">', esc_attr( apply_filters( 'unax_container_class', 'container' ) ) );
+	dynamic_sidebar( 'top-widget-area' );
+	echo '</div>';
+}
+
+
+/**
  * Enqueue scripts and styles.
  */
 function unax_scripts() {
@@ -342,6 +368,24 @@ function unax_inline_style() {
 
 
 /**
+ * Check if is WooCommerce cart, checkout or account page.
+ *
+ * @return bool
+ */
+function unax_is_woocommerce_page() {
+	if ( ! function_exists( 'is_cart' ) || ! function_exists( 'is_checkout' ) || ! function_exists( 'is_account_page' ) ) {
+		return false;
+	}
+
+	if ( is_cart() || is_checkout() || is_account_page() ) {
+		return true;
+	}
+
+	return false;
+}
+
+
+/**
  * Unax theme wrapper start.
  */
 function unax_get_sidebar() {
@@ -367,8 +411,15 @@ function unax_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+	if ( unax_is_woocommerce_page() ) {
+		$classes[] = 'no-sidebar';
+	}
+
 	return $classes;
 }
+
+
+
 
 
 /**

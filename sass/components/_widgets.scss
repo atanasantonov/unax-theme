@@ -7,6 +7,17 @@
 	}
 }
 
+.top-widget-area {
+	.widget {
+		margin-bottom: 0;
+	}
+
+	.widget > * {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
 .widget_unax_contacts {
 	display: flex;
 	flex-direction: row;

@@ -39,4 +39,13 @@
 			?>
 
 		</header><!-- .site-header -->
-		<?php get_template_part( 'template-parts/navigation/modal-menu' ); ?>
+		<?php
+
+		get_template_part( 'template-parts/navigation/modal-menu' );
+
+		/**
+		 * Hook: unax_below_header
+		 *
+		 * @hooked unax_top_widget_area - 10
+		 */
+		do_action( 'unax_below_header' );
