@@ -2,8 +2,6 @@ name: PHP PSR Enforcer
 
 on:
   push:
-    branches:
-      - master
     tags:
       - '*.*.*'
 
