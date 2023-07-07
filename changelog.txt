@@ -6,6 +6,7 @@
 * New: Sidebar removed from WooCommerce pages
 * New: Top widget area added
 * New: Color palette settings added
+* New: Sticky header added
 
 
 2020-09-13 - version 1.2.3

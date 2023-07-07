@@ -3,6 +3,13 @@
 	padding: 0;
 	background-color: $white;
 
+	&.sticky {
+		position: fixed;
+		width: 100%;
+	    top: 0px;
+	    z-index: 1000;
+	}
+
 	.custom-logo {
 		max-width: 100px;
 		margin-right: 1rem;

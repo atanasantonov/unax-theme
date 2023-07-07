@@ -33,24 +33,8 @@ function unax_customize_register( $wp_customize ) {
 	}
 
 	// Colors.
-	// Add Settings
-    $wp_customize->add_setting( 'diwp_theme_color', array(
-        'default' => '#04bfbf',
-    ));
-
-
-    $wp_customize->add_setting( 'diwp_header_bgcolor', array(
-        'default' => '#45ace0',
-    ));
-
-
-    // Add Controls
 	$unax_theme_default_colors = unax_default_colors();
 	foreach ( $unax_theme_default_colors as $key => $value ) {
-		$wp_customize->add_setting( 'diwp_theme_color', array(
-	        'default' => '#04bfbf',
-	    ));
-
 		$wp_customize->add_setting( sprintf( 'unax_editor_color_palette_%s', $key ), array( 'default' => $value, ) );
 
 	    $wp_customize->add_control(
@@ -115,7 +99,28 @@ function unax_customize_register( $wp_customize ) {
 		'unax_common_settings',
 		array(
 			'title'      => esc_html__( 'Theme Settings', 'unax' ),
-			'priority'   => 120,
+			'priority'   => 20,
+		)
+	);
+
+	// Sticky header.
+	$wp_customize->add_setting(
+		'unax_sticky_header',
+		array(
+			'default' 			=> '0',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'unax_sticky_header',
+			array(
+				'label'    => esc_html__( 'Enable sticky header.', 'unax' ),
+				'section'  => 'unax_common_settings',
+				'priority' => 10,
+				'type'     => 'checkbox'
+			)
 		)
 	);
 
@@ -179,7 +184,7 @@ function unax_customize_register( $wp_customize ) {
 		array(
 			'title'       => esc_html__( 'Contacts', 'unax' ),
 			'description' => esc_html__( 'Use contact details with Contacts Widget. Blank fields not rendered.', 'unax' ),
-			'priority'    => 20,
+			'priority'    => 30,
 		)
 	);
 

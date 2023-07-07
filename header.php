@@ -25,7 +25,7 @@
 
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'unax' ); ?></a>
-		<header id="masthead" class="site-header">
+		<header id="masthead" class="site-header <?php echo '1' === apply_filters( 'unax_sticky_header', get_theme_mod( 'unax_sticky_header', '0' ) ) ? ' sticky' : ''; ?>">
 			<?php
 			/**
 			 * Hook: unax_header

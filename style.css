@@ -11647,6 +11647,11 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 .site-header {
   padding: 0;
   background-color: #fff; }
+  .site-header.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000; }
   .site-header .custom-logo {
     max-width: 100px;
     margin-right: 1rem; }
