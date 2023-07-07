@@ -6,8 +6,8 @@
  */
 
 /**
-* Define colors for editor palette
-*/
+ * Define colors for editor palette
+ */
 function unax_default_colors() {
 	return array(
 		'primary'   => '#007bff',
@@ -33,8 +33,8 @@ function unax_editor_color_palette() {
 	$mods              = get_theme_mods();
 
 	foreach ( $unax_theme_default_colors as $key => $value ) {
-		$unax_theme_colors[$key] = empty( $mods[sprintf( 'unax_editor_color_palette_%s', $key )] ) ? $value : $mods[sprintf( 'unax_editor_color_palette_%s', $key )];
-		$unax_theme_colors[$key] = apply_filters( sprintf( 'unax_editor_color_palette_%s', $key ), $unax_theme_colors[$key] );
+		$unax_theme_colors[ $key ] = empty( $mods[ sprintf( 'unax_editor_color_palette_%s', $key ) ] ) ? $value : $mods[ sprintf( 'unax_editor_color_palette_%s', $key ) ]; // phpcs:ignore
+		$unax_theme_colors[ $key ] = apply_filters( sprintf( 'unax_editor_color_palette_%s', $key ), $unax_theme_colors[ $key ] ); // phpcs:ignore
 	}
 
 	return $unax_theme_colors;
