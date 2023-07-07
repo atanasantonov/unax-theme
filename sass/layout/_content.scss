@@ -71,3 +71,23 @@
 .alignfull {
 	width: 100%;
 }
+
+#unax-to-top {
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 2rem;
+	z-index: 999;
+	border: none;
+	outline: none;
+	background-color: $black;
+	border: 1px solid $white;
+	color: $white;
+	cursor: pointer;
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+#unax-to-top:hover {
+background-color: $dark;
+}

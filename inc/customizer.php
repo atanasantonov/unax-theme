@@ -124,6 +124,27 @@ function unax_customize_register( $wp_customize ) {
 		)
 	);
 
+	// To top button.
+	$wp_customize->add_setting(
+		'unax_to_top_button',
+		array(
+			'default' 			=> '0',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'unax_to_top_button',
+			array(
+				'label'    => esc_html__( 'Enable "To top" button.', 'unax' ),
+				'section'  => 'unax_common_settings',
+				'priority' => 10,
+				'type'     => 'checkbox'
+			)
+		)
+	);
+
 	// Archive display option.
 	$wp_customize->add_setting(
 		'archive_display',

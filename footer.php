@@ -102,6 +102,18 @@
 
 	</footer><!-- #colophon -->
 
+	<?php
+
+	if ( ! empty( get_theme_mod( 'unax_to_top_button', '' ) ) ) {
+		printf(
+			'<button id="unax-to-top" title="%s">%s</button>',
+			esc_html__( 'Go to top', 'unax' ),
+			esc_html__( 'To top', 'unax' )
+		);
+	}
+
+	?>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

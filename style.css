@@ -11812,6 +11812,24 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 .alignfull {
   width: 100%; }
 
+#unax-to-top {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 999;
+  border: none;
+  outline: none;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem; }
+
+#unax-to-top:hover {
+  background-color: #343a40; }
+
 .site-footer {
   clear: both;
   margin-top: 3rem;
