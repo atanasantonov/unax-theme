@@ -35,7 +35,13 @@ function unax_customize_register( $wp_customize ) {
 	// Colors.
 	$unax_theme_default_colors = unax_default_colors();
 	foreach ( $unax_theme_default_colors as $key => $value ) {
-		$wp_customize->add_setting( sprintf( 'unax_editor_color_palette_%s', $key ), array( 'default' => $value ) );
+		$wp_customize->add_setting(
+			sprintf( 'unax_editor_color_palette_%s', $key ),
+			array(
+				'default' => $value,
+				'sanitize_callback' => 'sanitize_text_field'
+			)
+		);
 
 		$wp_customize->add_control(
 			new WP_Customize_Color_Control(
