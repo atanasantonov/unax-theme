@@ -2,10 +2,10 @@ name: PHP PSR Enforcer
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-    types: [ opened, synchronize ]
+    branches:
+      - master
+    tags:
+      - '*.*.*'
 
 jobs:
   phpcs:
