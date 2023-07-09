@@ -24,7 +24,7 @@
 			data-set-focus=".close-nav-toggle"
 			>
 			<span class="toggle-inner">
-				<i class="fas fa-bars"></i>
+				<?php printf( '<img src="%s/dist/icons/bars-solid.svg">', esc_url( get_template_directory_uri() ) ); ?>
 				<span class="screen-reader-text">
 					<?php esc_html_e( 'Menu', 'unax' ); ?>
 				</span>

@@ -73,3 +73,13 @@ body {
 		margin-right: -1rem;
 	}
 }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+	.widget_unax_contacts .contacts,
+	.widget_unax_contacts .socials {
+		justify-content: flex-end;
+	}
+}

@@ -17,7 +17,7 @@
 
 				<button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal">
 					<span class="screen-reader-text"><?php esc_html_e( 'Close menu', 'unax' ); ?></span>
-					<i class="fas fa-times"></i>
+					<?php printf( '<img src="%s/dist/icons/xmark-solid.svg">', esc_url( get_template_directory_uri() ) ); ?>
 				</button><!-- .nav-toggle -->
 
 				<nav class="mobile-menu" aria-label="<?php esc_attr_e( 'Mobile menu', 'unax' ); ?>">

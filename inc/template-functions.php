@@ -583,7 +583,7 @@ function unax_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 			$toggle_duration      = apply_filters( 'unax_toggle_duration', 250 );
 
 			// Add the sub menu toggle.
-			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Submenu', 'unax' ) . '</span><i class="fas fa-chevron-down"></i></button>';
+			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Submenu', 'unax' ) . '</span><img src="' . esc_url( get_template_directory_uri() ) . '/dist/icons/chevron-down-solid.svg"></button>';
 		}
 
 		// Close the wrapper.

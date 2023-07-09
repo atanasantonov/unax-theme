@@ -47,7 +47,9 @@ class Unax_Contacts_Widget extends WP_Widget {
 		}
 
 		// Markup for contacts data.
-		$markup = '<a href="%1$s" class="%2$s" title="%3$s" target="_blank"><i class="%4$s"></i><span class="d-none d-lg-inline-block">%5$s</span></a>';
+		$markup = '<a href="%1$s" class="%2$s" title="%3$s" target="_blank"><img src="%4$s/dist/icons/%5$s.svg">%6$s</a>';
+
+		echo '<div class="contacts">';
 
 		// Phone.
 		$unax_contact_phone = get_theme_mod( 'unax_contact_phone', '' );
@@ -57,7 +59,8 @@ class Unax_Contacts_Widget extends WP_Widget {
 				'tel:' . esc_attr( $unax_contact_phone ),
 				'',
 				esc_attr__( 'Phone', 'unax' ),
-				'fas fa-phone',
+				esc_url( get_template_directory_uri() ),
+				'phone-solid-white',
 				esc_html( $unax_contact_phone )
 			);
 		}
@@ -70,20 +73,23 @@ class Unax_Contacts_Widget extends WP_Widget {
 				'mailto:' . esc_attr( $unax_contact_email ),
 				'',
 				esc_attr__( 'Email', 'unax' ),
-				'far fa-envelope',
+				esc_url( get_template_directory_uri() ),
+				'envelope-regular-white',
 				esc_html( $unax_contact_email )
 			);
 		}
 
 		// Address.
-		$unax_contact_address = get_theme_mod( 'unax_contact_address', '' );
+		$unax_contact_address     = get_theme_mod( 'unax_contact_address', '' );
+		$unax_contact_address_map = get_theme_mod( 'unax_contact_address_map', '' );
 		if ( ! empty( $unax_contact_address ) ) {
 			printf(
 				wp_kses_post( $markup ),
-				'#',
-				'd-none d-lg-inline-block',
+				! empty( $unax_contact_address_map ) ? esc_url( $unax_contact_address_map ) : '#',
+				'',
 				esc_attr__( 'Address', 'unax' ),
-				'fas fa-map-marker-alt',
+				esc_url( get_template_directory_uri() ),
+				'location-dot-solid-white',
 				esc_html( $unax_contact_address )
 			);
 		}
@@ -94,13 +100,15 @@ class Unax_Contacts_Widget extends WP_Widget {
 			printf(
 				wp_kses_post( $markup ),
 				'#',
-				'd-none d-lg-inline-block',
+				'',
 				esc_attr__( 'Working hours', 'unax' ),
-				'far fa-clock',
+				esc_url( get_template_directory_uri() ),
+				'clock-regular-white',
 				esc_html( $unax_contact_working_hours )
 			);
 		}
 
+		echo '</div>';
 		echo '<div class="socials">';
 
 		// Facebook page.
@@ -111,7 +119,8 @@ class Unax_Contacts_Widget extends WP_Widget {
 				esc_url( $unax_contact_facebook_page ),
 				'',
 				esc_attr__( 'Facebook page', 'unax' ),
-				'fab fa-facebook-square',
+				esc_url( get_template_directory_uri() ),
+				'facebook-white',
 				''
 			);
 		}
@@ -124,7 +133,8 @@ class Unax_Contacts_Widget extends WP_Widget {
 				esc_url( $unax_contact_youtube ),
 				'',
 				esc_attr__( 'Youtube', 'unax' ),
-				'fab fa-youtube-square',
+				esc_url( get_template_directory_uri() ),
+				'youtube-white',
 				''
 			);
 		}
@@ -137,7 +147,8 @@ class Unax_Contacts_Widget extends WP_Widget {
 				esc_url( $unax_contact_linkedin ),
 				'',
 				esc_attr__( 'LinkedIn', 'unax' ),
-				'fab fa-linkedin',
+				esc_url( get_template_directory_uri() ),
+				'linkedin-white',
 				''
 			);
 		}
@@ -150,7 +161,8 @@ class Unax_Contacts_Widget extends WP_Widget {
 				'skype:' . esc_attr( $unax_contact_skype ) . '?chat',
 				'',
 				esc_attr__( 'Skype', 'unax' ),
-				'fab fa-skype',
+				esc_url( get_template_directory_uri() ),
+				'skype-white',
 				''
 			);
 		}

@@ -5,7 +5,7 @@ Author: Atanas Antonov
 Author URI: https://unax.org
 Description: Lightweight theme based on Underscores and Twitter Bootstrap. Clean and modern design. No sidebar and full width page templates. Plenty of widget areas are registered as well as several menu locations. Theme includes different filters for layout classes. Bootstrap colors with the appropriate filters integrated in Gutenberg color palette. Web Content Accessibility Guidelines (WCAG) compatible.
 Tags: block-styles, blog, custom-logo, e-commerce, editor-style, featured-images, full-width-template, grid-layout, right-sidebar, translation-ready
-Version: 1.3.0
+Version: 1.3.1
 Tested up to: 6.2
 Requires at least: 5.0
 Requires PHP: 5.6
@@ -27,12 +27,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Bootstrap */
 @import "bootstrap-4/bootstrap";
 
-/* Font Awesome */
-@import "fontawesome/fontawesome";
-@import "fontawesome/brands";
-@import "fontawesome/solid";
-@import "fontawesome/regular";
-
 /* Variables Site */
 @import "variables-site/variables-site";
 
@@ -42,6 +36,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 $primary:   var( --wp--preset--color--primary );
 $secondary: var( --wp--preset--color--secondary );
+$success:   var( --wp--preset--color--success );
+$danger:    var( --wp--preset--color--danger );
+$warning:   var( --wp--preset--color--warning );
+$info:      var( --wp--preset--color--info );
+$white:     var( --wp--preset--color--white );
+$light:     var( --wp--preset--color--light );
+$dark:      var( --wp--preset--color--dark );
+$black:     var( --wp--preset--color--black );
 
 /*--------------------------------------------------------------
 # Typography
@@ -97,7 +99,6 @@ $secondary: var( --wp--preset--color--secondary );
 --------------------------------------------------------------*/
 @import "components/cards";
 @import "components/comments";
-@import "components/socials";
 @import "components/widgets";
 
 /*--------------------------------------------------------------

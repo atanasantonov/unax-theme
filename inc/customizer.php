@@ -349,6 +349,24 @@ function unax_customize_register( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_setting(
+		'unax_contact_address_map',
+		array(
+			'default' => '',
+			'sanitize_callback' => 'sanitize_url',
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'unax_contact_address_map',
+			[
+				'label'    => __( 'Address map', 'unax' ),
+				'section'  => 'unax_section_contacts',
+			]
+		)
+	);
+
 	// Working hours.
 	$wp_customize->add_setting(
 		'unax_contact_working_hours',

@@ -20,8 +20,9 @@
 		display: none;
 	}
 
-	.fa-bars {
-		font-size: 36px;
+	img {
+		width: 2rem;
+		height: 2.4rem;
 	}
 
 }
@@ -87,6 +88,10 @@
     padding: 1rem 1.5rem;
     width: 100%;
 
+	img {
+		height: 2rem;
+		width: 2rem;
+	}
 }
 
 /* WP Nav Menu --------------------------------- */
@@ -174,8 +179,8 @@
     margin: 0;
     padding: 0 1.5rem;
 
-    .fas {
-        font-size: 36px;
+    img {
+        width: 2rem;
     }
 
 }
