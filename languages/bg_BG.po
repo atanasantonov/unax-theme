@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-04-13 12:55+0000\n"
-"PO-Revision-Date: 2023-07-07 18:13+0000\n"
+"PO-Revision-Date: 2023-07-09 08:02+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: unax\n"
 "Language: bg_BG\n"
@@ -18,44 +18,44 @@ msgstr ""
 "X-Loco-Version: 2.5.2; wp-5.7"
 
 #. Label of the color.
-#: inc/customizer.php:46
+#: inc/customizer.php:52
 #, php-format
 msgid "%s color."
 msgstr "%s цвят."
 
-#: inc/template-functions.php:285
+#: inc/template-functions.php:299
 msgid "Add widgets below header."
 msgstr "Добавяне на джаджи под хедъра."
 
-#: inc/template-functions.php:321
+#: inc/template-functions.php:335
 msgid "Add widgets to footer credits left area."
 msgstr "Добавете джаджи в кредитите в долна лява част."
 
-#: inc/template-functions.php:333
+#: inc/template-functions.php:347
 msgid "Add widgets to footer credits right area."
 msgstr "Добавете джаджи в кредитите в долна дясна част."
 
-#: inc/template-functions.php:309
+#: inc/template-functions.php:323
 msgid "Add widgets to footer."
 msgstr "Добавете джаджи в долната част."
 
-#: inc/template-functions.php:261
+#: inc/template-functions.php:275
 msgid "Add widgets to header."
 msgstr "Добавете джаджи в заглавната част."
 
-#: inc/template-functions.php:297
+#: inc/template-functions.php:311
 msgid "Add widgets to right side of footer menu."
 msgstr "Добавете джаджи вдясно на менюто в долната част."
 
-#: inc/template-functions.php:273
+#: inc/template-functions.php:287
 msgid "Add widgets to right side of primary menu."
 msgstr "Добавете джаджи вдясно на менюто в заглавната част."
 
-#: inc/template-functions.php:249
+#: inc/template-functions.php:263
 msgid "Add widgets to the sidebar."
 msgstr "Добавете джаджи в страничната лента."
 
-#: inc/customizer.php:340 inc/widgets/class-unax-contacts-widget.php:85
+#: inc/customizer.php:346 inc/widgets/class-unax-contacts-widget.php:85
 msgid "Address"
 msgstr "Адрес"
 
@@ -63,7 +63,7 @@ msgstr "Адрес"
 msgid "Another widget"
 msgstr "Друга джаджа"
 
-#: inc/customizer.php:163
+#: inc/customizer.php:169
 msgid "Archive display option"
 msgstr "Опция за показване на архив"
 
@@ -104,11 +104,11 @@ msgstr "Категория"
 msgid "Chats"
 msgstr "Чатове"
 
-#: inc/customizer.php:164
+#: inc/customizer.php:170
 msgid "Choose the archive display for archive pages."
 msgstr "Изберете стила на показване на архивни страници."
 
-#: inc/customizer.php:189
+#: inc/customizer.php:195
 msgid "Choose the default columns count for archive pages."
 msgstr "Изберете броя на колоните по подразбиране за архивни страници."
 
@@ -130,10 +130,14 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "%1$s коментар за \"%2$s\""
 msgstr[1] "%1$s коментара за \"%2$s\""
 
-#: inc/customizer.php:207 inc/widgets/class-unax-contacts-widget.php:22
+#: inc/customizer.php:213 inc/widgets/class-unax-contacts-widget.php:22
 #: inc/widgets/class-unax-contacts-widget.php:185
 msgid "Contacts"
 msgstr "Контакти"
+
+#: inc/template-functions.php:684
+msgid "Container"
+msgstr "Контейнер"
 
 #: template-parts/post/content-card.php:36
 #: template-parts/post/content-excerpt.php:36
@@ -154,11 +158,11 @@ msgstr "Тъмно"
 msgid "Day"
 msgstr "Ден"
 
-#: inc/customizer.php:67
+#: inc/customizer.php:73
 msgid "Display footer credits."
 msgstr "Показване на кредити във футъра."
 
-#: inc/customizer.php:88
+#: inc/customizer.php:94
 msgid "Display site title in footer."
 msgstr "Показване на заглавието на сайта във футъра."
 
@@ -169,16 +173,16 @@ msgstr "Показване на заглавието на сайта във фу
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Редакция <span class=\"screen-reader-text\">%s</span>"
 
-#: inc/customizer.php:245 inc/widgets/class-unax-contacts-widget.php:72
+#: inc/customizer.php:251 inc/widgets/class-unax-contacts-widget.php:72
 #| msgid "email"
 msgid "Email"
 msgstr "е-поща"
 
-#: inc/customizer.php:141
+#: inc/customizer.php:147
 msgid "Enable \"To top\" button."
 msgstr "Включване на бутона \"Най-горе\""
 
-#: inc/customizer.php:120
+#: inc/customizer.php:126
 msgid "Enable sticky header."
 msgstr "Включване на фиксиран хедър."
 
@@ -186,23 +190,23 @@ msgstr "Включване на фиксиран хедър."
 msgid "Example widget here"
 msgstr "Примерна джаджа тук"
 
-#: inc/customizer.php:264 inc/widgets/class-unax-contacts-widget.php:113
+#: inc/customizer.php:270 inc/widgets/class-unax-contacts-widget.php:113
 msgid "Facebook page"
 msgstr "Facebook страница"
 
-#: inc/template-functions.php:307
+#: inc/template-functions.php:321
 msgid "Footer"
 msgstr "Футър"
 
-#: inc/template-functions.php:319
+#: inc/template-functions.php:333
 msgid "Footer Credits Left"
 msgstr "Футър кредити вляво"
 
-#: inc/template-functions.php:331
+#: inc/template-functions.php:345
 msgid "Footer Credits Right"
 msgstr "Футър кредити вдясно"
 
-#: inc/template-functions.php:295
+#: inc/template-functions.php:309
 msgid "Footer Menu"
 msgstr "Футър меню"
 
@@ -223,15 +227,15 @@ msgstr "Галерии"
 msgid "Go to top"
 msgstr "До най-горе"
 
-#: inc/customizer.php:168
+#: inc/customizer.php:174
 msgid "Grid"
 msgstr "Решетка"
 
-#: inc/customizer.php:188
+#: inc/customizer.php:194
 msgid "Grid columns"
 msgstr "Брой колони"
 
-#: inc/template-functions.php:259
+#: inc/template-functions.php:273
 msgid "Header"
 msgstr "Хедър"
 
@@ -298,7 +302,7 @@ msgstr ""
 "с подходящи филтри, интегрирани в цветовата палитра на Gutenberg. Съвместими "
 "с насоките за достъпност на уеб съдържание (WCAG). "
 
-#: inc/customizer.php:302 inc/widgets/class-unax-contacts-widget.php:139
+#: inc/customizer.php:308 inc/widgets/class-unax-contacts-widget.php:139
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
@@ -306,7 +310,7 @@ msgstr "LinkedIn"
 msgid "Links"
 msgstr "Връзки"
 
-#: inc/customizer.php:169
+#: inc/customizer.php:175
 msgid "List"
 msgstr "Списък"
 
@@ -316,7 +320,7 @@ msgctxt "list item separator"
 msgid ", "
 msgstr ", "
 
-#: template-parts/navigation/main.php:29
+#: template-parts/navigation/main.php:30
 msgid "Menu"
 msgstr "Меню"
 
@@ -352,7 +356,7 @@ msgstr "Ууупс! Страницата не е открита."
 msgid "Pages:"
 msgstr "Страници:"
 
-#: inc/customizer.php:226 inc/widgets/class-unax-contacts-widget.php:59
+#: inc/customizer.php:232 inc/widgets/class-unax-contacts-widget.php:59
 msgid "Phone"
 msgstr "Телефон"
 
@@ -377,7 +381,7 @@ msgstr "С подкрепата на"
 msgid "Primary Color"
 msgstr "Основен цвят"
 
-#: inc/template-functions.php:271
+#: inc/template-functions.php:285
 msgid "Primary Menu"
 msgstr "Основно меню"
 
@@ -410,7 +414,7 @@ msgstr "Вторичен цвят"
 msgid "Show contacts from theme customizer."
 msgstr "Показване на контакти от инструмента за персонализиране на теми."
 
-#: inc/template-functions.php:247
+#: inc/template-functions.php:261
 msgid "Sidebar"
 msgstr "Странична лента"
 
@@ -418,7 +422,7 @@ msgstr "Странична лента"
 msgid "Skip to content"
 msgstr "Продължете към съдържанието"
 
-#: inc/customizer.php:321 inc/widgets/class-unax-contacts-widget.php:152
+#: inc/customizer.php:327 inc/widgets/class-unax-contacts-widget.php:152
 msgid "Skype"
 msgstr "Skype"
 
@@ -432,7 +436,7 @@ msgstr "Съжаляваме, но нищо не отговаря на ваши�
 msgid "Statuses"
 msgstr "Статуси"
 
-#: inc/template-functions.php:575
+#: inc/template-functions.php:586
 msgid "Submenu"
 msgstr "Подменю"
 
@@ -453,7 +457,7 @@ msgstr "Тагове"
 msgid "Theme"
 msgstr "Тема"
 
-#: inc/customizer.php:102
+#: inc/customizer.php:108
 msgid "Theme Settings"
 msgstr "Настройки на темата"
 
@@ -465,7 +469,7 @@ msgstr "Заглавие"
 msgid "To top"
 msgstr "Най-горе"
 
-#: inc/template-functions.php:283
+#: inc/template-functions.php:297
 msgid "Top widget area"
 msgstr "Горна зона за джаджи"
 
@@ -475,7 +479,7 @@ msgstr "Горна зона за джаджи"
 msgid "Unax"
 msgstr "Unax"
 
-#: inc/customizer.php:208
+#: inc/customizer.php:214
 msgid "Use contact details with Contacts Widget. Blank fields not rendered."
 msgstr ""
 "Използвайте данни за контакт за джаджа за контакти. Празните полета не се "
@@ -501,7 +505,7 @@ msgstr "Текст на джаджата"
 msgid "Widget title"
 msgstr "Заглавие на джаджата"
 
-#: inc/customizer.php:359 inc/widgets/class-unax-contacts-widget.php:98
+#: inc/customizer.php:365 inc/widgets/class-unax-contacts-widget.php:98
 msgid "Working hours"
 msgstr "Работно време"
 
@@ -509,7 +513,7 @@ msgstr "Работно време"
 msgid "Year"
 msgstr "Година"
 
-#: inc/customizer.php:283 inc/widgets/class-unax-contacts-widget.php:126
+#: inc/customizer.php:289 inc/widgets/class-unax-contacts-widget.php:126
 #| msgid "YouTube"
 msgid "Youtube"
 msgstr "Youtube"

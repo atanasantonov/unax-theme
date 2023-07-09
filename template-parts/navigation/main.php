@@ -10,6 +10,7 @@
 <div class="main-navigation">
 
 	<?php
+	
 	/*
 	 * Apply the filters to container
 	 */

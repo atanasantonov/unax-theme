@@ -205,6 +205,20 @@ function unax_setup() {
 	 */
 	add_theme_support( 'align-wide' );
 
+	/**
+	 * Default block styles.
+	 *
+	 * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#default-block-styles
+	 */
+	add_theme_support( 'wp-block-styles' );
+
+	/**
+	 * Responsive embeds.
+	 *
+	 * @link https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#responsive-embedded-content
+	 */
+	add_theme_support( 'responsive-embeds' );
+
 	/*
 	* Adds starter content to highlight the theme on fresh sites.
 	* This is done conditionally to avoid loading the starter content on every
@@ -436,9 +450,6 @@ function unax_body_classes( $classes ) {
 }
 
 
-
-
-
 /**
  * Unax theme wrapper start.
  */
@@ -644,3 +655,35 @@ function unax_block_core_embed_preview() {
 		}
 	}
 }
+
+/**
+ * Register block styles.
+ */
+function unax_register_block_styles() {
+	$blocks = array(
+		'columns',
+		'coverImage',
+		'group',
+		'gallery',
+		'heading',
+		'html',
+		'image',
+		'paragraph',
+		'shortcode',
+		'subhead',
+		'table',
+		'textColumns',
+		'video',
+	);
+
+	foreach ( $blocks as $block ) {
+		register_block_style(
+		    'core/' . $block,
+		    array(
+				'name'         => 'container',
+		        'label'        => __( 'Container', 'unax' ),
+		    )
+		);
+	}
+}
+unax_register_block_styles();

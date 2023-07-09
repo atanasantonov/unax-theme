@@ -39,7 +39,7 @@ function unax_customize_register( $wp_customize ) {
 			sprintf( 'unax_editor_color_palette_%s', $key ),
 			array(
 				'default' => $value,
-				'sanitize_callback' => 'sanitize_text_field'
+				'sanitize_callback' => 'sanitize_text_field',
 			)
 		);
 
