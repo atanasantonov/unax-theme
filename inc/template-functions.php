@@ -678,11 +678,11 @@ function unax_register_block_styles() {
 
 	foreach ( $blocks as $block ) {
 		register_block_style(
-		    'core/' . $block,
-		    array(
+			'core/' . $block,
+			array(
 				'name'         => 'container',
-		        'label'        => __( 'Container', 'unax' ),
-		    )
+				'label'        => __( 'Container', 'unax' ),
+			)
 		);
 	}
 }
