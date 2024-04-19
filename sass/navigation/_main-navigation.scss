@@ -69,13 +69,20 @@ ul.primary-menu {
 
 .primary-menu li {
 	list-style: none;
-	font-size: inherit;
+	font-size: 1.25rem;
 	line-height: 1.25;
 	position: relative;
+
+	@include media-breakpoint-up(xl) {
+		font-size: inherit;
+	}
 }
 
 .primary-menu > li {
-	padding: 0.5rem;
+	padding: .5rem 1rem;
+	@include media-breakpoint-up(xl) {
+		padding: 0.5rem;
+	}
 }
 
 .primary-menu > li:first-child {

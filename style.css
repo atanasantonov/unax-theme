@@ -6546,12 +6546,18 @@ ul.primary-menu {
 
 .primary-menu li {
   list-style: none;
-  font-size: inherit;
+  font-size: 1.25rem;
   line-height: 1.25;
   position: relative; }
+  @media (min-width: 1200px) {
+    .primary-menu li {
+      font-size: inherit; } }
 
 .primary-menu > li {
-  padding: 0.5rem; }
+  padding: .5rem 1rem; }
+  @media (min-width: 1200px) {
+    .primary-menu > li {
+      padding: 0.5rem; } }
 
 .primary-menu > li:first-child {
   padding-left: 0; }
