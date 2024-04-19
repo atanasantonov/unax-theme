@@ -47,20 +47,47 @@ class Unax_Contacts_Widget extends WP_Widget {
 		}
 
 		// Markup for contacts data.
-		$markup = '<a href="%1$s" class="%2$s" title="%3$s" target="_blank"><img src="%4$s/dist/icons/%5$s.svg">%6$s</a>';
+		$markup = '<a href="%1$s" class="%2$s" title="%3$s" target="_blank"><figure>%4$s</figure><span>%5$s</span></a>';
+		
+		// wp_kses allowed HTML tags for svg.
+		$wp_kses_allowed_html = array( 
+			'svg' => array(
+				'id' => true,
+				'xmlns' => true,
+				'xmlns:dc' => true,
+				'xmlns:cc' => true,
+				'xmlns:rdf=' => true,
+				'xmlns:svg' => true,
+				'xmlns:xlink' => true,
+				'version' => true,
+				'viewbox' => true,
+			),
+			'metadata' => array(
+				'id' => true,
+				'xmlns:rdf' => true,
+			),
+			'defs' => array(
+				'id' => true,
+			),
+			'path' => array(
+				'id' => true,
+				'style' => true,
+				'd' => true,
+			),
+		);
 
 		echo '<div class="contacts">';
 
 		// Phone.
 		$unax_contact_phone = get_theme_mod( 'unax_contact_phone', '' );
 		if ( ! empty( $unax_contact_phone ) ) {
+			$svg = file_get_contents( get_template_directory() . '/dist/icons/phone-solid-white.svg' );
 			printf(
 				wp_kses_post( $markup ),
 				'tel:' . esc_attr( $unax_contact_phone ),
 				'',
 				esc_attr__( 'Phone', 'unax' ),
-				esc_url( get_template_directory_uri() ),
-				'phone-solid-white',
+				wp_kses( $svg, $wp_kses_allowed_html ),
 				esc_html( $unax_contact_phone )
 			);
 		}
@@ -68,13 +95,13 @@ class Unax_Contacts_Widget extends WP_Widget {
 		// Email.
 		$unax_contact_email = get_theme_mod( 'unax_contact_email', '' );
 		if ( ! empty( $unax_contact_email ) ) {
+			$svg = file_get_contents( get_template_directory() . '/dist/icons/envelope-regular-white.svg' );
 			printf(
 				wp_kses_post( $markup ),
 				'mailto:' . esc_attr( $unax_contact_email ),
 				'',
 				esc_attr__( 'Email', 'unax' ),
-				esc_url( get_template_directory_uri() ),
-				'envelope-regular-white',
+				wp_kses( $svg, $wp_kses_allowed_html ),
 				esc_html( $unax_contact_email )
 			);
 		}
@@ -83,13 +110,13 @@ class Unax_Contacts_Widget extends WP_Widget {
 		$unax_contact_address     = get_theme_mod( 'unax_contact_address', '' );
 		$unax_contact_address_map = get_theme_mod( 'unax_contact_address_map', '' );
 		if ( ! empty( $unax_contact_address ) ) {
+			$svg = file_get_contents( get_template_directory() . '/dist/icons/envelope-regular-white.svg' );
 			printf(
 				wp_kses_post( $markup ),
 				! empty( $unax_contact_address_map ) ? esc_url( $unax_contact_address_map ) : '#',
 				'',
 				esc_attr__( 'Address', 'unax' ),
-				esc_url( get_template_directory_uri() ),
-				'location-dot-solid-white',
+				wp_kses( $svg, $wp_kses_allowed_html ),
 				esc_html( $unax_contact_address )
 			);
 		}
@@ -97,13 +124,13 @@ class Unax_Contacts_Widget extends WP_Widget {
 		// Working hours.
 		$unax_contact_working_hours = get_theme_mod( 'unax_contact_working_hours', '' );
 		if ( ! empty( $unax_contact_working_hours ) ) {
+			$svg = file_get_contents( get_template_directory() . '/dist/icons/clock-regular-white.svg' );
 			printf(
 				wp_kses_post( $markup ),
 				'#',
 				'',
 				esc_attr__( 'Working hours', 'unax' ),
-				esc_url( get_template_directory_uri() ),
-				'clock-regular-white',
+				wp_kses( $svg, $wp_kses_allowed_html ),
 				esc_html( $unax_contact_working_hours )
 			);
 		}
@@ -114,13 +141,13 @@ class Unax_Contacts_Widget extends WP_Widget {
 		// Facebook page.
 		$unax_contact_facebook_page = get_theme_mod( 'unax_contact_facebook_page', '' );
 		if ( ! empty( $unax_contact_facebook_page ) ) {
+			$svg = file_get_contents( get_template_directory() . '/dist/icons/facebook-white.svg' );
 			printf(
 				wp_kses_post( $markup ),
 				esc_url( $unax_contact_facebook_page ),
 				'',
 				esc_attr__( 'Facebook page', 'unax' ),
-				esc_url( get_template_directory_uri() ),
-				'facebook-white',
+				wp_kses( $svg, $wp_kses_allowed_html ),
 				''
 			);
 		}
@@ -128,13 +155,13 @@ class Unax_Contacts_Widget extends WP_Widget {
 		// Youtube.
 		$unax_contact_youtube = get_theme_mod( 'unax_contact_youtube', '' );
 		if ( ! empty( $unax_contact_youtube ) ) {
+			$svg = file_get_contents( get_template_directory() . '/dist/icons/youtube-white.svg' );
 			printf(
 				wp_kses_post( $markup ),
 				esc_url( $unax_contact_youtube ),
 				'',
 				esc_attr__( 'Youtube', 'unax' ),
-				esc_url( get_template_directory_uri() ),
-				'youtube-white',
+				wp_kses( $svg, $wp_kses_allowed_html ),
 				''
 			);
 		}
@@ -142,13 +169,13 @@ class Unax_Contacts_Widget extends WP_Widget {
 		// LinkedIn.
 		$unax_contact_linkedin = get_theme_mod( 'unax_contact_linkedin', '' );
 		if ( ! empty( $unax_contact_linkedin ) ) {
+			$svg = file_get_contents( get_template_directory() . '/dist/icons/linkedin-white.svg' );
 			printf(
 				wp_kses_post( $markup ),
 				esc_url( $unax_contact_linkedin ),
 				'',
 				esc_attr__( 'LinkedIn', 'unax' ),
-				esc_url( get_template_directory_uri() ),
-				'linkedin-white',
+				wp_kses( $svg, $wp_kses_allowed_html ),
 				''
 			);
 		}
@@ -156,13 +183,13 @@ class Unax_Contacts_Widget extends WP_Widget {
 		// Skype.
 		$unax_contact_skype = get_theme_mod( 'unax_contact_skype', '' );
 		if ( ! empty( $unax_contact_skype ) ) {
+			$svg = file_get_contents( get_template_directory() . '/dist/icons/skype-white.svg' );
 			printf(
 				wp_kses_post( $markup ),
 				'skype:' . esc_attr( $unax_contact_skype ) . '?chat',
 				'',
 				esc_attr__( 'Skype', 'unax' ),
-				esc_url( get_template_directory_uri() ),
-				'skype-white',
+				wp_kses( $svg, $wp_kses_allowed_html ),
 				''
 			);
 		}

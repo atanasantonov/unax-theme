@@ -8043,25 +8043,46 @@ ul.products {
   margin-top: 0;
   margin-bottom: 0; }
 
-.widget_unax_contacts img {
-  width: 1.5rem; }
+.widget_unax_contacts figure {
+  width: 1.75rem; }
   @media (min-width: 992px) {
-    .widget_unax_contacts img {
+    .widget_unax_contacts figure {
       width: 1.25rem; } }
 
 .widget_unax_contacts .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   margin-top: 1rem; }
+  @media (min-width: 768px) {
+    .widget_unax_contacts .contacts {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .widget_unax_contacts .contacts a {
-    margin-bottom: 0.5rem; }
-  .widget_unax_contacts .contacts img {
-    margin-right: 0.5rem; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .widget_unax_contacts .contacts a {
+        margin-bottom: 0.5rem; } }
+    .widget_unax_contacts .contacts a figure {
+      margin: 0 0.5rem 0 0; }
+    .widget_unax_contacts .contacts a span {
+      display: none; }
+      @media (min-width: 768px) {
+        .widget_unax_contacts .contacts a span {
+          display: inline-block;
+          vertical-align: middle; } }
 
 .widget_unax_contacts .socials {
   margin-top: 1rem;
@@ -8080,8 +8101,17 @@ ul.products {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; } }
-  .widget_unax_contacts .socials img {
+  .widget_unax_contacts .socials figure {
     margin: 0 0.25rem; }
+
+.header-widget-area .widget_unax_contacts svg path {
+  fill: var(--wp--preset--color--black) !important; }
+
+.header-widget-area .widget_unax_contacts .socials {
+  margin-top: 1rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 /*--------------------------------------------------------------
 ## Content
