@@ -1,3 +1,10 @@
+2024-04-19 - version 1.3.2
+* New: Class header-widget-area added to header widget area tag.
+* Fix: Contact widget Fontawesome icons loaded as escaped inline svg
+* Fix: Contact widget icons styling
+* Fix: Header custom logo mobile width fixed
+* Fix: Main navigation large screen fixes
+
 2023-07-09 - version 1.3.1
 * New: Fontawesome icons loaded as images
 * Removed: Fontawesome library
