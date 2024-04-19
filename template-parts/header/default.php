@@ -38,7 +38,7 @@
 		</div><!-- .site-branding -->
 
 		<?php if ( is_active_sidebar( 'header-widget-area' ) ) : ?>
-		<div class="widget-area">
+		<div class="widget-area header-widget-area">
 			<?php dynamic_sidebar( 'header-widget-area' ); ?>
 		</div>
 		<?php endif; ?>
