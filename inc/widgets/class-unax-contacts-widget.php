@@ -48,9 +48,9 @@ class Unax_Contacts_Widget extends WP_Widget {
 
 		// Markup for contacts data.
 		$markup = '<a href="%1$s" class="%2$s" title="%3$s" target="_blank"><figure>%4$s</figure><span>%5$s</span></a>';
-		
+
 		// wp_kses allowed HTML tags for svg.
-		$wp_kses_allowed_html = array( 
+		$wp_kses_allowed_html = array(
 			'svg' => array(
 				'id' => true,
 				'xmlns' => true,
