@@ -26,9 +26,9 @@
         "phpcompatibility/phpcompatibility-paragonie": "*",
         "phpcompatibility/phpcompatibility-wp": "*",
         "sirbrillig/phpcs-variable-analysis": "*",
-        "squizlabs/php_codesniffer": "*",
+        "squizlabs/php_codesniffer": "*", 
         "staabm/annotate-pull-request-from-checkstyle": "*",
-        "wp-coding-standards/wpcs": "*"
+        "wp-coding-standards/wpcs": "2.3"
     },
 	"extra": {
 		"installer-paths": {
