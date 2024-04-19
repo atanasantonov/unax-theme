@@ -7177,7 +7177,7 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
     top: 0px;
     z-index: 1000; }
   .site-header .custom-logo {
-    max-width: 100px;
+    max-width: 40px;
     margin-right: 1rem; }
     @media (min-width: 992px) {
       .site-header .custom-logo {
