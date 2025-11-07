@@ -40,6 +40,7 @@ function unax_editor_color_palette() {
 	return $unax_theme_colors;
 }
 
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -48,14 +49,6 @@ function unax_editor_color_palette() {
  * as indicating support for post thumbnails.
  */
 function unax_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on unax, use a find and replace
-	 * to change 'unax' to the name of your theme in all the template files.
-	 */
-	load_theme_textdomain( 'unax', get_template_directory() . '/languages' );
-
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 

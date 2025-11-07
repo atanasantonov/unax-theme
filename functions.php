@@ -14,6 +14,21 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 992;
 }
 
+
+/**
+ * Load the theme textdomain for translation.
+ */
+function unax_load_textdomain() {
+	load_theme_textdomain( 'unax', get_template_directory() . '/languages' );
+}
+
+
+/**
+ * Load the theme textdomain for translation.
+ */
+add_action( 'init', 'unax_load_textdomain' );
+
+
 /**
  * Updates related actions.
  */
