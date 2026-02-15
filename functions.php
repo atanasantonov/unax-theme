@@ -22,7 +22,6 @@ function unax_load_textdomain() {
 	load_theme_textdomain( 'unax', get_template_directory() . '/languages' );
 }
 
-
 /**
  * Load the theme textdomain for translation.
  */
@@ -69,3 +68,8 @@ require get_template_directory() . '/inc/widgets/class-unax-contacts-widget.php'
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Register custom Gutenberg block styles.
+ */
+unax_register_block_styles();

@@ -229,6 +229,11 @@ function unax_setup() {
 	 */
 	add_theme_support( 'woocommerce' );
 	add_theme_support( 'wc-product-gallery-lightbox' );
+
+	/**
+	 * Register translations after textdomain is loaded.
+	 */
+	esc_html__( 'Container', 'unax' );
 }
 
 /**
@@ -674,9 +679,9 @@ function unax_register_block_styles() {
 			'core/' . $block,
 			array(
 				'name'         => 'container',
-				'label'        => __( 'Container', 'unax' ),
+				'label'        => 'Container',
 			)
 		);
 	}
 }
-unax_register_block_styles();
+
